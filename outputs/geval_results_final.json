@@ -1,0 +1,1624 @@
+{
+  "results": [
+    {
+      "row_id": 1,
+      "person_id": "c_human",
+      "question": "where do you typically purchase your personal care products, and why?",
+      "human_answers": "i usually buy my products online, as this gives the most flexibility and there are some nice discouns. sometimes i buy them at stores when i see something interesting.",
+      "ai_answers": "i typically purchase my personal care products from stores that offer a wide range of essentials, like supermarkets or online platforms this way, i can get everything i need in one place, saving time and effort i also look for retailers that provide good value for money and carry products with non-harmful ingredients",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "8d127d9b89c25069b498204d79e4d4512f6d4cf6643a6f88e85b7c21e4c13c01",
+      "core": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The AI mentions both online platforms and physical stores, but it does not preserve online purchasing as the primary channel and replaces much of the stated rationale with one-stop shopping, time savings, and ingredient concerns.",
+        "human_evidence": "i usually buy my products online, as this gives the most flexibility and there are some nice discouns.",
+        "ai_evidence": "i typically purchase my personal care products from stores that offer a wide range of essentials, like supermarkets or online platforms",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Both answers include online and in-store purchasing, but the AI does not preserve the pattern of usually buying online and only sometimes buying in stores.",
+        "human_evidence": "sometimes i buy them at stores when i see something interesting.",
+        "ai_evidence": "like supermarkets or online platforms",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI's emphasis on value for money partly matches the human's appreciation of discounts, but the human's priority on flexibility is not clearly preserved and other priorities are added.",
+        "human_evidence": "this gives the most flexibility and there are some nice discouns.",
+        "ai_evidence": "i also look for retailers that provide good value for money and carry products with non-harmful ingredients",
+        "confidence": "medium"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Value for money partly aligns with discounts, and time savings are loosely compatible with flexibility, but the AI substitutes substantially different reasons and omits the store trigger of seeing something interesting.",
+        "human_evidence": "as this gives the most flexibility and there are some nice discouns.",
+        "ai_evidence": "this way, i can get everything i need in one place, saving time and effort",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human distinguishes usually buying online from sometimes shopping in stores under a specific condition; the AI collapses the channels together and loses that frequency and condition.",
+        "human_evidence": "sometimes i buy them at stores when i see something interesting.",
+        "ai_evidence": "i typically purchase my personal care products from stores that offer a wide range of essentials, like supermarkets or online platforms",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 2,
+      "person_id": "s_human",
+      "question": "where do you typically purchase your personal care products, and why?",
+      "human_answers": "i usually order my face products online from yesstyle page that has the korean skin products i need, but then when it comes to body shampoo i go to supermarkets or drugstores like dm.",
+      "ai_answers": "i typically purchase my personal care products from online stores like yesstyle and soko glam because they offer a wide range of korean skincare brands and provide detailed ingredient lists i also appreciate that they often include free samples, which lets me try new products before committing plus, their transparency and reliability make me feel confident in my choices 😊",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "a7a255961323f2119c98f22e2538d5aed3fade5856653b640ae0bd97ef00892c",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI preserves the central point about buying Korean skincare online from YesStyle, but omits the distinct practice of purchasing body shampoo at supermarkets or drugstores such as dm.",
+        "human_evidence": "i usually order my face products online from yesstyle page that has the korean skin products i need, but then when it comes to body shampoo i go to supermarkets or drugstores like dm.",
+        "ai_evidence": "i typically purchase my personal care products from online stores like yesstyle and soko glam",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The online YesStyle purchasing behavior aligns, but the AI does not preserve the human's separate in-store purchasing behavior for body shampoo.",
+        "human_evidence": "when it comes to body shampoo i go to supermarkets or drugstores like dm.",
+        "ai_evidence": "i typically purchase my personal care products from online stores like yesstyle and soko glam",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human describes where they purchase different products but does not explicitly state a like, dislike, priority, or preference.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "Both answers identify access to Korean skincare products as the reason for purchasing from YesStyle; the AI's additional reasons are compatible but reference-unverifiable.",
+        "human_evidence": "yesstyle page that has the korean skin products i need",
+        "ai_evidence": "because they offer a wide range of korean skincare brands",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human makes an important product-category distinction—online for face products but physical stores for body shampoo—which the AI largely generalizes into online purchasing of personal care products.",
+        "human_evidence": "but then when it comes to body shampoo i go to supermarkets or drugstores like dm.",
+        "ai_evidence": "i typically purchase my personal care products from online stores like yesstyle and soko glam",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 3,
+      "person_id": "g_human",
+      "question": "where do you typically purchase your personal care products, and why?",
+      "human_answers": "i almost always get all my personal care products (which are being close to being empty) when doing grocery shopping in my nearest full-service supermarket. this feels the most convenient and time-efficient to me.",
+      "ai_answers": "i typically purchase my personal care products from the supermarket it's convenient, and i can easily find the brands i recognize and trust plus, i like to see the product sizes and designs before buying",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "df5bfdbd3c1a711699d31f965dcf2b365d224152177a38fe09ff2b636151f6e4",
+      "core": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "Both answers center on purchasing personal care products at a supermarket for convenience. The AI omits the nearest full-service location, grocery-trip timing, and near-empty trigger, but retains the main answer.",
+        "human_evidence": "when doing grocery shopping in my nearest full-service supermarket.",
+        "ai_evidence": "i typically purchase my personal care products from the supermarket",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "The AI preserves the typical supermarket-purchasing behavior, though it leaves out that this occurs during grocery shopping when products are close to empty.",
+        "human_evidence": "i almost always get all my personal care products (which are being close to being empty) when doing grocery shopping in my nearest full-service supermarket.",
+        "ai_evidence": "i typically purchase my personal care products from the supermarket",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "Both answers prioritize convenience. The AI does not explicitly preserve time efficiency and adds compatible, reference-unverifiable preferences about brands and inspecting products.",
+        "human_evidence": "this feels the most convenient and time-efficient to me.",
+        "ai_evidence": "it's convenient",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "Convenience is preserved as a purchase reason, while the human's time-efficiency rationale is only implicit or omitted. The added brand-recognition and visual-inspection reasons do not contradict the stated motivation.",
+        "human_evidence": "this feels the most convenient and time-efficient to me.",
+        "ai_evidence": "it's convenient, and i can easily find the brands i recognize and trust",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI roughly preserves high frequency through “typically,” but loses meaningful conditions: buying during grocery trips, using the nearest full-service supermarket, and waiting until products are close to empty.",
+        "human_evidence": "i almost always get all my personal care products (which are being close to being empty) when doing grocery shopping in my nearest full-service supermarket.",
+        "ai_evidence": "i typically purchase my personal care products from the supermarket",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 4,
+      "person_id": "c_human",
+      "question": "which personal care brands do you buy most often for skincare (or body wash) products, and why?",
+      "human_answers": "i don't really know the brands. i buy them because they get the job done and are affordable.",
+      "ai_answers": "i usually stick with brands that offer simple and effective products for skincare, i use a reliable sunscreen that doesn't have a bad scent and is affordable i don't follow trends much, so i prefer brands that are recommended by friends or have proven to work well for me",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "d9cadfc239313626ae9a6d90025752f5b41eacb3f223febce57db6a2fb43c5bc",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI preserves effectiveness and affordability as key considerations, but it does not preserve the human's central admission that they do not really know the brands and instead suggests recurring brand choices.",
+        "human_evidence": "i don't really know the brands. i buy them because they get the job done and are affordable.",
+        "ai_evidence": "i usually stick with brands that offer simple and effective products for skincare",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "Both answers describe obtaining or using personal-care products that are effective and affordable; the AI's additional sunscreen and recommendation details do not directly conflict with that behavior.",
+        "human_evidence": "i buy them because they get the job done and are affordable.",
+        "ai_evidence": "i use a reliable sunscreen that doesn't have a bad scent and is affordable",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "The human's priorities of effectiveness and affordability are preserved, with the AI adding compatible desired attributes.",
+        "human_evidence": "they get the job done and are affordable.",
+        "ai_evidence": "simple and effective products for skincare, i use a reliable sunscreen that doesn't have a bad scent and is affordable",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "The AI retains both stated purchase drivers: products working well and being affordable. The extra references to scent and recommendations do not replace or contradict those reasons.",
+        "human_evidence": "i buy them because they get the job done and are affordable.",
+        "ai_evidence": "have proven to work well for me",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human qualifies their answer with uncertainty about brand knowledge, while the AI omits this and instead portrays a usual pattern of sticking with brands. This substantially changes the qualified nature of the answer without explicitly stating the direct opposite.",
+        "human_evidence": "i don't really know the brands.",
+        "ai_evidence": "i usually stick with brands",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 5,
+      "person_id": "s_human",
+      "question": "which personal care brands do you buy most often for skincare (or body wash) products, and why?",
+      "human_answers": "for my face i mostly use korean products like 'some by me', 'axis-y', 'beauty of joseon' for sunscreen.",
+      "ai_answers": "i mostly buy skincare products from korean brands like 'some by mi' for their aha, bha, pha toner, and axis-y for their niacinamide serum because they work well for my oily, acne-prone skin i also use sunscreen by beauty of joseon since it feels light and effective these brands are transparent about their ingredients and have natural, organic options that i prefer",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "bae5a5f4b082c0e0ae96d0ab50ab97195d24c58611b339499e6a89a93014c1b1",
+      "core": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "The AI preserves the central claim that the person primarily uses Korean facial-skincare brands, naming the same three brands and correctly associating Beauty of Joseon with sunscreen. The added product details and benefits are reference-unverifiable but do not materially conflict with the human answer.",
+        "human_evidence": "for my face i mostly use korean products like 'some by me', 'axis-y', 'beauty of joseon' for sunscreen.",
+        "ai_evidence": "i mostly buy skincare products from korean brands like 'some by mi'",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "Both answers describe primarily buying or using Korean skincare products from the same brands, including using Beauty of Joseon sunscreen. The AI's specific toner and serum claims add detail without changing the core behavior.",
+        "human_evidence": "for my face i mostly use korean products",
+        "ai_evidence": "i mostly buy skincare products from korean brands",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human reports which products and brands they mostly use but does not explicitly state a like, dislike, priority, indifference, or preference.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": false,
+        "score": null,
+        "rationale": "Although the question asks why and the AI supplies several reasons, the human answer does not state any reason or decision driver for using these brands.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "The AI preserves the human's frequency qualifier that these are the brands they use or buy mostly, rather than presenting them as exclusive choices.",
+        "human_evidence": "mostly use korean products",
+        "ai_evidence": "mostly buy skincare products from korean brands",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 6,
+      "person_id": "g_human",
+      "question": "which personal care brands do you buy most often for skincare (or body wash) products, and why?",
+      "human_answers": "i'm actually not 100%% confident of the branding of my current body lotion. i think the current bottle is from niveau and the previous one was a cost-efficient discounter (no-name) brand.",
+      "ai_answers": "i usually buy nivea for skincare and body wash products because they are reliable and have been effective for me over time i also sometimes pick up no-name brands if they have a good price-to-performance ratio i prefer sticking to what i know works well and fits into my routine",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "bc0ff482c50d9da96c18623e857724a8f27e8160354c99d215a1d1b8739daea7",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI preserves the two brand categories—Nivea and no-name products—but turns a tentative report about the current and previous bottles into a confident recurring purchasing pattern and adds unsupported efficacy claims.",
+        "human_evidence": "i think the current bottle is from niveau and the previous one was a cost-efficient discounter (no-name) brand.",
+        "ai_evidence": "i usually buy nivea for skincare and body wash products because they are reliable",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Both answers indicate use or purchase of Nivea and a no-name brand, but the AI meaningfully changes a current-versus-previous account into “usually” and “sometimes” buying patterns.",
+        "human_evidence": "the current bottle is from niveau and the previous one was a cost-efficient discounter (no-name) brand.",
+        "ai_evidence": "i usually buy nivea for skincare and body wash products",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human reports current and previous products but does not explicitly state a like, dislike, priority, indifference, or relative preference.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "The human's stated price/value reason for the no-name brand is preserved by the AI's equivalent price-to-performance explanation; the additional Nivea reasons do not contradict it.",
+        "human_evidence": "cost-efficient discounter (no-name) brand.",
+        "ai_evidence": "no-name brands if they have a good price-to-performance ratio",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human emphasizes uncertainty about the lotion's branding, while the AI presents Nivea as a confident usual purchase and describes an established routine, substantially losing that uncertainty.",
+        "human_evidence": "i'm actually not 100%% confident of the branding of my current body lotion.",
+        "ai_evidence": "i usually buy nivea for skincare and body wash products",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 7,
+      "person_id": "c_human",
+      "question": "what is the ideal size and packaging for a body wash product for you? for example regarding volume in ml, materials used, design, functionality, informativeness, …",
+      "human_answers": "it should be around 300 ml, use natural materias and smell nice. of course it needs to clean the body haha",
+      "ai_answers": "i prefer a body wash size of around 250-500 ml, with packaging made from recyclable or biodegradable materials the design should be simple and functional, like a pump or squeeze bottle, and clearly list essential information such as ingredients and usage instructions sustainability and ease of use are key for me",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "28c67bc93e6e22366c3ac06df2f4c80077b18e263104fc148c30e365df05e77f",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI broadly matches the approximate size and environmentally oriented packaging, but it broadens the volume considerably and omits the human's desired pleasant smell and explicit cleaning requirement.",
+        "human_evidence": "it should be around 300 ml, use natural materias and smell nice.",
+        "ai_evidence": "i prefer a body wash size of around 250-500 ml, with packaging made from recyclable or biodegradable materials",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human describes an ideal product and desired features, not an actual or intended purchase, use pattern, or other behavior.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The approximate size and sustainability-related packaging preferences partially align, but recyclable or biodegradable materials are not identical to natural materials, and the AI omits the preference for a pleasant smell and cleaning functionality.",
+        "human_evidence": "it should be around 300 ml, use natural materias and smell nice.",
+        "ai_evidence": "i prefer a body wash size of around 250-500 ml, with packaging made from recyclable or biodegradable materials",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human states desired product attributes and functionality but does not explain why those attributes are preferred.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI preserves an approximate rather than exact volume, but its 250–500 ml range is substantially broader than around 300 ml and it omits the human's emphatic requirement that the product clean the body.",
+        "human_evidence": "of course it needs to clean the body haha",
+        "ai_evidence": "i prefer a body wash size of around 250-500 ml",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 8,
+      "person_id": "s_human",
+      "question": "what is the ideal size and packaging for a body wash product for you? for example regarding volume in ml, materials used, design, functionality, informativeness, …",
+      "human_answers": "for body wash, i would go with a big size as it is more efficient, but glass bottle and transparent, minimalistic.",
+      "ai_answers": "for a body wash, i prefer a 250-300 ml glass bottle with a pump dispenser for ease of use the packaging should be clean and clear, with detailed ingredient information and usage instructions natural and organic ingredients are a must, and the design should be practical and informative",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "520e90646c6d1afce6fd5837a44a9329ef0a8759487ad9011e5206c6c6f706e9",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI preserves the preference for glass and a clean design, but changes the important request for a large, transparent, minimalist package into a specific 250–300 ml format with several added features.",
+        "human_evidence": "a big size as it is more efficient, but glass bottle and transparent, minimalistic.",
+        "ai_evidence": "i prefer a 250-300 ml glass bottle with a pump dispenser",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human describes an ideal hypothetical product configuration, not an actual or intended real-world purchase or use behavior.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Glass aligns, and a clean design may partially reflect minimalism, but the AI's 250–300 ml size does not preserve the stated preference for a big size, while transparency is not clearly retained.",
+        "human_evidence": "i would go with a big size as it is more efficient, but glass bottle and transparent, minimalistic.",
+        "ai_evidence": "i prefer a 250-300 ml glass bottle with a pump dispenser",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human identifies efficiency as the reason for choosing a large size, whereas the AI omits that driver and instead gives ease of use as a reason for a pump dispenser.",
+        "human_evidence": "as it is more efficient",
+        "ai_evidence": "with a pump dispenser for ease of use",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human's desired size degree is explicitly large, but the AI replaces it with 250–300 ml, materially changing that size qualification without enough context to establish a direct reversal.",
+        "human_evidence": "a big size",
+        "ai_evidence": "250-300 ml",
+        "confidence": "medium"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 9,
+      "person_id": "g_human",
+      "question": "what is the ideal size and packaging for a body wash product for you? for example regarding volume in ml, materials used, design, functionality, informativeness, …",
+      "human_answers": "for home use, i prefer medium-large sized metal bottles of more than 300 ml with a pump dispenser that can be refilled. regarding the design i don't have a strong opinion. however, i think i prefer a clean and minimalistic design. i don't really care about information of its ingredients. for traveling purposes, i prefer rather small plastic bottles (around 150ml) with a normal dispenser.",
+      "ai_answers": "i prefer a body wash product that comes in a 500ml bottle, as it lasts long enough without needing frequent repurchases the packaging should be simple and functional, with clear labeling of ingredients and benefits a minimalistic design that fits easily into my routine and storage space is ideal",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "1b6c2319edf9d749bc2104c6f9b5c9923fa51e3c4887428ceb5449da6fbb31c0",
+      "core": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The AI aligns with the larger home-use volume and minimalist design, but it collapses the human's home-versus-travel distinction and omits central material, dispenser, and refillability requirements. It also elevates ingredient labeling despite the human's stated lack of concern.",
+        "human_evidence": "for traveling purposes, i prefer rather small plastic bottles (around 150ml) with a normal dispenser.",
+        "ai_evidence": "i prefer a body wash product that comes in a 500ml bottle",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human describes desired product features and hypothetical use-context preferences, not an actual or intended purchasing or usage behavior.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The larger size and minimalist design partially align, but the AI misses the preferred metal refillable pump for home and small plastic travel bottle, while treating ingredient labeling as important despite the human's indifference.",
+        "human_evidence": "i don't really care about information of its ingredients.",
+        "ai_evidence": "with clear labeling of ingredients and benefits",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human uses travel as the driver for choosing a small plastic bottle, whereas the AI substitutes avoiding frequent repurchases as its stated reason for a large bottle. These are different decision drivers rather than direct opposites.",
+        "human_evidence": "for traveling purposes, i prefer rather small plastic bottles",
+        "ai_evidence": "as it lasts long enough without needing frequent repurchases",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The AI loses the important home-versus-travel condition and strengthens the human's tentative, weak design preference into an unqualified ideal. It also fails to preserve the explicit indifference toward ingredient information.",
+        "human_evidence": "regarding the design i don't have a strong opinion. however, i think i prefer a clean and minimalistic design.",
+        "ai_evidence": "a minimalistic design that fits easily into my routine and storage space is ideal",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 10,
+      "person_id": "c_human",
+      "question": "which personal care products, if any, do you regularly buy in larger/bulk quantities?",
+      "human_answers": "i don't usually buy in bulk, but rather as soon as i need them.",
+      "ai_answers": "i regularly buy toothpaste and deodorant in bulk these are essential items in my daily routine, and buying them in larger quantities helps me save money and avoid running out",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "90779f9f3fd569d3c9637279485188e5a7be2dc45e10db06bfa19ba9119e9db5",
+      "core": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The AI reverses the central meaning: the human generally buys products as needed rather than in bulk, while the AI claims regular bulk purchasing.",
+        "human_evidence": "i don't usually buy in bulk, but rather as soon as i need them.",
+        "ai_evidence": "i regularly buy toothpaste and deodorant in bulk",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The stated purchasing behaviors directly conflict: not usually buying in bulk versus regularly doing so.",
+        "human_evidence": "i don't usually buy in bulk",
+        "ai_evidence": "i regularly buy toothpaste and deodorant in bulk",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human describes a purchasing pattern but does not explicitly state a preference, like, dislike, or priority.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human gives no explicit reason for the purchasing pattern; the AI-only reasons of saving money and avoiding shortages cannot establish applicability.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The AI materially reverses the human's frequency qualifier, changing “don't usually” into “regularly.”",
+        "human_evidence": "i don't usually buy in bulk",
+        "ai_evidence": "i regularly buy toothpaste and deodorant in bulk",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 11,
+      "person_id": "s_human",
+      "question": "which personal care products, if any, do you regularly buy in larger/bulk quantities?",
+      "human_answers": "body wash, hand wash, thats it. i do not like to buy face products in big sizes or hair shampoo. i hate that. ",
+      "ai_answers": "i regularly buy the aha, bha, pha toner from 'some by mi' and the niacinamide serum from axis-y in bulk these products are essential for my skincare routine, and i like to ensure i always have a consistent supply plus, they work really well for my oily, acne-prone skin 😊",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "583945e6202dcb6932085ea425aa5b8f08f8b8c8cc4e4d5a8add8aae940ed58f",
+      "core": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The human regularly buys only body wash and hand wash in bulk and explicitly rejects bulk face products, while the AI centers its answer on buying facial toner and serum in bulk.",
+        "human_evidence": "body wash, hand wash, thats it. i do not like to buy face products in big sizes",
+        "ai_evidence": "i regularly buy the aha, bha, pha toner from 'some by mi' and the niacinamide serum from axis-y in bulk",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The reported bulk-buying behavior is directly contradictory: the human limits it to body and hand wash, whereas the AI reports regularly bulk-buying face products the human rejects buying in large sizes.",
+        "human_evidence": "body wash, hand wash, thats it.",
+        "ai_evidence": "i regularly buy the aha, bha, pha toner from 'some by mi' and the niacinamide serum from axis-y in bulk",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The human strongly dislikes buying face products in large sizes, while the AI favorably describes keeping facial skincare products in bulk for a consistent supply.",
+        "human_evidence": "i do not like to buy face products in big sizes or hair shampoo. i hate that.",
+        "ai_evidence": "i like to ensure i always have a consistent supply",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human states what they buy and strongly dislike but gives no reason or decision driver for those choices.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The AI materially reverses the human's exclusivity and emphatic rejection: “thats it” and “i hate that” become regular bulk purchasing of facial skincare products.",
+        "human_evidence": "thats it. i do not like to buy face products in big sizes or hair shampoo. i hate that.",
+        "ai_evidence": "these products are essential for my skincare routine, and i like to ensure i always have a consistent supply",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 12,
+      "person_id": "g_human",
+      "question": "which personal care products, if any, do you regularly buy in larger/bulk quantities?",
+      "human_answers": "i'm almost always only buying a single item as soon as one personal care product is about to go empty. in rare occasions i buy the same product twice in one shopping trip when its discounted.",
+      "ai_answers": "i regularly buy head & shoulders shampoo and nivea roll-on deodorant in bulk these are products i use daily and trust for their effectiveness buying in larger quantities helps me avoid frequent shopping trips and ensures i always have them on hand",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "3fe51e8d17221cb442b69f2ea4796ad3be774ab26155b9c19182500fcfbb6c09",
+      "core": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The human's central claim is that they almost always buy one item and only rarely buy two, while the AI instead claims regular bulk purchasing.",
+        "human_evidence": "i'm almost always only buying a single item",
+        "ai_evidence": "i regularly buy head & shoulders shampoo and nivea roll-on deodorant in bulk",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The AI directly contradicts the human's purchasing pattern by changing rare duplicate purchases into regular bulk buying.",
+        "human_evidence": "in rare occasions i buy the same product twice in one shopping trip",
+        "ai_evidence": "i regularly buy head & shoulders shampoo and nivea roll-on deodorant in bulk",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human describes purchasing behavior but does not explicitly state a preference, priority, like, dislike, or indifference regarding bulk quantities.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human identifies discounts as the reason for rare duplicate purchases, whereas the AI substitutes avoiding shopping trips and maintaining supply; these are different rather than directly opposite drivers.",
+        "human_evidence": "when its discounted.",
+        "ai_evidence": "buying in larger quantities helps me avoid frequent shopping trips",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The AI reverses the human's important frequency qualification, presenting bulk buying as regular rather than a rare exception.",
+        "human_evidence": "in rare occasions",
+        "ai_evidence": "i regularly buy head & shoulders shampoo and nivea roll-on deodorant in bulk",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 13,
+      "person_id": "c_human",
+      "question": "if you could choose one celebrity to represent a brand of men's or women's skin and body care products that inspires you to make a purchase, who would that celebrity be and why?",
+      "human_answers": "it would need to be a well-known celebreity, probably starring in movies which is handsome and lean. maybe something like jacob elordi or christian bale.",
+      "ai_answers": "i'd choose emma watson she's known for her practical approach to personal care, advocates for sustainability, and uses products with non-harmful ingredients her consistency and health-conscious choices align with my values",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "9029fe2e481e600869a3a0241e9fdd253fc2a1b889b30bc256b82d5d2644ada3",
+      "core": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human centers on a well-known, handsome, lean male movie star, while the AI selects Emma Watson and emphasizes personal-care and sustainability values. This is a major central mismatch, though not a direct reversal.",
+        "human_evidence": "probably starring in movies which is handsome and lean",
+        "ai_evidence": "i'd choose emma watson",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human provides only a hypothetical celebrity selection, not an actual or intended real-world action or behavioral tendency.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human favors male actors such as Jacob Elordi or Christian Bale, whereas the AI chooses Emma Watson. The preferred representative and salient attributes differ substantially.",
+        "human_evidence": "maybe something like jacob elordi or christian bale.",
+        "ai_evidence": "i'd choose emma watson",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human's drivers are fame, movie stardom, handsomeness, and leanness; the AI substitutes sustainability, non-harmful ingredients, and health-consciousness. These are unrelated motivations rather than direct opposites.",
+        "human_evidence": "a well-known celebreity, probably starring in movies which is handsome and lean.",
+        "ai_evidence": "advocates for sustainability, and uses products with non-harmful ingredients",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human gives a tentative, example-based answer using “probably” and “maybe,” while the AI presents one definite choice. This substantially loses the human's uncertainty and flexible set of possibilities.",
+        "human_evidence": "maybe something like jacob elordi or christian bale.",
+        "ai_evidence": "i'd choose emma watson",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": true
+    },
+    {
+      "row_id": 14,
+      "person_id": "s_human",
+      "question": "if you could choose one celebrity to represent a brand of men's or women's skin and body care products that inspires you to make a purchase, who would that celebrity be and why?",
+      "human_answers": "i do not know, it really depends on the day, it changes all the time, but if i had to pick one, i would go with keira knightley, just because i like her in general :)",
+      "ai_answers": "i would choose hyram yarbro to represent a brand of skincare products he’s known for his dedication to skincare, transparency about ingredients, and practical advice, which aligns perfectly with my values and needs plus, he often recommends effective, natural, and organic products that suit my skin type",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "c7f105e096afaa5f40667eef7689fe0eb2de214b3973c94e93379498c80a6e75",
+      "core": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human conditionally selects Keira Knightley while emphasizing variability, whereas the AI definitively selects Hyram Yarbro and gives a different basis for the choice. This is a major central mismatch, though not a direct reversal.",
+        "human_evidence": "but if i had to pick one, i would go with keira knightley",
+        "ai_evidence": "i would choose hyram yarbro to represent a brand of skincare products",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human gives only a hypothetical forced choice, not an actual action, intended purchase, habit, or behavioral tendency.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human favors Keira Knightley in the forced choice and generally likes her, while the AI favors Hyram Yarbro. This is a major preference mismatch without evidence that the human explicitly rejects the AI's choice.",
+        "human_evidence": "i would go with keira knightley, just because i like her in general",
+        "ai_evidence": "i would choose hyram yarbro",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human's reason is a general liking for Keira Knightley, while the AI substitutes skincare expertise, transparency, advice, and product suitability as reasons. These are different decision drivers rather than a direct reversal of the same driver.",
+        "human_evidence": "just because i like her in general",
+        "ai_evidence": "he’s known for his dedication to skincare, transparency about ingredients, and practical advice, which aligns perfectly with my values and needs",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human stresses that the answer changes frequently and presents Keira Knightley only as a forced choice; the AI states a firm choice without preserving that uncertainty or conditionality. This is a major loss of nuance, not a reversal of the qualifier.",
+        "human_evidence": "i do not know, it really depends on the day, it changes all the time, but if i had to pick one",
+        "ai_evidence": "i would choose hyram yarbro",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": true
+    },
+    {
+      "row_id": 15,
+      "person_id": "g_human",
+      "question": "if you could choose one celebrity to represent a brand of men's or women's skin and body care products that inspires you to make a purchase, who would that celebrity be and why?",
+      "human_answers": "i can't really think of a male celebrity right now since i haven't met any in real life and i'm aware that they are polished (using make-up) when being filmed or being at public events.",
+      "ai_answers": "i'd choose david beckham he's known for his practical and consistent approach to personal care, and he embodies reliability and a straightforward lifestyle plus, his long-term commitment to grooming makes him a trustworthy choice",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "981970e68155e844f2bf8405afa0d6f505c3a49d6b6b377f898d27aa7f3deffd",
+      "core": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The human cannot identify a celebrity and expresses skepticism about celebrities’ polished public images, while the AI confidently selects David Beckham and endorses his trustworthiness. This substantially reverses the central response.",
+        "human_evidence": "i can't really think of a male celebrity right now",
+        "ai_evidence": "i'd choose david beckham",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human does not describe a relevant purchase, intended action, habit, or behavioral tendency; inability to provide a hypothetical celebrity choice is not behavioral evidence.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human expresses uncertainty and makes no celebrity selection, whereas the AI gives Beckham as a definite choice. This is a major mismatch, but not a direct rejection of Beckham or an opposite celebrity preference.",
+        "human_evidence": "i can't really think of a male celebrity right now",
+        "ai_evidence": "i'd choose david beckham",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human’s hesitation is driven by having no real-life acquaintance with celebrities and knowing their appearances are polished, while the AI substitutes reliability, lifestyle, and grooming as reasons. These are different rather than directly reversed motivations.",
+        "human_evidence": "since i haven't met any in real life and i'm aware that they are polished (using make-up) when being filmed or being at public events.",
+        "ai_evidence": "he embodies reliability and a straightforward lifestyle",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The AI loses the human’s qualified uncertainty—especially “can't really” and “right now”—and replaces it with an unqualified choice. This is a major loss of uncertainty, though not a literal reversal of a crucial condition.",
+        "human_evidence": "i can't really think of a male celebrity right now",
+        "ai_evidence": "i'd choose david beckham",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": true
+    },
+    {
+      "row_id": 16,
+      "person_id": "c_human",
+      "question": "how long have you been using your current brand of toothpaste? do you also remember the last time you switched brands and why?",
+      "human_answers": "since forever, my mum used to buy them and i just continued to buy them, so something like 10 years? i did never have a specific reason to switch toothpase brands.",
+      "ai_answers": "i've been using my current brand of toothpaste for a few years now the last time i switched brands was because i wanted a product with better ingredients i prefer to stick with what works and avoid unnecessary changes",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "21905f9872ff4b35ef6970ec5e353ffe58bde8ccd52c0eccd71c8c345775a96e",
+      "core": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The AI retains the broad idea of using one brand for an extended period, but materially changes both the duration and the account of why a switch occurred.",
+        "human_evidence": "something like 10 years? i did never have a specific reason to switch toothpase brands.",
+        "ai_evidence": "for a few years now the last time i switched brands was because i wanted a product with better ingredients",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Both answers describe continued use of a current brand, but “a few years” meaningfully understates the human's approximately ten-year use.",
+        "human_evidence": "i just continued to buy them, so something like 10 years?",
+        "ai_evidence": "i've been using my current brand of toothpaste for a few years now",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human describes continued purchasing and a lack of a specific switching reason, but does not explicitly state a like, dislike, priority, or preference; the AI-only preference cannot establish applicability.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The human explicitly says there was never a specific reason for switching, while the AI directly supplies a specific reason—seeking better ingredients.",
+        "human_evidence": "i did never have a specific reason to switch toothpase brands.",
+        "ai_evidence": "the last time i switched brands was because i wanted a product with better ingredients",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The AI loses the human's uncertainty around the approximate duration and directly reverses the absolute qualification that there was never a specific switching reason.",
+        "human_evidence": "since forever, my mum used to buy them and i just continued to buy them, so something like 10 years?",
+        "ai_evidence": "i've been using my current brand of toothpaste for a few years now the last time i switched brands was because i wanted a product with better ingredients",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 17,
+      "person_id": "s_human",
+      "question": "how long have you been using your current brand of toothpaste? do you also remember the last time you switched brands and why?",
+      "human_answers": "i do not care much about toothpaste brand, my boyfriend buys those in the drugstore close by. i just want it to feel fresh and have the right texture, i do care about the ingredients tho.",
+      "ai_answers": "i've been using my current brand of toothpaste for about two years now the last time i switched brands was because i wanted something with more natural ingredients and better effectiveness i always look for transparency in the ingredients and how well the product works for me 😊",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "1e7cecf7ed4f9759fbb07e7d039d0ddfa7ffa556630c0b7cfcd2844a6f90b887",
+      "core": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The AI preserves concern about ingredients but replaces the human's brand indifference and boyfriend-led purchasing with a specific two-year usage and switching narrative, while omitting freshness and texture.",
+        "human_evidence": "i do not care much about toothpaste brand, my boyfriend buys those in the drugstore close by. i just want it to feel fresh and have the right texture, i do care about the ingredients tho.",
+        "ai_evidence": "i've been using my current brand of toothpaste for about two years now the last time i switched brands was because i wanted something with more natural ingredients and better effectiveness",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human describes the boyfriend as handling toothpaste purchases, whereas the AI attributes a defined period of brand use and a past switching decision to the speaker.",
+        "human_evidence": "my boyfriend buys those in the drugstore close by.",
+        "ai_evidence": "i've been using my current brand of toothpaste for about two years now the last time i switched brands was",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Both answers reflect concern about ingredients and product performance, but the AI omits the human's brand indifference and specific desires for freshness and texture while adding naturalness and transparency.",
+        "human_evidence": "i just want it to feel fresh and have the right texture, i do care about the ingredients tho.",
+        "ai_evidence": "i wanted something with more natural ingredients and better effectiveness i always look for transparency in the ingredients and how well the product works for me",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human does not state why they last switched brands or otherwise give an explicit reason for a switching decision; the AI's switching rationale cannot create applicability.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The AI loses the human's qualified low concern about brand and turns the answer into a definite switching history with an absolute claim about always checking ingredients.",
+        "human_evidence": "i do not care much about toothpaste brand",
+        "ai_evidence": "i always look for transparency in the ingredients and how well the product works for me",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 18,
+      "person_id": "g_human",
+      "question": "how long have you been using your current brand of toothpaste? do you also remember the last time you switched brands and why?",
+      "human_answers": "its rather likely that my toothpaste brand changed when i bought a new toothpaste last week since i don't really pay attention to the toothpaste brands. however, i think that i'm usually rotating between 2-3 toothpaste brands (e.g., colgate, elmex, blend-a-med)",
+      "ai_answers": "i've been using my current brand of toothpaste for several years now the last time i switched brands was because of a recommendation from a friend, but i quickly went back to my usual one since it works well for me i prefer sticking to what i know is reliable",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "85e665e0772ccf4a3143681fd051ec95f2f3e02c53a3ad98793f22e572d18096",
+      "core": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The human describes a likely brand change last week and regular rotation among several brands, while the AI claims years of continuous use and loyalty to one usual brand. This substantially reverses the central meaning.",
+        "human_evidence": "my toothpaste brand changed when i bought a new toothpaste last week",
+        "ai_evidence": "i've been using my current brand of toothpaste for several years now",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The human usually rotates among two or three brands, whereas the AI describes returning to and sticking with one usual brand; these are directly contradictory usage patterns.",
+        "human_evidence": "i'm usually rotating between 2-3 toothpaste brands",
+        "ai_evidence": "i quickly went back to my usual one",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The human expresses low concern about toothpaste brands, while the AI asserts a preference for familiar, reliable brands. This reverses the human's stated brand indifference.",
+        "human_evidence": "i don't really pay attention to the toothpaste brands",
+        "ai_evidence": "i prefer sticking to what i know is reliable",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human links brand changes to not paying attention to brands, while the AI substitutes a friend's recommendation and perceived reliability as decision drivers. These are major but not cleanly opposite motivations.",
+        "human_evidence": "since i don't really pay attention to the toothpaste brands",
+        "ai_evidence": "the last time i switched brands was because of a recommendation from a friend",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 1,
+        "rationale": "The human's uncertainty about the recent switch and qualified claim of usually rotating brands are replaced by categorical long-term continuity and brand loyalty. This materially distorts both certainty and frequency.",
+        "human_evidence": "its rather likely that my toothpaste brand changed",
+        "ai_evidence": "i've been using my current brand of toothpaste for several years now",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 19,
+      "person_id": "c_human",
+      "question": "if you would create the perfect body wash for you, what ingredients would it have? what other features you would prefer?",
+      "human_answers": "i prefer something that is effective and not overpriced, and of course i care about sustainable ingredients",
+      "ai_answers": "If I were to create my perfect body wash, it’d have a super gentle formula with ingredients like aloe vera or chamomile to keep my skin calm and hydrated. I’d want it to smell fresh but not too strong—something light and clean. Also, I’m all about sustainability, so the packaging needs to be eco-friendly! It should moisturize without leaving that greasy feeling, and definitely no harsh chemicals—stuff like sulfates or parabens. Just something simple, effective, and easy to use every day.",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "d5650484157272653ca0f5009f0647d727edca9305a0265e3cee2539876e4829",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI preserves effectiveness and a general concern for sustainability, but omits affordability and shifts the specified sustainability focus from ingredients to packaging.",
+        "human_evidence": "i prefer something that is effective and not overpriced, and of course i care about sustainable ingredients",
+        "ai_evidence": "Also, I’m all about sustainability, so the packaging needs to be eco-friendly!",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human describes desired product attributes, not an actual or intended action, habit, or behavioral tendency.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The preference for effectiveness broadly aligns, but the AI leaves out the price priority and replaces sustainable ingredients with eco-friendly packaging.",
+        "human_evidence": "effective and not overpriced, and of course i care about sustainable ingredients",
+        "ai_evidence": "Just something simple, effective, and easy to use every day.",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human states preferred attributes but gives no reason explaining why those attributes matter.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI preserves a strong sustainability concern but loses the human's specific affordability constraint and ingredient-level sustainability qualification.",
+        "human_evidence": "not overpriced, and of course i care about sustainable ingredients",
+        "ai_evidence": "I’m all about sustainability, so the packaging needs to be eco-friendly!",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 20,
+      "person_id": "s_human",
+      "question": "if you would create the perfect body wash for you, what ingredients would it have? what other features you would prefer?",
+      "human_answers": "the important things for me are ingredients, i want to have full transparency on the ingredient list. this should be clearly stated in the packaging. it would be nice to have for each ingredient also what are the effects on the body. I want a clear glass bottle, minimalistic. The texture if the body lotion is also very imprtant to me, it should be soft but not heavy. I want it to smell oud like. ",
+      "ai_answers": "If I were to create the perfect body wash, it would include organic coconut oil for hydration, aloe vera for soothing, and essential oils like lavender for a calming scent. I would ensure it’s free from harsh chemicals and packaged in biodegradable materials. A gentle exfoliating element from natural sources and cruelty-free testing would also be essential. Overall, it would nourish the skin while being kind to the planet.",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "26166b5d47127c50b799b1c90664e2e333da40435140406173a029da7d40fc8a",
+      "core": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The AI proposes a largely different product concept and omits the human’s central requirements of ingredient transparency, explanatory labeling, clear minimalist glass packaging, light texture, and oud-like scent. Its focus on specific natural ingredients and environmental features leaves little substantive alignment.",
+        "human_evidence": "i want to have full transparency on the ingredient list.",
+        "ai_evidence": "Overall, it would nourish the skin while being kind to the planet.",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human describes an ideal hypothetical product, not an actual action, habit, purchase, or intended real-world behavior.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The AI fails to preserve most stated preferences and replaces the oud-like scent and clear minimalist glass bottle with lavender and biodegradable packaging. Both answers favor skin-beneficial ingredients, but this limited overlap does not retain the human’s main priorities.",
+        "human_evidence": "I want a clear glass bottle, minimalistic.",
+        "ai_evidence": "I would ensure it’s free from harsh chemicals and packaged in biodegradable materials.",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human states desired attributes and priorities but does not explain why they are desired; the AI’s hydration, calming, and environmental reasons cannot create applicability.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human’s differentiated strength and balance—transparency being important, ingredient effects merely being nice, and texture being soft but not heavy—are largely omitted. The AI instead presents its unrelated features with firm language such as “essential.”",
+        "human_evidence": "it should be soft but not heavy.",
+        "ai_evidence": "A gentle exfoliating element from natural sources and cruelty-free testing would also be essential.",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 21,
+      "person_id": "g_human",
+      "question": "if you would create the perfect body wash for you, what ingredients would it have? what other features you would prefer?",
+      "human_answers": "since i've never spent effort on investigating ingredients of a body wash, i don't have an answer to what ingredients should be in my perfect body wash. regarding other features, it should smell good and shouldn't impact the dryness of my skin in a negative way (ideally it effects it in a positive way)",
+      "ai_answers": "i’d love a body wash that blends real peppermint extract for a cool, refreshing feel with shea butter for deep moisture. a mild, herbal fragrance would keep it invigorating yet not overpowering. i’d also prefer a refillable pump bottle for convenience and to reduce waste—so it’s both a pleasant daily ritual and a more eco-friendly choice.",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "e9c161e3384f2c2d8c550600e6c647fa23325071b878f6fa928036e83c6e8c33",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI preserves the desired pleasant scent and moisturizing effect, but materially changes the ingredient portion by giving confident, specific choices where the human explicitly had no answer.",
+        "human_evidence": "i don't have an answer to what ingredients should be in my perfect body wash.",
+        "ai_evidence": "i’d love a body wash that blends real peppermint extract for a cool, refreshing feel with shea butter for deep moisture.",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human reports never putting effort into investigating body-wash ingredients. The AI omits that behavior and instead presents specific ingredient selections, though it does not directly claim the opposite investigation habit.",
+        "human_evidence": "i've never spent effort on investigating ingredients of a body wash",
+        "ai_evidence": "i’d love a body wash that blends real peppermint extract",
+        "confidence": "medium"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The mild fragrance and deep moisture broadly match the human's scent and skin-dryness preferences, but the AI invents firm ingredient preferences despite the human explicitly lacking them.",
+        "human_evidence": "it should smell good and shouldn't impact the dryness of my skin in a negative way (ideally it effects it in a positive way)",
+        "ai_evidence": "a mild, herbal fragrance would keep it invigorating yet not overpowering.",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human explains their lack of an ingredient answer by having never investigated ingredients. The AI does not preserve that reason and instead supplies unrelated rationales for newly specified ingredients.",
+        "human_evidence": "since i've never spent effort on investigating ingredients of a body wash, i don't have an answer",
+        "ai_evidence": "for a cool, refreshing feel",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The AI changes explicit uncertainty about ingredients into confident specificity and does not preserve the distinction between merely avoiding worse dryness and ideally improving it. This is a major loss of qualification rather than a direct reversal.",
+        "human_evidence": "i don't have an answer to what ingredients should be in my perfect body wash.",
+        "ai_evidence": "i’d love a body wash that blends real peppermint extract for a cool, refreshing feel with shea butter for deep moisture.",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 22,
+      "person_id": "c_human",
+      "question": "Which out of the following type of body lotion you would prefer and why? Option 1 – Dove Body Love Nourished\nRadiance Body Lotion Option 2 – Dove Body Love Light Hydration Body Lotion Option 3 – Dove Body Love Pro Age\nBody Lotion for Mature Skin Option 4 – Dove Body Love Supple Bounce Body Lotion",
+      "human_answers": "i would chose option 2",
+      "ai_answers": "I’d probably go for Option 2 – Dove Body Love Light Hydration Body Lotion. It sounds like it’s perfect for daily use, providing just the right amount of hydration without feeling too heavy. I’m not really after something super rich or intense, so a light hydration option is ideal. Plus, it’s something I can use every day without worrying about feeling greasy or sticky—just smooth and soft skin!",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "876e95fb50e9cbcc931d994e771ceb76ac1bc2e6a0fdcbed237aff5f8c57ceff",
+      "core": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "Both answers select Option 2, preserving the central answer. The AI slightly weakens the human’s unqualified choice by saying it would “probably” choose it, while its added reasons are reference-unverifiable but compatible.",
+        "human_evidence": "i would chose option 2",
+        "ai_evidence": "I’d probably go for Option 2 – Dove Body Love Light Hydration Body Lotion.",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human only makes a hypothetical forced-choice selection and does not describe an actual action, intended purchase, habit, or behavioral tendency.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "The preferred option matches exactly, though the AI’s “probably” introduces slight uncertainty absent from the human’s direct selection.",
+        "human_evidence": "i would chose option 2",
+        "ai_evidence": "I’d probably go for Option 2 – Dove Body Love Light Hydration Body Lotion.",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": false,
+        "score": null,
+        "rationale": "Although the question asks why, the human provides no reason or decision driver; the AI-only rationale cannot make motivation applicable.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human gives a plain selection without a meaningful qualification, uncertainty, frequency, exception, or condition to preserve.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 23,
+      "person_id": "s_human",
+      "question": "Which out of the following type of body lotion you would prefer and why? Option 1 – Dove Body Love Nourished\nRadiance Body Lotion Option 2 – Dove Body Love Light Hydration Body Lotion Option 3 – Dove Body Love Pro Age\nBody Lotion for Mature Skin Option 4 – Dove Body Love Supple Bounce Body Lotion",
+      "human_answers": "my first choice would be option 1 and option 2, from what i understand just from the desciption I would like to have smth that hydratates and nourishes my body",
+      "ai_answers": "I would prefer Option 2 – Dove Body Love Light Hydration Body Lotion. I tend to go for products that provide hydration without being too heavy or greasy, and the \"light hydration\" aspect fits my preference. Since I’m sensitive to strong scents, I also appreciate that Dove’s body lotions generally have a mild fragrance. I also value sustainability, so Dove’s commitment to responsible sourcing and packaging aligns with my values, making it a good fit for my body care routine.",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "50fe6e4e825212496c538de617398289f8d75729f5d83026db155ef0179a57af",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI retains Option 2 and the desire for hydration, but omits the human’s equal selection of Option 1 and the important nourishment component while introducing other priorities.",
+        "human_evidence": "my first choice would be option 1 and option 2, from what i understand just from the desciption I would like to have smth that hydratates and nourishes my body",
+        "ai_evidence": "I would prefer Option 2 – Dove Body Love Light Hydration Body Lotion.",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human gives a hypothetical product preference, not an actual action, habit, intended purchase, or behavioral tendency.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Option 2 and hydration align, but the AI narrows the human’s joint preference for Options 1 and 2 to Option 2 alone and does not preserve the preference for nourishment.",
+        "human_evidence": "my first choice would be option 1 and option 2",
+        "ai_evidence": "I would prefer Option 2 – Dove Body Love Light Hydration Body Lotion.",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Hydration is a shared decision driver, but the AI omits nourishment and adds lightness, fragrance sensitivity, and sustainability as other reasons.",
+        "human_evidence": "I would like to have smth that hydratates and nourishes my body",
+        "ai_evidence": "I tend to go for products that provide hydration without being too heavy or greasy",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human’s tentative judgment based only on the descriptions and dual first choice become a definite single choice in the AI answer, substantially reducing the stated uncertainty and qualification.",
+        "human_evidence": "from what i understand just from the desciption",
+        "ai_evidence": "I would prefer Option 2 – Dove Body Love Light Hydration Body Lotion.",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 24,
+      "person_id": "g_human",
+      "question": "Which out of the following type of body lotion you would prefer and why? Option 1 – Dove Body Love Nourished\nRadiance Body Lotion Option 2 – Dove Body Love Light Hydration Body Lotion Option 3 – Dove Body Love Pro Age\nBody Lotion for Mature Skin Option 4 – Dove Body Love Supple Bounce Body Lotion",
+      "human_answers": "i don't really feel addressed by any of the suggested product names. i think that i don't pay that much attention to product names (at least regarding personal care products). i rather pay attention to visual product designs. if I had to pick one, then \"dove body love light hydration body lotion\".",
+      "ai_answers": "i’d pick the dove body love pro age body lotion for mature skin option because it absorbs quickly and feels weightless on my skin. that lightweight texture makes it easy to layer with my favorite scents, and it provides just the right amount of moisture for everyday comfort.",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "0d79dce8d8f1180b60348bacad5b060f5cf3898ed10b41c85a474bfed62acd25",
+      "core": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The AI replaces the human’s weak, forced choice of Option 2 and general lack of engagement with product names with a confident choice of Option 3 and unrelated product claims. This is a major central mismatch, though not a direct reversal.",
+        "human_evidence": "if I had to pick one, then \"dove body love light hydration body lotion\".",
+        "ai_evidence": "i’d pick the dove body love pro age body lotion for mature skin option",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human only makes a hypothetical forced choice and does not describe an actual action, intended real-world action, habit, or behavioral tendency.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human prioritizes visual design over personal-care product names and only conditionally selects Option 2, whereas the AI confidently favors Option 3 based on texture and moisture. These preferences are substantially mismatched without being explicit opposites.",
+        "human_evidence": "i rather pay attention to visual product designs.",
+        "ai_evidence": "i’d pick the dove body love pro age body lotion for mature skin option because it absorbs quickly and feels weightless on my skin.",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human identifies visual product design, rather than naming, as the relevant consideration; the AI substitutes quick absorption, weightlessness, scent layering, and moisture as reasons. These are unrelated decision drivers rather than a direct reversal.",
+        "human_evidence": "i think that i don't pay that much attention to product names (at least regarding personal care products). i rather pay attention to visual product designs.",
+        "ai_evidence": "that lightweight texture makes it easy to layer with my favorite scents, and it provides just the right amount of moisture for everyday comfort.",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human expresses uncertainty, limited attention to names, and a conditional forced choice, while the AI presents an unqualified selection with definite reasons. This substantially loses the human’s hesitation and conditionality.",
+        "human_evidence": "if I had to pick one",
+        "ai_evidence": "i’d pick the dove body love pro age body lotion for mature skin option",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": true
+    },
+    {
+      "row_id": 25,
+      "person_id": "c_human",
+      "question": "How likely are you to repurchase your preferred personal care brand, and what factors influence your loyalty to that brand?",
+      "human_answers": "as i said i would rebuy a brand if the product is working for me, has a good affortable price and smells good",
+      "ai_answers": "I’d say I’m pretty likely to repurchase if a brand works well for me. I mean, if it keeps my skin feeling good and smells nice, I’m happy. I also really like when a brand cares about sustainability—whether it’s how they package stuff or the ingredients they use. And of course, price matters too. I’m not looking to spend a lot on products that don’t make a difference. As long as it feels nice, doesn’t irritate my skin, and isn’t crazy expensive, I’ll definitely stick with it!",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "641e45e94d4ec0721f1a45cedbe3bf580194bdc633de2d1a388d8f3af0fe8808",
+      "core": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "The AI preserves the central message that repurchase depends on effectiveness, pleasant scent, and affordability. Its added sustainability consideration is compatible and does not contradict the human’s stated factors.",
+        "human_evidence": "i would rebuy a brand if the product is working for me, has a good affortable price and smells good",
+        "ai_evidence": "I’d say I’m pretty likely to repurchase if a brand works well for me.",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "Both describe the same intended behavior: repurchasing or staying with a brand when the product meets the stated conditions.",
+        "human_evidence": "i would rebuy a brand if the product is working for me",
+        "ai_evidence": "As long as it feels nice, doesn’t irritate my skin, and isn’t crazy expensive, I’ll definitely stick with it!",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "The AI retains the human’s priorities of product performance, good scent, and affordable pricing. Sustainability is an additional compatible preference rather than a conflicting priority.",
+        "human_evidence": "the product is working for me, has a good affortable price and smells good",
+        "ai_evidence": "if it keeps my skin feeling good and smells nice, I’m happy.",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "The same loyalty drivers—effectiveness, scent, and price—are present in both answers; the extra sustainability factor does not replace or negate them.",
+        "human_evidence": "if the product is working for me, has a good affortable price and smells good",
+        "ai_evidence": "And of course, price matters too. I’m not looking to spend a lot on products that don’t make a difference.",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "The AI preserves the conditional nature of loyalty: repurchase occurs when the product works well and meets scent and price expectations.",
+        "human_evidence": "i would rebuy a brand if",
+        "ai_evidence": "I’d say I’m pretty likely to repurchase if a brand works well for me.",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 26,
+      "person_id": "s_human",
+      "question": "How likely are you to repurchase your preferred personal care brand, and what factors influence your loyalty to that brand?",
+      "human_answers": "if i am happy with the quality of the product, i stick to the brand, but i do not care much of the brand rather then the product itself. ",
+      "ai_answers": "I'm highly likely to repurchase my preferred personal care brands if they consistently deliver effective results, use clean and organic ingredients, have minimalistic and sustainable packaging, and align with my values of sustainability and ethical practices.",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "1fe8d8873204466d5307e669760ddf0dd2d045eb5cdd4bb58da974afa747505c",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Both answers tie repurchase to product performance, but the AI omits the human's limited concern for brand identity and adds sustainability, ingredient, packaging, and ethics criteria that materially broaden the central answer.",
+        "human_evidence": "i do not care much of the brand rather then the product itself.",
+        "ai_evidence": "I'm highly likely to repurchase my preferred personal care brands if they consistently deliver effective results",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "The AI preserves the conditional tendency to repurchase or remain with a brand when its products perform well, though it states the likelihood more strongly.",
+        "human_evidence": "if i am happy with the quality of the product, i stick to the brand",
+        "ai_evidence": "I'm highly likely to repurchase my preferred personal care brands if they consistently deliver effective results",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Both prioritize product quality or effectiveness, but the AI does not preserve the human's relative indifference to the brand and introduces several additional priorities.",
+        "human_evidence": "i do not care much of the brand rather then the product itself.",
+        "ai_evidence": "use clean and organic ingredients, have minimalistic and sustainable packaging, and align with my values of sustainability and ethical practices.",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "Effective results closely preserve product quality as the main loyalty driver; the AI's additional values-based factors broaden, but do not contradict, that motivation.",
+        "human_evidence": "if i am happy with the quality of the product",
+        "ai_evidence": "if they consistently deliver effective results",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI retains a condition for repurchase but strengthens the likelihood and loses the important qualification that loyalty is to the product more than to the brand.",
+        "human_evidence": "but i do not care much of the brand rather then the product itself.",
+        "ai_evidence": "I'm highly likely to repurchase my preferred personal care brands",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 27,
+      "person_id": "g_human",
+      "question": "How likely are you to repurchase your preferred personal care brand, and what factors influence your loyalty to that brand?",
+      "human_answers": "i don't have a favorite personal care brand, so I can't answer what factors influence my loyalty. my generic answer would be high quality products with fair pricing.",
+      "ai_answers": "i don’t really have a single favorite brand, but if i happen to like one and it stays easy to find and reasonably priced, i usually stick with it. convenience, price, and whether i’ve had any issues using it before are the main reasons i keep buying the same product.",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "2ee3827f81b48f1ae8dfbdf7e1928032a706861db6dbf6b9f2eb063b6b3d6bcc",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI preserves the lack of a single favorite brand and the importance of reasonable pricing, but it omits product quality and turns a generic, non-personal answer into a personal loyalty pattern.",
+        "human_evidence": "i don't have a favorite personal care brand",
+        "ai_evidence": "i don’t really have a single favorite brand",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human does not describe an actual habit, intended action, repurchase decision, or behavioral tendency; the answer is explicitly generic.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Both answers indicate no single favorite brand and value fair pricing, but the AI omits the human's stated priority of high quality and adds other priorities.",
+        "human_evidence": "high quality products with fair pricing",
+        "ai_evidence": "easy to find and reasonably priced",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Fair pricing is a shared loyalty factor, but the AI leaves out high quality and substitutes convenience and prior trouble-free use as additional main drivers.",
+        "human_evidence": "high quality products with fair pricing",
+        "ai_evidence": "convenience, price, and whether i’ve had any issues using it before",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human carefully says they cannot identify personal loyalty factors and offers only a generic answer, whereas the AI presents a usual personal repurchase tendency and definite main reasons.",
+        "human_evidence": "so I can't answer what factors influence my loyalty. my generic answer would be",
+        "ai_evidence": "i usually stick with it",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 28,
+      "person_id": "c_human",
+      "question": "How do you discover new personal care products, and what influences your decision to try them?",
+      "human_answers": "usually my friends or what i see is famous in instagram",
+      "ai_answers": "I mostly discover new products through friends or social media. If someone I trust recommends something or I see a positive review, that’s usually what gets my attention. I also pay attention to any cool ads or influencer posts that feel genuine, but it’s mostly about the product having a good reputation or sounding like it fits my needs. What influences me to try something new? It’s got to be something that aligns with what I already like—something simple, effective, and not full of harsh ingredients. I also check the price to make sure it’s reasonable.",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "1769310ad3c23a616bf7cf497d86f2668b448db8da38d13bc09373c067e19eab",
+      "core": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "The AI preserves the central discovery channels of friends and social media and broadly reflects popularity/reputation, while generalizing Instagram and adding several reference-unverifiable criteria.",
+        "human_evidence": "usually my friends or what i see is famous in instagram",
+        "ai_evidence": "I mostly discover new products through friends or social media.",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "Both describe usually or mostly discovering products through friends and social media, though the AI broadens the Instagram-specific pattern.",
+        "human_evidence": "usually my friends or what i see is famous in instagram",
+        "ai_evidence": "I mostly discover new products through friends or social media.",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human describes discovery sources and influences but does not explicitly state a like, dislike, priority, indifference, or desired product attribute.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "medium"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "The AI retains recommendations and online reputation as decision drivers, closely matching friends and Instagram fame, but adds other unverified drivers such as product fit, ingredients, and price.",
+        "human_evidence": "my friends or what i see is famous in instagram",
+        "ai_evidence": "it’s mostly about the product having a good reputation or sounding like it fits my needs.",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 5,
+        "rationale": "The human's usual tendency is preserved through the AI's equivalent use of mostly, without turning the discovery channels into absolutes.",
+        "human_evidence": "usually my friends",
+        "ai_evidence": "I mostly discover new products through friends or social media.",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 29,
+      "person_id": "s_human",
+      "question": "How do you discover new personal care products, and what influences your decision to try them?",
+      "human_answers": "mostly from instagram, people that i follow. there are a few people that have same skin issues as i do or hten could also be from friends",
+      "ai_answers": "I discover new personal care products mainly through social media, especially dermatologists and skincare experts on Instagram. I also do my own research to check ingredients and reviews. I’m influenced to try products if they’re high-quality, organic, sustainable, and have good performance without strong scents or harsh textures. If the packaging is minimalistic and functional, that's a bonus!",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "3c65aa73a77f3d075ec0fc78a01451971975844d6d18fc0e970edf2dd61d96b3",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Both answers identify Instagram as the main discovery channel, but the AI replaces relatable people with dermatologists and experts, omits friends, and supplies substantially different influences on trying products.",
+        "human_evidence": "mostly from instagram, people that i follow.",
+        "ai_evidence": "I discover new personal care products mainly through social media, especially dermatologists and skincare experts on Instagram.",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "The main behavior of discovering products through Instagram is preserved. The AI omits occasional discovery through friends and adds independent research, but these do not overturn the core behavior.",
+        "human_evidence": "mostly from instagram, people that i follow.",
+        "ai_evidence": "I discover new personal care products mainly through social media, especially dermatologists and skincare experts on Instagram.",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": false,
+        "score": null,
+        "rationale": "The human describes discovery behavior and sources of influence but does not explicitly state a like, dislike, desired product attribute, or preference.",
+        "human_evidence": null,
+        "ai_evidence": null,
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human is influenced by people with similar skin issues, whereas the AI substitutes product qualities, ingredients, reviews, and sustainability as decision drivers. These are substantially different rather than direct opposites.",
+        "human_evidence": "there are a few people that have same skin issues as i do",
+        "ai_evidence": "I’m influenced to try products if they’re high-quality, organic, sustainable, and have good performance without strong scents or harsh textures.",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "The AI preserves that Instagram is the main channel through “mainly,” but loses the human’s distinction between a few relatable accounts and the secondary possibility of recommendations from friends.",
+        "human_evidence": "or hten could also be from friends",
+        "ai_evidence": "I discover new personal care products mainly through social media",
+        "confidence": "high"
+      },
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 30,
+      "person_id": "g_human",
+      "question": "How do you discover new personal care products, and what influences your decision to try them?",
+      "human_answers": "when buying a new product in the past, i think i mainly discovered them unintentionally when being in the personal care section of a supermarket. i think i could be influenced by the design of the product and whether i recognize the brand.",
+      "ai_answers": "i mostly come across new products by chance when i’m shopping or if a friend mentions something they like. if it seems practical, within my usual budget, and doesn’t have a scent or texture i dislike, i might pick it up to see how it works.",
+      "evaluator_model": "gpt-5.6",
+      "model_options": {},
+      "prompt_version": "fidelity-v4",
+      "evidence_format": "single-excerpt-v1",
+      "cache_key": "7e08a70e4645b8298d77daba34c95236ca5547510327c873a802811f21ce68d4",
+      "core": {
+        "applicable": true,
+        "score": 3,
+        "rationale": "Both answers center on discovering products by chance while shopping, but the AI replaces the human’s key influences of product design and brand recognition with practicality, budget, scent, and texture.",
+        "human_evidence": "i mainly discovered them unintentionally when being in the personal care section of a supermarket",
+        "ai_evidence": "i mostly come across new products by chance when i’m shopping",
+        "confidence": "high"
+      },
+      "behavior": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "The AI preserves the main discovery pattern of encountering new products incidentally while shopping. Mentioning friends and omitting the supermarket personal-care section are minor differences rather than conflicting behaviors.",
+        "human_evidence": "when buying a new product in the past, i think i mainly discovered them unintentionally",
+        "ai_evidence": "i mostly come across new products by chance when i’m shopping or if a friend mentions something they like.",
+        "confidence": "high"
+      },
+      "preference": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human prioritizes product design and brand recognition, while the AI instead emphasizes practicality, budget, scent, and texture; these are substantially different priorities without being direct opposites.",
+        "human_evidence": "the design of the product and whether i recognize the brand.",
+        "ai_evidence": "if it seems practical, within my usual budget, and doesn’t have a scent or texture i dislike",
+        "confidence": "high"
+      },
+      "motivation": {
+        "applicable": true,
+        "score": 2,
+        "rationale": "The human names design and brand familiarity as reasons they could be influenced to try a product, but the AI substitutes unrelated practical, financial, and sensory drivers.",
+        "human_evidence": "i think i could be influenced by the design of the product and whether i recognize the brand.",
+        "ai_evidence": "if it seems practical, within my usual budget, and doesn’t have a scent or texture i dislike",
+        "confidence": "high"
+      },
+      "nuance": {
+        "applicable": true,
+        "score": 4,
+        "rationale": "The AI largely preserves the human’s qualified frequency and tentativeness through “mostly” and “might,” though it is somewhat less explicitly uncertain about recalling past discovery behavior.",
+        "human_evidence": "i think i mainly discovered them unintentionally",
+        "ai_evidence": "i might pick it up to see how it works.",
+        "confidence": "medium"
+      },
+      "status": "completed",
+      "cached": false
+    }
+  ]
+}

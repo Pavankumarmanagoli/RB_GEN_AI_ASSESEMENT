@@ -14,10 +14,14 @@ REQUIRED_COLUMNS = [
 ]
 
 
-def inspect_data() -> None:
-    data = pd.read_excel(
+def load_data() -> pd.DataFrame:
+    return pd.read_excel(
         DATA_PATH, sheet_name="answer_pairs", engine="openpyxl", keep_default_na=False
     )
+
+
+def inspect_data() -> None:
+    data = load_data()
     print(f"File: {DATA_PATH.name}")
     print("Sheet: answer_pairs")
     print(f"Dataset shape: {data.shape[0]} rows, {data.shape[1]} columns")
