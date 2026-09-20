@@ -1,0 +1,64 @@
+{
+  "people": [
+    {
+      "person_id": "c_human",
+      "row_ids": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28
+      ],
+      "number_of_rows": 10,
+      "mean_human_fidelity_score": 2.7,
+      "human_contradiction_count": 3,
+      "human_omission_count": 6,
+      "human_unsupported_detail_count": 10
+    },
+    {
+      "person_id": "g_human",
+      "row_ids": [
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21,
+        24,
+        27,
+        30
+      ],
+      "number_of_rows": 10,
+      "mean_human_fidelity_score": 2.5,
+      "human_contradiction_count": 6,
+      "human_omission_count": 7,
+      "human_unsupported_detail_count": 10
+    },
+    {
+      "person_id": "s_human",
+      "row_ids": [
+        2,
+        5,
+        8,
+        11,
+        14,
+        17,
+        20,
+        23,
+        26,
+        29
+      ],
+      "number_of_rows": 10,
+      "mean_human_fidelity_score": 2.4,
+      "human_contradiction_count": 2,
+      "human_omission_count": 9,
+      "human_unsupported_detail_count": 10
+    }
+  ]
+}

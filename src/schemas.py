@@ -158,3 +158,30 @@ class BERTScoreResult(BaseModel):
             if not math.isfinite(value):
                 raise ValueError(f"{name} must be a finite number, got {value}.")
         return self
+
+
+class HumanReviewRecord(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    review_id: str
+    row_id: int | str
+    person_id: str
+    question: str = Field(min_length=1)
+    human_answer: str = Field(min_length=1)
+    ai_answer: str = Field(min_length=1)
+    human_fidelity_score: int = Field(ge=1, le=5)
+    human_contradiction: Literal["YES", "NO"]
+    human_omission: Literal["YES", "NO"]
+    human_unsupported_detail: Literal["YES", "NO"]
+    reviewer_note: str
+    geval_core_fidelity: int | None = Field(ge=1, le=5)
+    claim_coverage_rate: float | None
+    strict_alignment_rate: float | None
+    step4_contradiction_present: bool
+    step4_missing_count: int = Field(ge=0)
+    step4_unsupported_rate: float | None
+    nli_contradiction_present: bool
+    nli_contradiction_count: int = Field(ge=0)
+    bertscore_precision: float
+    bertscore_recall: float
+    bertscore_f1: float

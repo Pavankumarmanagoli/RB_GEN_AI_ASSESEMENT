@@ -15,3 +15,5 @@ wheels/
 !.env.example
 outputs/.*_cache.json
 .claude/
+.DS_Store
+~.xlsx

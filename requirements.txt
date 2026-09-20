@@ -98,6 +98,7 @@ numpy==2.4.6 ; python_full_version < '3.12'
     #   contourpy
     #   matplotlib
     #   pandas
+    #   scipy
     #   transformers
 numpy==2.5.3 ; python_full_version >= '3.12'
     # via
@@ -105,6 +106,7 @@ numpy==2.5.3 ; python_full_version >= '3.12'
     #   contourpy
     #   matplotlib
     #   pandas
+    #   scipy
     #   transformers
 nvidia-cublas==13.1.1.3 ; sys_platform == 'linux'
     # via
@@ -191,6 +193,10 @@ rich==15.0.0
     # via typer
 safetensors==0.8.0
     # via transformers
+scipy==1.17.1 ; python_full_version < '3.12'
+    # via rb-gen-ai-assesement
+scipy==1.18.1 ; python_full_version >= '3.12'
+    # via rb-gen-ai-assesement
 setuptools==84.0.0
     # via torch
 shellingham==1.5.4
