@@ -107,3 +107,26 @@ class AlignmentJudgment(BaseModel):
 class ClaimAlignmentResult(AlignmentJudgment):
     # row_id is attached locally and is never sent to the model.
     row_id: int | str
+
+
+class NLIPrediction(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    nli_label: Literal["entailment", "neutral", "contradiction"]
+    entailment_prob: float = Field(ge=0.0, le=1.0)
+    neutral_prob: float = Field(ge=0.0, le=1.0)
+    contradiction_prob: float = Field(ge=0.0, le=1.0)
+    nli_confidence: float = Field(ge=0.0, le=1.0)
+
+    @model_validator(mode="after")
+    def validate_confidence_matches_predicted(self) -> Self:
+        probs = {
+            "entailment": self.entailment_prob,
+            "neutral": self.neutral_prob,
+            "contradiction": self.contradiction_prob,
+        }
+        if abs(sum(probs.values()) - 1.0) > 1e-3:
+            raise ValueError("NLI probabilities must sum to approximately 1.")
+        if abs(probs[self.nli_label] - self.nli_confidence) > 1e-6:
+            raise ValueError("nli_confidence must equal the probability of the predicted label.")
+        return self
