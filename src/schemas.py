@@ -49,3 +49,61 @@ class FidelityEvaluation(FidelityJudgment):
     # Identifiers are attached locally and are never sent to the judge.
     row_id: int | str
     person_id: str
+
+
+class ClaimList(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    claims: list[str] = Field(min_length=1)
+
+
+class AtomicClaim(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    # claim_id is assigned locally from extraction order and is never sent to the model.
+    claim_id: str
+    claim: str = Field(min_length=1)
+
+
+class ClaimExtractionResult(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    row_id: int | str
+    human_claims: list[AtomicClaim]
+    ai_claims: list[AtomicClaim]
+
+
+class ClaimAlignment(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    human_claim_id: str
+    ai_claim_id: str | None
+    label: Literal["aligned", "partial", "contradicted", "missing"]
+    rationale: str = Field(min_length=1)
+
+    @model_validator(mode="after")
+    def validate_ai_claim_id(self) -> Self:
+        if self.label == "missing" and self.ai_claim_id is not None:
+            raise ValueError("A missing label must have ai_claim_id=null.")
+        if self.label != "missing" and self.ai_claim_id is None:
+            raise ValueError(f"A {self.label} label requires a non-null ai_claim_id.")
+        return self
+
+
+class UnsupportedAIClaim(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    ai_claim_id: str
+    rationale: str = Field(min_length=1)
+
+
+class AlignmentJudgment(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    alignments: list[ClaimAlignment]
+    unsupported_ai_claims: list[UnsupportedAIClaim]
+
+
+class ClaimAlignmentResult(AlignmentJudgment):
+    # row_id is attached locally and is never sent to the model.
+    row_id: int | str

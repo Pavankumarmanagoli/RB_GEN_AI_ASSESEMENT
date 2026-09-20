@@ -1,0 +1,2242 @@
+{
+  "results": [
+    {
+      "row_id": 1,
+      "person_id": "c_human",
+      "question": "where do you typically purchase your personal care products, and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "a24c23baa753b8ae792732873be9eeb6df75195dace2ac3c7cf9e31750868be3",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "The AI includes online platforms among typical purchase sources but does not say the respondent usually buys online specifically."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that online purchasing provides the most flexibility."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": "a5",
+          "label": "partial",
+          "rationale": "Looking for good value overlaps with seeking discounts, but the AI does not specifically connect discounts to buying online."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "The AI indicates purchases from retailers such as supermarkets, but does not specifically state that physical-store purchases occur sometimes."
+        },
+        {
+          "human_claim_id": "h5",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim says that seeing something interesting prompts purchases at stores."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "No human claim mentions getting everything needed in one place."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim identifies saving time as a reason for retailer choice."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim identifies saving effort as a reason for retailer choice."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim mentions seeking products with non-harmful ingredients."
+        }
+      ],
+      "human_claim_count": 5,
+      "ai_claim_count": 6,
+      "aligned_count": 0,
+      "partial_count": 3,
+      "contradicted_count": 0,
+      "missing_count": 2,
+      "unsupported_count": 4,
+      "claim_coverage_rate": 0.6,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.6666666666666666,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 2,
+      "person_id": "s_human",
+      "question": "where do you typically purchase your personal care products, and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "036aa142df4e6c295533f77699513082e4d085388e464347e49ac4eadba8bd26",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "Both describe typical online purchases from YesStyle, but the AI broadens face products to personal care products and also names Soko Glam."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": "a2",
+          "label": "partial",
+          "rationale": "Both indicate access to Korean skincare through YesStyle-related online shopping, but the AI describes a broad range across multiple stores rather than specifically the products the respondent needs at YesStyle."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions purchasing body shampoo from supermarkets or drugstores such as dm."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim mentions detailed ingredient lists as a reason for purchasing."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim mentions appreciation for free samples."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim mentions using samples to try products before committing."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim mentions store transparency or confidence in product choices."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim mentions store reliability or confidence in product choices."
+        }
+      ],
+      "human_claim_count": 3,
+      "ai_claim_count": 7,
+      "aligned_count": 0,
+      "partial_count": 2,
+      "contradicted_count": 0,
+      "missing_count": 1,
+      "unsupported_count": 5,
+      "claim_coverage_rate": 0.6666666666666666,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.7142857142857143,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 3,
+      "person_id": "g_human",
+      "question": "where do you typically purchase your personal care products, and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "147c9371f13f99baab7289b65eee2f4c37166ab29f79e526e79d7568500b59ae",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "Both describe typically buying personal care products at a supermarket, but the AI omits that this happens almost always for all nearly empty products during grocery trips at the nearest full-service supermarket."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": "a2",
+          "label": "partial",
+          "rationale": "Both identify convenience as a reason for supermarket purchasing, but the AI does not say it is the most convenient option or tie it to grocery shopping at the nearest full-service supermarket."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that supermarket purchasing during grocery shopping is considered the most time-efficient option."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim mentions recognized brands as a reason for supermarket purchasing."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim mentions trusted brands as a reason for supermarket purchasing."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim mentions wanting to see product sizes before buying."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim mentions wanting to see product designs before buying."
+        }
+      ],
+      "human_claim_count": 3,
+      "ai_claim_count": 6,
+      "aligned_count": 0,
+      "partial_count": 2,
+      "contradicted_count": 0,
+      "missing_count": 1,
+      "unsupported_count": 4,
+      "claim_coverage_rate": 0.6666666666666666,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.6666666666666666,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 4,
+      "person_id": "c_human",
+      "question": "which personal care brands do you buy most often for skincare (or body wash) products, and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "909a5c9ba5293d6257ec14b9df09dda7f7eee45ab91aa7806b3e3465afe901ea",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent does not know which personal care brands they buy most often."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": "a8",
+          "label": "partial",
+          "rationale": "Both claims emphasize products or brands that work well, but the AI describes a preference rather than explicitly saying effectiveness is why the products are bought."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": "a5",
+          "label": "partial",
+          "rationale": "The AI confirms that one sunscreen is affordable, but it does not generalize this to the respondent's products or explicitly state affordability as the reason for buying them."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a1",
+          "rationale": "No human claim mentions sticking with brands because their products are simple."
+        },
+        {
+          "ai_claim_id": "a2",
+          "rationale": "Although it concerns effective products, it was not used because a8 more closely matches the respondent's preference for products that work for them."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim specifically describes the sunscreen as reliable."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim discusses the sunscreen's scent."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim discusses whether the respondent follows trends."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim mentions recommendations from friends."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "No human claim connects avoiding trends with preferences for recommended or proven brands."
+        }
+      ],
+      "human_claim_count": 3,
+      "ai_claim_count": 9,
+      "aligned_count": 0,
+      "partial_count": 2,
+      "contradicted_count": 0,
+      "missing_count": 1,
+      "unsupported_count": 7,
+      "claim_coverage_rate": 0.6666666666666666,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.7777777777777778,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 5,
+      "person_id": "s_human",
+      "question": "which personal care brands do you buy most often for skincare (or body wash) products, and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "da9bc9c0998e13861bd141894be7089264f440d76f47c3bb91ccd66782e0f17b",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "Both describe a predominance of Korean skincare, but buying Korean brands does not fully establish using those products on the face."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": "a2",
+          "label": "partial",
+          "rationale": "The AI identifies a specific Some By Mi skincare product the respondent buys, but does not explicitly state that they use it on their face."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": "a3",
+          "label": "partial",
+          "rationale": "The AI identifies a specific Axis-Y skincare product the respondent buys, but does not explicitly state that they use it on their face."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": "a5",
+          "label": "aligned",
+          "rationale": "Both claims state that the respondent uses Beauty of Joseon sunscreen."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim mentions the products working well for oily, acne-prone skin."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim describes how the sunscreen feels."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim discusses the sunscreen's perceived effectiveness."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "No human claim discusses brand transparency about ingredients."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "No human claim states that the brands offer natural or organic options."
+        },
+        {
+          "ai_claim_id": "a10",
+          "rationale": "No human claim states a preference for natural or organic options."
+        }
+      ],
+      "human_claim_count": 4,
+      "ai_claim_count": 10,
+      "aligned_count": 1,
+      "partial_count": 3,
+      "contradicted_count": 0,
+      "missing_count": 0,
+      "unsupported_count": 6,
+      "claim_coverage_rate": 1.0,
+      "strict_alignment_rate": 0.25,
+      "unsupported_rate": 0.6,
+      "status": "completed",
+      "cached": true
+    },
+    {
+      "row_id": 6,
+      "person_id": "g_human",
+      "question": "which personal care brands do you buy most often for skincare (or body wash) products, and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "7cde9df7afe3dc5a07a6fa11ee949208b9de17368db34a931a9544e47685940a",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim addresses the respondent's uncertainty about the current body lotion's brand."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim identifies the respondent's current body lotion bottle as Niveau."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": "a4",
+          "label": "partial",
+          "rationale": "Both mention the respondent buying a no-name brand, but the AI claim does not identify it as the previous body lotion or as a discounter brand."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": "a5",
+          "label": "partial",
+          "rationale": "A good price-to-performance ratio overlaps with cost-efficiency, but the AI frames it as a general buying condition rather than a description of the previous lotion brand."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a1",
+          "rationale": "This general Nivea purchasing habit does not establish the brand of the respondent's current body lotion."
+        },
+        {
+          "ai_claim_id": "a2",
+          "rationale": "No human claim discusses the reliability of Nivea products."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim discusses Nivea products' effectiveness over time."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim discusses a preference for familiar products that work well."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim discusses whether products fit into the respondent's routine."
+        }
+      ],
+      "human_claim_count": 4,
+      "ai_claim_count": 7,
+      "aligned_count": 0,
+      "partial_count": 2,
+      "contradicted_count": 0,
+      "missing_count": 2,
+      "unsupported_count": 5,
+      "claim_coverage_rate": 0.5,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.7142857142857143,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 7,
+      "person_id": "c_human",
+      "question": "what is the ideal size and packaging for a body wash product for you? for example regarding volume in ml, materials used, design, functionality, informativeness, …",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "1e05fa93a116921272edb29d49902094e0c535f1e5a2a0664e9d404766ba5503",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "The AI's preferred range includes 300 ml but does not preserve the specific ideal size of around 300 ml."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": "a2",
+          "label": "partial",
+          "rationale": "Natural materials overlap with some biodegradable materials, but recyclable or biodegradable materials are not necessarily natural."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim addresses the respondent's preference for a pleasant smell."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent expects body wash to clean the body."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim addresses a preference for simple packaging design."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim addresses a general preference for functional packaging."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim addresses pump or squeeze bottles."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim addresses ingredient labeling."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim addresses usage instructions on packaging."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "No human claim states that sustainability is a key consideration."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "No human claim states that ease of use is a key consideration."
+        }
+      ],
+      "human_claim_count": 4,
+      "ai_claim_count": 9,
+      "aligned_count": 0,
+      "partial_count": 2,
+      "contradicted_count": 0,
+      "missing_count": 2,
+      "unsupported_count": 7,
+      "claim_coverage_rate": 0.5,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.7777777777777778,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 8,
+      "person_id": "s_human",
+      "question": "what is the ideal size and packaging for a body wash product for you? for example regarding volume in ml, materials used, design, functionality, informativeness, …",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "11b034e7d8a15a7146aa375217ad07742057f69cc1413037d41896f832cb7eb7",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "Both express a preferred body wash size, but the AI specifies 250–300 ml without explicitly characterizing it as large."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that greater efficiency motivates choosing a large body wash size."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": "a2",
+          "label": "aligned",
+          "rationale": "Both claims state a preference for a glass body wash bottle."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": "a6",
+          "label": "aligned",
+          "rationale": "Clear packaging preserves the stated preference for transparent packaging."
+        },
+        {
+          "human_claim_id": "h5",
+          "ai_claim_id": "a5",
+          "label": "partial",
+          "rationale": "A clean design overlaps with minimalist packaging, but does not necessarily require minimalism."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim mentions a pump dispenser."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim mentions ease of use as a reason for preferring a pump dispenser."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim requires detailed ingredient information on the packaging."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "No human claim requires usage instructions on the packaging."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "No human claim states that natural ingredients are mandatory."
+        },
+        {
+          "ai_claim_id": "a10",
+          "rationale": "No human claim states that organic ingredients are mandatory."
+        },
+        {
+          "ai_claim_id": "a11",
+          "rationale": "No human claim states that the packaging design should be practical."
+        },
+        {
+          "ai_claim_id": "a12",
+          "rationale": "No human claim states that the packaging design should be informative."
+        }
+      ],
+      "human_claim_count": 5,
+      "ai_claim_count": 12,
+      "aligned_count": 2,
+      "partial_count": 2,
+      "contradicted_count": 0,
+      "missing_count": 1,
+      "unsupported_count": 8,
+      "claim_coverage_rate": 0.8,
+      "strict_alignment_rate": 0.4,
+      "unsupported_rate": 0.6666666666666666,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 9,
+      "person_id": "g_human",
+      "question": "what is the ideal size and packaging for a body wash product for you? for example regarding volume in ml, materials used, design, functionality, informativeness, …",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "4b4f891f197d94388bac9558fda2581a93ff4549c5098eb5774afeade1dc5f53",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "Both describe preference for a bottle over 300 ml, but the AI specifies 500 ml and omits the home-use context."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions a preference for metal bottles."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions a preference for a pump dispenser."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions refillable bottles."
+        },
+        {
+          "human_claim_id": "h5",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent lacks a strong opinion about packaging design."
+        },
+        {
+          "human_claim_id": "h6",
+          "ai_claim_id": "a8",
+          "label": "partial",
+          "rationale": "Both indicate a preference for minimalistic design, but the AI presents it definitively as ideal rather than as an uncertain preference."
+        },
+        {
+          "human_claim_id": "h7",
+          "ai_claim_id": "a6",
+          "label": "contradicted",
+          "rationale": "Not caring about ingredient information conflicts with preferring clear ingredient labeling."
+        },
+        {
+          "human_claim_id": "h8",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions a travel preference for a small bottle around 150 ml."
+        },
+        {
+          "human_claim_id": "h9",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions a travel preference for plastic bottles."
+        },
+        {
+          "human_claim_id": "h10",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions a travel preference for a normal dispenser."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "No human claim discusses how long a 500 ml bottle lasts."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim identifies avoiding frequent repurchases as a reason for bottle-size preference."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No aligned human claim separately states a preference for simple packaging."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim states a preference for functional packaging."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim discusses clear labeling of product benefits."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "No human claim states that the design should fit easily into the respondent's routine."
+        },
+        {
+          "ai_claim_id": "a10",
+          "rationale": "No human claim states that the design should fit easily into storage space."
+        }
+      ],
+      "human_claim_count": 10,
+      "ai_claim_count": 10,
+      "aligned_count": 0,
+      "partial_count": 2,
+      "contradicted_count": 1,
+      "missing_count": 7,
+      "unsupported_count": 7,
+      "claim_coverage_rate": 0.2,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.7,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 10,
+      "person_id": "c_human",
+      "question": "which personal care products, if any, do you regularly buy in larger/bulk quantities?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "c11966d20dc767c9371a1177bda45ac63046509ccdd3e1cb18b29740fa73d79f",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "The AI describes regular bulk buying of one specific personal care product, whereas the human makes a broader claim about usual personal care purchasing."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent purchases personal care products as soon as they are needed."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "This specific claim about regularly buying deodorant in bulk was not used to support an alignment."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim addresses toothpaste and deodorant being essential daily items."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim states that saving money motivates bulk purchases."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim states that avoiding running out motivates bulk purchases."
+        }
+      ],
+      "human_claim_count": 2,
+      "ai_claim_count": 5,
+      "aligned_count": 0,
+      "partial_count": 1,
+      "contradicted_count": 0,
+      "missing_count": 1,
+      "unsupported_count": 4,
+      "claim_coverage_rate": 0.5,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.8,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 11,
+      "person_id": "s_human",
+      "question": "which personal care products, if any, do you regularly buy in larger/bulk quantities?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "8de244c7533ba5b82c6840b2ea94137e889a3762972399741530f471e599af99",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions buying body wash in larger or bulk quantities."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions buying hand wash in larger or bulk quantities."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "Both concern obtaining a facial skincare product in quantity, but the AI describes regularly buying a specific toner in bulk rather than a general dislike of large-sized face products."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions hair shampoo or a dislike of buying it in large sizes."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "The claim about buying a specific niacinamide serum in bulk was not used to support a human claim."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim states that skincare products are essential to the respondent's routine."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim mentions maintaining a consistent supply as a reason for bulk purchases."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim discusses product effectiveness for oily, acne-prone skin."
+        }
+      ],
+      "human_claim_count": 4,
+      "ai_claim_count": 5,
+      "aligned_count": 0,
+      "partial_count": 1,
+      "contradicted_count": 0,
+      "missing_count": 3,
+      "unsupported_count": 4,
+      "claim_coverage_rate": 0.25,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.8,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 12,
+      "person_id": "g_human",
+      "question": "which personal care products, if any, do you regularly buy in larger/bulk quantities?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "b12b228276a333d64fd808595bdfe92344fea25db23c023ee5af269ad926b781",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "contradicted",
+          "rationale": "Buying shampoo in bulk regularly is incompatible with almost always buying only one personal care item near depletion."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": "a2",
+          "label": "contradicted",
+          "rationale": "Regularly buying deodorant in bulk conflicts with buying two of the same product only on rare occasions."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim identifies a discount as the reason for occasionally buying two units."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a3",
+          "rationale": "Daily use of Head & Shoulders is not addressed by any human claim."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "Daily use of Nivea roll-on deodorant is not addressed by any human claim."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "Trust in Head & Shoulders for effectiveness is not addressed by any human claim."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "Trust in Nivea roll-on deodorant for effectiveness is not addressed by any human claim."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "Avoiding frequent shopping trips is a different purchasing reason from receiving a discount."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "Keeping products on hand is a different purchasing reason from receiving a discount."
+        }
+      ],
+      "human_claim_count": 3,
+      "ai_claim_count": 8,
+      "aligned_count": 0,
+      "partial_count": 0,
+      "contradicted_count": 2,
+      "missing_count": 1,
+      "unsupported_count": 6,
+      "claim_coverage_rate": 0.0,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.75,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 13,
+      "person_id": "c_human",
+      "question": "if you could choose one celebrity to represent a brand of men's or women's skin and body care products that inspires you to make a purchase, who would that celebrity be and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "dd9b71ab2d934c2cd523d75b7b32bd577c3edb944eebd010a4c9256057e9a484",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "aligned",
+          "rationale": "Both claims say the respondent would choose a celebrity to represent the skin and body care brand."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the chosen celebrity would probably be a movie star."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim says the celebrity would need to be handsome and lean."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": "a1",
+          "label": "contradicted",
+          "rationale": "The human suggests Jacob Elordi or Christian Bale, while the AI makes the incompatible single choice of Emma Watson."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "No human claim discusses Emma Watson's practical approach to personal care."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim discusses Emma Watson's sustainability advocacy."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim discusses Emma Watson's use of products with non-harmful ingredients."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim says Emma Watson's consistency aligns with the respondent's values."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim says Emma Watson's health-conscious choices align with the respondent's values."
+        }
+      ],
+      "human_claim_count": 4,
+      "ai_claim_count": 6,
+      "aligned_count": 1,
+      "partial_count": 0,
+      "contradicted_count": 1,
+      "missing_count": 2,
+      "unsupported_count": 5,
+      "claim_coverage_rate": 0.25,
+      "strict_alignment_rate": 0.25,
+      "unsupported_rate": 0.8333333333333334,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 14,
+      "person_id": "s_human",
+      "question": "if you could choose one celebrity to represent a brand of men's or women's skin and body care products that inspires you to make a purchase, who would that celebrity be and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "7e98d2c119eff8e42100c7dd1b2ad151f1c6734b788a02e9235cc6dfcaa16178",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "contradicted",
+          "rationale": "The human says the respondent does not know whom they would choose, while the AI specifies Hyram Yarbro as their choice."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim says the respondent's choice depends on the day."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent's choice changes all the time."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": "a1",
+          "label": "contradicted",
+          "rationale": "Under the same hypothetical choice, the human names Keira Knightley while the AI names Hyram Yarbro."
+        },
+        {
+          "human_claim_id": "h5",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim attributes a hypothetical choice of Keira Knightley to the respondent's general liking of her."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "No human claim discusses Hyram Yarbro's dedication to skincare."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim discusses Hyram Yarbro's transparency about ingredients."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim discusses Hyram Yarbro giving practical advice."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim says Hyram Yarbro's approach aligns with the respondent's values."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim says Hyram Yarbro's approach aligns with the respondent's needs."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim discusses Hyram Yarbro recommending effective products."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "No human claim discusses Hyram Yarbro recommending natural products."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "No human claim discusses Hyram Yarbro recommending organic products."
+        },
+        {
+          "ai_claim_id": "a10",
+          "rationale": "No human claim discusses Hyram Yarbro recommending products suited to the respondent's skin type."
+        }
+      ],
+      "human_claim_count": 5,
+      "ai_claim_count": 10,
+      "aligned_count": 0,
+      "partial_count": 0,
+      "contradicted_count": 2,
+      "missing_count": 3,
+      "unsupported_count": 9,
+      "claim_coverage_rate": 0.0,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.9,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 15,
+      "person_id": "g_human",
+      "question": "if you could choose one celebrity to represent a brand of men's or women's skin and body care products that inspires you to make a purchase, who would that celebrity be and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "5638048a3f66dfe92121bf73420d0b9a7f5211c01fb7abe4a14e6b483f6fa5c5",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "contradicted",
+          "rationale": "Choosing David Beckham as a male celebrity is incompatible with being unable to think of a male celebrity."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions whether the respondent has met male celebrities in real life."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions celebrities being polished with makeup for filming or public events."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "No human claim discusses David Beckham's practical approach to personal care."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim discusses David Beckham's consistent approach to personal care."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim states that David Beckham embodies reliability."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim states that David Beckham embodies a straightforward lifestyle."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim discusses David Beckham's long-term commitment to grooming."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim describes Beckham's grooming commitment as making him trustworthy."
+        }
+      ],
+      "human_claim_count": 3,
+      "ai_claim_count": 7,
+      "aligned_count": 0,
+      "partial_count": 0,
+      "contradicted_count": 1,
+      "missing_count": 2,
+      "unsupported_count": 6,
+      "claim_coverage_rate": 0.0,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.8571428571428571,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 16,
+      "person_id": "c_human",
+      "question": "how long have you been using your current brand of toothpaste? do you also remember the last time you switched brands and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "6aad630ad61721a11ccc65f116d8ff887db5fa49ac0b52e104e4a2c8e8b08db9",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "Both state long-term use of the current brand, but “a few years” does not preserve the human claim’s roughly 10-year duration."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent’s mother used to buy the current toothpaste brand."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": "a3",
+          "label": "partial",
+          "rationale": "Both indicate staying with a toothpaste choice, but the AI claim omits that the respondent continued buying the specific brand their mother had bought and instead says it works."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": "a2",
+          "label": "contradicted",
+          "rationale": "The human claim denies any specific reason for switching, while the AI claim asserts better ingredients as a specific reason."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim states a general preference to avoid unnecessary changes."
+        }
+      ],
+      "human_claim_count": 4,
+      "ai_claim_count": 4,
+      "aligned_count": 0,
+      "partial_count": 2,
+      "contradicted_count": 1,
+      "missing_count": 1,
+      "unsupported_count": 1,
+      "claim_coverage_rate": 0.5,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.25,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 17,
+      "person_id": "s_human",
+      "question": "how long have you been using your current brand of toothpaste? do you also remember the last time you switched brands and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "7be19e7f0466d8bb057de5f191d7f17df153f31d225d2b4ed7069939bec1c57a",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent is relatively indifferent to toothpaste brands."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim identifies the respondent's boyfriend as the toothpaste purchaser."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim mentions where the toothpaste is purchased."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim specifically mentions freshness as a desired toothpaste quality."
+        },
+        {
+          "human_claim_id": "h5",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim specifically mentions toothpaste texture."
+        },
+        {
+          "human_claim_id": "h6",
+          "ai_claim_id": "a5",
+          "label": "aligned",
+          "rationale": "Always seeking transparency about toothpaste ingredients supports that the respondent cares about those ingredients."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a1",
+          "rationale": "No human claim concerns how long the respondent has used the current brand."
+        },
+        {
+          "ai_claim_id": "a2",
+          "rationale": "No human claim states that the respondent previously switched brands."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim addresses natural ingredients as a reason for the last brand switch."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim addresses effectiveness as a reason for the last brand switch."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim generally states that the respondent considers how well toothpaste works for them."
+        }
+      ],
+      "human_claim_count": 6,
+      "ai_claim_count": 6,
+      "aligned_count": 1,
+      "partial_count": 0,
+      "contradicted_count": 0,
+      "missing_count": 5,
+      "unsupported_count": 5,
+      "claim_coverage_rate": 0.16666666666666666,
+      "strict_alignment_rate": 0.16666666666666666,
+      "unsupported_rate": 0.8333333333333334,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 18,
+      "person_id": "g_human",
+      "question": "how long have you been using your current brand of toothpaste? do you also remember the last time you switched brands and why?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "adacd8cc26ec2af26e82903cb7c7bb57a86cf9e8e181e5947f211141267c7c42",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent purchased toothpaste last week."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": "a2",
+          "label": "partial",
+          "rationale": "Both claims involve switching toothpaste brands, but the AI gives a definite switch after a friend's recommendation rather than a likely change during last week's purchase."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent does not pay attention to toothpaste brands."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": "a3",
+          "label": "partial",
+          "rationale": "Returning to a usual brand implies some movement between brands, but it does not establish regular rotation among 2–3 brands or name the listed brands."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a1",
+          "rationale": "No human claim states that the current toothpaste brand has been used for several years."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim says the respondent returned to a usual brand because it works well."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim expresses a preference for familiar, reliable products."
+        }
+      ],
+      "human_claim_count": 4,
+      "ai_claim_count": 5,
+      "aligned_count": 0,
+      "partial_count": 2,
+      "contradicted_count": 0,
+      "missing_count": 2,
+      "unsupported_count": 3,
+      "claim_coverage_rate": 0.5,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.6,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 19,
+      "person_id": "c_human",
+      "question": "if you would create the perfect body wash for you, what ingredients would it have? what other features you would prefer?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "d6f2ca4658c6719a895e1a3250e3284322ea53df6a396a3e930c4329d4687fa7",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a17",
+          "label": "aligned",
+          "rationale": "Both claims state that the respondent prefers an effective body wash."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim addresses the body wash's price or whether it is overpriced."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": "a9",
+          "label": "partial",
+          "rationale": "Both express concern for sustainability, but the AI claim does not specifically connect sustainability to the body wash's ingredients."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a1",
+          "rationale": "This claim about a gentle formula was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a2",
+          "rationale": "This claim naming aloe vera or chamomile was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "This claim about keeping skin calm was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "This claim about keeping skin hydrated was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "This claim about a fresh smell was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "This claim about avoiding an overly strong scent was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "This claim about preferring a light scent was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "This claim about preferring a clean scent was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a10",
+          "rationale": "This claim specifically concerns eco-friendly packaging, not sustainable ingredients."
+        },
+        {
+          "ai_claim_id": "a11",
+          "rationale": "This claim about moisturizing skin was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a12",
+          "rationale": "This claim about avoiding a greasy feeling was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a13",
+          "rationale": "This claim about avoiding harsh chemicals does not state that the ingredients should be sustainable."
+        },
+        {
+          "ai_claim_id": "a14",
+          "rationale": "This claim about excluding sulfates was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a15",
+          "rationale": "This claim about excluding parabens was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a16",
+          "rationale": "This claim about simplicity was not used to support any human claim."
+        },
+        {
+          "ai_claim_id": "a18",
+          "rationale": "This claim about everyday ease of use was not used to support any human claim."
+        }
+      ],
+      "human_claim_count": 3,
+      "ai_claim_count": 18,
+      "aligned_count": 1,
+      "partial_count": 1,
+      "contradicted_count": 0,
+      "missing_count": 1,
+      "unsupported_count": 16,
+      "claim_coverage_rate": 0.6666666666666666,
+      "strict_alignment_rate": 0.3333333333333333,
+      "unsupported_rate": 0.8888888888888888,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 20,
+      "person_id": "s_human",
+      "question": "if you would create the perfect body wash for you, what ingredients would it have? what other features you would prefer?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "a9e9da09dd1e9ed1eaf625f17133146da950f22ddef908bb3e27520864aa7725",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "A preference for organic coconut oil indicates some concern with ingredients, but does not establish their general importance."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim addresses full ingredient transparency."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim says the ingredient list should be clearly displayed on the packaging."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "Although some AI claims describe ingredient effects, none says those effects should be stated to the respondent."
+        },
+        {
+          "human_claim_id": "h5",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim specifies a clear glass bottle."
+        },
+        {
+          "human_claim_id": "h6",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "Biodegradable packaging does not express a preference for minimalist packaging."
+        },
+        {
+          "human_claim_id": "h7",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that body-lotion texture is very important."
+        },
+        {
+          "human_claim_id": "h8",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim specifies a soft texture."
+        },
+        {
+          "human_claim_id": "h9",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim specifies a non-heavy texture."
+        },
+        {
+          "human_claim_id": "h10",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "The AI mentions a calming scent from essential oils such as lavender, but does not express a desire for an oud-like scent."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "The hydration benefit of coconut oil is not addressed by any human claim."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "The inclusion of aloe vera is not addressed by any human claim."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "The soothing effect of aloe vera is not addressed by any human claim."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "The inclusion of essential oils such as lavender is not addressed by any human claim."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "A calming scent does not match the specifically requested oud-like scent."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "Freedom from harsh chemicals is not asserted by any human claim."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "Biodegradable packaging is distinct from clear glass or minimalist packaging."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "A gentle natural exfoliating element does not express any claimed texture preference."
+        },
+        {
+          "ai_claim_id": "a10",
+          "rationale": "Cruelty-free testing is not addressed by any human claim."
+        },
+        {
+          "ai_claim_id": "a11",
+          "rationale": "Skin nourishment is not addressed by any human claim."
+        },
+        {
+          "ai_claim_id": "a12",
+          "rationale": "Environmental kindness is not addressed by any human claim."
+        }
+      ],
+      "human_claim_count": 10,
+      "ai_claim_count": 12,
+      "aligned_count": 0,
+      "partial_count": 1,
+      "contradicted_count": 0,
+      "missing_count": 9,
+      "unsupported_count": 11,
+      "claim_coverage_rate": 0.1,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.9166666666666666,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 21,
+      "person_id": "g_human",
+      "question": "if you would create the perfect body wash for you, what ingredients would it have? what other features you would prefer?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "2f09aba0a60c87b9d076c717ec8bdd6fd7a8895e2dafdec320acb58e91773db2",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim addresses whether the respondent has investigated body wash ingredients."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": "a1",
+          "label": "contradicted",
+          "rationale": "The human claim denies knowing which ingredients the ideal wash should contain, while the AI specifies real peppermint extract as a wanted ingredient."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": "a5",
+          "label": "aligned",
+          "rationale": "Preferring a mild, herbal fragrance expresses a specific kind of desirable smell."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": "a4",
+          "label": "aligned",
+          "rationale": "Wanting deep moisture is consistent with requiring the body wash not to worsen skin dryness."
+        },
+        {
+          "human_claim_id": "h5",
+          "ai_claim_id": "a4",
+          "label": "aligned",
+          "rationale": "Wanting deep moisture expresses a desire for the body wash to improve dryness."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "No human claim mentions a cool or refreshing feel."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "This additional desired ingredient was not needed to support any human claim."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim specifically mentions an invigorating fragrance."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim specifically says the fragrance should not be overpowering."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "No human claim addresses packaging or a refillable pump bottle."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "No human claim mentions convenience as a packaging preference reason."
+        },
+        {
+          "ai_claim_id": "a10",
+          "rationale": "No human claim mentions waste reduction as a packaging preference reason."
+        },
+        {
+          "ai_claim_id": "a11",
+          "rationale": "No human claim addresses making daily use a pleasant ritual."
+        },
+        {
+          "ai_claim_id": "a12",
+          "rationale": "No human claim addresses eco-friendliness."
+        }
+      ],
+      "human_claim_count": 5,
+      "ai_claim_count": 12,
+      "aligned_count": 3,
+      "partial_count": 0,
+      "contradicted_count": 1,
+      "missing_count": 1,
+      "unsupported_count": 9,
+      "claim_coverage_rate": 0.6,
+      "strict_alignment_rate": 0.6,
+      "unsupported_rate": 0.75,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 22,
+      "person_id": "c_human",
+      "question": "Which out of the following type of body lotion you would prefer and why? Option 1 – Dove Body Love Nourished\nRadiance Body Lotion Option 2 – Dove Body Love Light Hydration Body Lotion Option 3 – Dove Body Love Pro Age\nBody Lotion for Mature Skin Option 4 – Dove Body Love Supple Bounce Body Lotion",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "4384de5c1a88a11326a8461ece0645edb16172a13f89fc5a999b51f5a005b173",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "aligned",
+          "rationale": "Both claims state that the respondent would choose Option 2, Dove Body Love Light Hydration Body Lotion, with the AI adding only mild uncertainty."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "This daily-use suitability opinion is not part of the human claim."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "This hydration-level rationale is not stated in the human claim."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "This expectation about heaviness is not stated in the human claim."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "This preference against super-rich lotion is not stated in the human claim."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "This preference against intense lotion is not stated in the human claim."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "This view that light hydration is ideal is not stated in the human claim."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "This belief about everyday use is not part of the human claim."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "This expectation that Option 2 would not feel greasy is not stated in the human claim."
+        },
+        {
+          "ai_claim_id": "a10",
+          "rationale": "This expectation that Option 2 would not feel sticky is not stated in the human claim."
+        },
+        {
+          "ai_claim_id": "a11",
+          "rationale": "This expectation that Option 2 would leave skin smooth is not stated in the human claim."
+        },
+        {
+          "ai_claim_id": "a12",
+          "rationale": "This expectation that Option 2 would leave skin soft is not stated in the human claim."
+        }
+      ],
+      "human_claim_count": 1,
+      "ai_claim_count": 12,
+      "aligned_count": 1,
+      "partial_count": 0,
+      "contradicted_count": 0,
+      "missing_count": 0,
+      "unsupported_count": 11,
+      "claim_coverage_rate": 1.0,
+      "strict_alignment_rate": 1.0,
+      "unsupported_rate": 0.9166666666666666,
+      "status": "completed",
+      "cached": true
+    },
+    {
+      "row_id": 23,
+      "person_id": "s_human",
+      "question": "Which out of the following type of body lotion you would prefer and why? Option 1 – Dove Body Love Nourished\nRadiance Body Lotion Option 2 – Dove Body Love Light Hydration Body Lotion Option 3 – Dove Body Love Pro Age\nBody Lotion for Mature Skin Option 4 – Dove Body Love Supple Bounce Body Lotion",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "f97f61f4e4e0508c6eb354521335af2b763efff4b67365919eb403c51ee2396b",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "The AI identifies Option 2 as preferred but omits Option 1 from the respondent's first choices."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the preference is based only on the product descriptions."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": "a2",
+          "label": "aligned",
+          "rationale": "Both claims state that the respondent prefers body products that provide hydration."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim expresses a preference for a body lotion that nourishes the body."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a3",
+          "rationale": "This additional claim about preferring light hydration was not needed to support an alignment."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim mentions sensitivity to strong scents."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim mentions appreciation of Dove's mild fragrance."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim mentions valuing sustainability."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim discusses Dove's responsible sourcing."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "No human claim discusses Dove's responsible packaging."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "No human claim states that Option 2 fits the respondent's body care routine."
+        }
+      ],
+      "human_claim_count": 4,
+      "ai_claim_count": 9,
+      "aligned_count": 1,
+      "partial_count": 1,
+      "contradicted_count": 0,
+      "missing_count": 2,
+      "unsupported_count": 7,
+      "claim_coverage_rate": 0.5,
+      "strict_alignment_rate": 0.25,
+      "unsupported_rate": 0.7777777777777778,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 24,
+      "person_id": "g_human",
+      "question": "Which out of the following type of body lotion you would prefer and why? Option 1 – Dove Body Love Nourished\nRadiance Body Lotion Option 2 – Dove Body Love Light Hydration Body Lotion Option 3 – Dove Body Love Pro Age\nBody Lotion for Mature Skin Option 4 – Dove Body Love Supple Bounce Body Lotion",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "c85d74efce50c977e84edbd019ad21b63bc02adcffe5995456bc4f595d9e5057",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim addresses whether the respondent feels addressed by the suggested product names."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim discusses how much attention the respondent pays to personal-care product names."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent pays more attention to visual product designs."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": "a1",
+          "label": "contradicted",
+          "rationale": "The claims select different Dove lotions as the respondent's single required choice."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "No human claim mentions quick absorption as a reason for the choice."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim mentions a weightless skin feel as a reason for the choice."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim discusses layering the lotion with scents due to its lightweight texture."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim discusses the lotion providing an appropriate amount of moisture for everyday comfort."
+        }
+      ],
+      "human_claim_count": 4,
+      "ai_claim_count": 5,
+      "aligned_count": 0,
+      "partial_count": 0,
+      "contradicted_count": 1,
+      "missing_count": 3,
+      "unsupported_count": 4,
+      "claim_coverage_rate": 0.0,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.8,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 25,
+      "person_id": "c_human",
+      "question": "How likely are you to repurchase your preferred personal care brand, and what factors influence your loyalty to that brand?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "bf73d09a91f8ffe2ee9d7a3b25a533041880be2a690743a8bdf189e654c4f8db",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "aligned",
+          "rationale": "Both claims state that the respondent is likely to repurchase a brand when its product works well for them."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": "a6",
+          "label": "partial",
+          "rationale": "Both identify price as influencing continued brand preference, but the AI claim does not specifically mention affordability or repurchasing."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": "a2",
+          "label": "partial",
+          "rationale": "The AI claim links a pleasant smell to satisfaction with a brand, but not specifically to willingness to repurchase it."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim discusses a preference for brands that care about sustainability."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim discusses packaging practices or perceptions of sustainability."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim discusses ingredient choices or perceptions of sustainability."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim states that the respondent avoids spending heavily on ineffective products."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "This claim adds a definite intention to stay with a brand under several combined conditions not expressed together in the human claims."
+        }
+      ],
+      "human_claim_count": 3,
+      "ai_claim_count": 8,
+      "aligned_count": 1,
+      "partial_count": 2,
+      "contradicted_count": 0,
+      "missing_count": 0,
+      "unsupported_count": 5,
+      "claim_coverage_rate": 1.0,
+      "strict_alignment_rate": 0.3333333333333333,
+      "unsupported_rate": 0.625,
+      "status": "completed",
+      "cached": true
+    },
+    {
+      "row_id": 26,
+      "person_id": "s_human",
+      "question": "How likely are you to repurchase your preferred personal care brand, and what factors influence your loyalty to that brand?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "5a248ac04130aeed2d309148afaae43b578c2482b1a2e4c26cbb0186c7aa0bec",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a2",
+          "label": "partial",
+          "rationale": "Both link product performance or quality to loyalty, but effective results are narrower than overall quality and merely influencing loyalty is weaker than sticking with a brand."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent places little importance on the brand itself."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim directly compares the respondent's concern for the product with their concern for the brand."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a1",
+          "rationale": "This general repurchase claim does not specifically express satisfaction with product quality or low concern for branding."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim specifically mentions clean ingredients."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim specifically mentions organic ingredients."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim specifically mentions minimalistic packaging."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim specifically mentions sustainable packaging."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim specifically mentions alignment with sustainability values."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "No human claim specifically mentions alignment with ethical-practice values."
+        }
+      ],
+      "human_claim_count": 3,
+      "ai_claim_count": 8,
+      "aligned_count": 0,
+      "partial_count": 1,
+      "contradicted_count": 0,
+      "missing_count": 2,
+      "unsupported_count": 7,
+      "claim_coverage_rate": 0.3333333333333333,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.875,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 27,
+      "person_id": "g_human",
+      "question": "How likely are you to repurchase your preferred personal care brand, and what factors influence your loyalty to that brand?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "a7c7645bba5c5ccaaff188ab8fd66cf42a7b47bd747eee851f23f836d9ffc383",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "aligned",
+          "rationale": "Both claims state that the respondent does not have a favorite personal care brand."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that the respondent cannot identify loyalty factors specifically for a favorite personal care brand."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim identifies high product quality as a factor influencing the respondent's loyalty."
+        },
+        {
+          "human_claim_id": "h4",
+          "ai_claim_id": "a4",
+          "label": "aligned",
+          "rationale": "The AI identifies price as a main loyalty factor, preserving the claim that fair pricing would influence loyalty."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "No human claim states that liking, availability, and reasonable pricing usually lead to continued purchasing."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim identifies convenience as a main loyalty factor."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim identifies prior issues with using a product as a main loyalty factor."
+        }
+      ],
+      "human_claim_count": 4,
+      "ai_claim_count": 5,
+      "aligned_count": 2,
+      "partial_count": 0,
+      "contradicted_count": 0,
+      "missing_count": 2,
+      "unsupported_count": 3,
+      "claim_coverage_rate": 0.5,
+      "strict_alignment_rate": 0.5,
+      "unsupported_rate": 0.6,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 28,
+      "person_id": "c_human",
+      "question": "How do you discover new personal care products, and what influences your decision to try them?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "84191363e3a832762e16c905c5df1cf6c71130b5475325797c23599be9b1ecf5",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "aligned",
+          "rationale": "Both claims identify friends as a usual or main source for discovering new personal care products."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": "a2",
+          "label": "partial",
+          "rationale": "Social media includes Instagram, but the AI claim does not specify Instagram or discovering products by seeing what is famous there."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim addresses trusted recommendations getting the respondent's attention."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim addresses positive reviews getting the respondent's attention."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim addresses attention to cool advertisements."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim addresses attention to genuine-feeling influencer posts."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim addresses product reputation as an influence on interest."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "No human claim addresses fit with the respondent's needs as an influence on interest."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "No human claim addresses alignment with what the respondent already likes."
+        },
+        {
+          "ai_claim_id": "a10",
+          "rationale": "No human claim addresses a preference for simple personal care products."
+        },
+        {
+          "ai_claim_id": "a11",
+          "rationale": "No human claim addresses a preference for effective personal care products."
+        },
+        {
+          "ai_claim_id": "a12",
+          "rationale": "No human claim addresses avoiding harsh ingredients."
+        },
+        {
+          "ai_claim_id": "a13",
+          "rationale": "No human claim addresses checking product prices."
+        },
+        {
+          "ai_claim_id": "a14",
+          "rationale": "No human claim addresses wanting reasonable product prices."
+        }
+      ],
+      "human_claim_count": 2,
+      "ai_claim_count": 14,
+      "aligned_count": 1,
+      "partial_count": 1,
+      "contradicted_count": 0,
+      "missing_count": 0,
+      "unsupported_count": 12,
+      "claim_coverage_rate": 1.0,
+      "strict_alignment_rate": 0.5,
+      "unsupported_rate": 0.8571428571428571,
+      "status": "completed",
+      "cached": true
+    },
+    {
+      "row_id": 29,
+      "person_id": "s_human",
+      "question": "How do you discover new personal care products, and what influences your decision to try them?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "ad7f479e04b24fa3dfadc92b8e7af134a5d35593f190ee23babf581c42dcdc25",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "Both identify a primary online source, but the AI broadens Instagram accounts the respondent follows to social media generally."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that people the respondent follows share the respondent's skin issues."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim identifies friends as a source of product discovery."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "This adds dermatologists and skincare experts as especially important Instagram sources, which is not expressed by any human claim."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim mentions the respondent conducting independent product research."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim mentions checking product ingredients."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim mentions checking product reviews."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim states that high quality influences product trials."
+        },
+        {
+          "ai_claim_id": "a7",
+          "rationale": "No human claim states that organic products influence product trials."
+        },
+        {
+          "ai_claim_id": "a8",
+          "rationale": "No human claim states that sustainability influences product trials."
+        },
+        {
+          "ai_claim_id": "a9",
+          "rationale": "No human claim states that product performance influences product trials."
+        },
+        {
+          "ai_claim_id": "a10",
+          "rationale": "No human claim mentions avoiding strong scents as an influence."
+        },
+        {
+          "ai_claim_id": "a11",
+          "rationale": "No human claim mentions avoiding harsh textures as an influence."
+        },
+        {
+          "ai_claim_id": "a12",
+          "rationale": "No human claim discusses minimalistic packaging."
+        },
+        {
+          "ai_claim_id": "a13",
+          "rationale": "No human claim discusses functional packaging."
+        }
+      ],
+      "human_claim_count": 3,
+      "ai_claim_count": 13,
+      "aligned_count": 0,
+      "partial_count": 1,
+      "contradicted_count": 0,
+      "missing_count": 2,
+      "unsupported_count": 12,
+      "claim_coverage_rate": 0.3333333333333333,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.9230769230769231,
+      "status": "completed",
+      "cached": false
+    },
+    {
+      "row_id": 30,
+      "person_id": "g_human",
+      "question": "How do you discover new personal care products, and what influences your decision to try them?",
+      "aligner_model": "gpt-5.6",
+      "prompt_version": "alignment-v2",
+      "cache_key": "7efacb1285bb55226e9504b523e3abc6ef8a497ab2ee2c44b050a9aa885bf438",
+      "alignments": [
+        {
+          "human_claim_id": "h1",
+          "ai_claim_id": "a1",
+          "label": "partial",
+          "rationale": "Both claims say discovery mainly happens unintentionally while shopping, but the AI claim omits the past framing and the supermarket personal care section."
+        },
+        {
+          "human_claim_id": "h2",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that product design could influence the decision to try it."
+        },
+        {
+          "human_claim_id": "h3",
+          "ai_claim_id": null,
+          "label": "missing",
+          "rationale": "No AI claim states that brand recognition could influence the decision to try a product."
+        }
+      ],
+      "unsupported_ai_claims": [
+        {
+          "ai_claim_id": "a2",
+          "rationale": "No human claim mentions discovering products through a friend's recommendation."
+        },
+        {
+          "ai_claim_id": "a3",
+          "rationale": "No human claim mentions practicality as a reason to try a product."
+        },
+        {
+          "ai_claim_id": "a4",
+          "rationale": "No human claim mentions budget as a reason to try a product."
+        },
+        {
+          "ai_claim_id": "a5",
+          "rationale": "No human claim mentions avoiding disliked scents as a reason to try a product."
+        },
+        {
+          "ai_claim_id": "a6",
+          "rationale": "No human claim mentions avoiding disliked textures as a reason to try a product."
+        }
+      ],
+      "human_claim_count": 3,
+      "ai_claim_count": 6,
+      "aligned_count": 0,
+      "partial_count": 1,
+      "contradicted_count": 0,
+      "missing_count": 2,
+      "unsupported_count": 5,
+      "claim_coverage_rate": 0.3333333333333333,
+      "strict_alignment_rate": 0.0,
+      "unsupported_rate": 0.8333333333333334,
+      "status": "completed",
+      "cached": false
+    }
+  ]
+}

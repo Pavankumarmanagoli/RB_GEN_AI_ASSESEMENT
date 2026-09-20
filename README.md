@@ -120,3 +120,42 @@ uv export --format requirements-txt --no-hashes --no-emit-project --output-file 
 ```
 
 API implementation reference: [OpenAI structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs).
+
+## Step 4: Atomic claim extraction and alignment
+
+Step 4 decomposes each human and AI answer into atomic claims (Step 4A), then
+independently aligns the human claims against the AI claims (Step 4B), labeling
+each human claim `aligned`, `partial`, `contradicted`, or `missing`, and each
+leftover AI claim `unsupported`. This is diagnostic evidence alongside G-Eval, not
+a replacement for it; no combined fidelity score is produced.
+
+Both stages are frozen:
+
+- Claim extraction: `src/claim_extractor.py`, prompt version `claims-v2`.
+- Claim alignment: `src/claim_aligner.py`, prompt version `alignment-v2`.
+
+Each stage caches successful results separately from G-Eval and from each other,
+in `outputs/.claims_cache.json` and `outputs/.alignment_cache.json`.
+
+Run the full 30-row dataset:
+
+```bash
+.venv/bin/python -m src.run_claim_extraction --full
+.venv/bin/python -m src.run_claim_alignment --full
+```
+
+Both runners also accept `--rows ID [ID ...]` to target specific rows. Alignment
+consumes Step 4A's saved extraction output rather than re-extracting claims, so
+extraction must be run first.
+
+The final, reviewer-facing results are:
+
+- `outputs/claim_extraction_final.json`
+- `outputs/claim_extraction_final.csv`
+- `outputs/claim_alignment_final.json`
+- `outputs/claim_alignment_final.csv`
+
+`unsupported` means a claim is absent from the human reference; it does not by
+itself mean the claim is false or contradictory, mirroring G-Eval's
+reference-unverifiable principle. `claim_coverage_rate` and `strict_alignment_rate`
+are per-row descriptive metrics, not a combined score.

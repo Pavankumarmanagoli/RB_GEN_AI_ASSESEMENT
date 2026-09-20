@@ -1,0 +1,1984 @@
+{
+  "results": [
+    {
+      "row_id": 1,
+      "person_id": "c_human",
+      "question": "where do you typically purchase your personal care products, and why?",
+      "human_answers": "i usually buy my products online, as this gives the most flexibility and there are some nice discouns. sometimes i buy them at stores when i see something interesting.",
+      "ai_answers": "i typically purchase my personal care products from stores that offer a wide range of essentials, like supermarkets or online platforms this way, i can get everything i need in one place, saving time and effort i also look for retailers that provide good value for money and carry products with non-harmful ingredients",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent usually buys personal care products online."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "Buying online provides the respondent with the most flexibility."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The availability of some nice discounts is a reason the respondent buys personal care products online."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent sometimes buys personal care products at stores."
+        },
+        {
+          "claim_id": "h5",
+          "claim": "Seeing something interesting is the reason the respondent sometimes buys personal care products at stores."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent typically purchases personal care products from stores that offer a wide range of essentials, such as supermarkets or online platforms."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The ability to get everything needed in one place is a reason for the respondent's choice of retailer."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "Saving time is a reason for the respondent's choice of retailer."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "Saving effort is a reason for the respondent's choice of retailer."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent also looks for retailers that provide good value for money."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent also looks for retailers that carry products with non-harmful ingredients."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 2,
+      "person_id": "s_human",
+      "question": "where do you typically purchase your personal care products, and why?",
+      "human_answers": "i usually order my face products online from yesstyle page that has the korean skin products i need, but then when it comes to body shampoo i go to supermarkets or drugstores like dm.",
+      "ai_answers": "i typically purchase my personal care products from online stores like yesstyle and soko glam because they offer a wide range of korean skincare brands and provide detailed ingredient lists i also appreciate that they often include free samples, which lets me try new products before committing plus, their transparency and reliability make me feel confident in my choices 😊",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent usually orders face products online from YesStyle."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "YesStyle carries the Korean skin products the respondent needs."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent purchases body shampoo from supermarkets or drugstores such as dm."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent typically purchases personal care products from online stores such as YesStyle and Soko Glam."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The wide range of Korean skincare brands is a reason the respondent purchases from these online stores."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The stores' detailed ingredient lists are a reason the respondent purchases from them."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent appreciates that these stores often include free samples."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The free samples allow the respondent to try new products before committing."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The stores' transparency makes the respondent feel confident in their choices."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "The stores' reliability makes the respondent feel confident in their choices."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 3,
+      "person_id": "g_human",
+      "question": "where do you typically purchase your personal care products, and why?",
+      "human_answers": "i almost always get all my personal care products (which are being close to being empty) when doing grocery shopping in my nearest full-service supermarket. this feels the most convenient and time-efficient to me.",
+      "ai_answers": "i typically purchase my personal care products from the supermarket it's convenient, and i can easily find the brands i recognize and trust plus, i like to see the product sizes and designs before buying",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent almost always purchases all personal care products that are close to empty while grocery shopping at the nearest full-service supermarket."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent considers purchasing personal care products during grocery shopping at the nearest full-service supermarket the most convenient option."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent considers purchasing personal care products during grocery shopping at the nearest full-service supermarket the most time-efficient option."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent typically purchases personal care products from the supermarket."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "Convenience is a reason the respondent purchases personal care products from the supermarket."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "Being able to easily find brands the respondent recognizes is a reason for purchasing personal care products from the supermarket."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "Being able to easily find brands the respondent trusts is a reason for purchasing personal care products from the supermarket."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent likes to see product sizes before buying."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent likes to see product designs before buying."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 4,
+      "person_id": "c_human",
+      "question": "which personal care brands do you buy most often for skincare (or body wash) products, and why?",
+      "human_answers": "i don't really know the brands. i buy them because they get the job done and are affordable.",
+      "ai_answers": "i usually stick with brands that offer simple and effective products for skincare, i use a reliable sunscreen that doesn't have a bad scent and is affordable i don't follow trends much, so i prefer brands that are recommended by friends or have proven to work well for me",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent does not really know the personal care brands they buy most often."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent buys the products because they get the job done."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent buys the products because they are affordable."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent usually sticks with skincare brands that offer simple products."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent usually sticks with skincare brands that offer effective products."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent uses a sunscreen they consider reliable."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent's sunscreen does not have a bad scent."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent's sunscreen is affordable."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent does not follow trends much."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "The respondent prefers brands recommended by friends."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "The respondent prefers brands that have proven to work well for them."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "Not following trends much is the reason the respondent prefers brands recommended by friends or proven to work well for them."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 5,
+      "person_id": "s_human",
+      "question": "which personal care brands do you buy most often for skincare (or body wash) products, and why?",
+      "human_answers": "for my face i mostly use korean products like 'some by me', 'axis-y', 'beauty of joseon' for sunscreen.",
+      "ai_answers": "i mostly buy skincare products from korean brands like 'some by mi' for their aha, bha, pha toner, and axis-y for their niacinamide serum because they work well for my oily, acne-prone skin i also use sunscreen by beauty of joseon since it feels light and effective these brands are transparent about their ingredients and have natural, organic options that i prefer",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent mostly uses Korean skincare products on their face."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent uses Some By Mi products on their face."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent uses AXIS-Y products on their face."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent uses Beauty of Joseon sunscreen on their face."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent mostly buys skincare products from Korean brands."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent buys Some By Mi AHA, BHA, PHA toner."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent buys Axis-Y niacinamide serum."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The Some By Mi toner and Axis-Y serum work well for the respondent's oily, acne-prone skin."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent also uses Beauty of Joseon sunscreen."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "Beauty of Joseon sunscreen feels light to the respondent."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "Beauty of Joseon sunscreen feels effective to the respondent."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "These brands are transparent about their ingredients."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "These brands offer natural, organic options."
+        },
+        {
+          "claim_id": "a10",
+          "claim": "The respondent prefers natural, organic options."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 6,
+      "person_id": "g_human",
+      "question": "which personal care brands do you buy most often for skincare (or body wash) products, and why?",
+      "human_answers": "i'm actually not 100%% confident of the branding of my current body lotion. i think the current bottle is from niveau and the previous one was a cost-efficient discounter (no-name) brand.",
+      "ai_answers": "i usually buy nivea for skincare and body wash products because they are reliable and have been effective for me over time i also sometimes pick up no-name brands if they have a good price-to-performance ratio i prefer sticking to what i know works well and fits into my routine",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent is not 100% confident about the brand of their current body lotion."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent thinks their current body lotion bottle is from Niveau."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent's previous body lotion was from a no-name discounter brand."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent describes the previous body lotion brand as cost-efficient."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent usually buys Nivea for skincare and body wash products."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent considers Nivea products reliable."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "Nivea products have been effective for the respondent over time."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent sometimes buys no-name brands."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "A good price-to-performance ratio is a condition for the respondent to buy no-name brands."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent prefers sticking to products they know work well."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "The respondent prefers products that fit into their routine."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 7,
+      "person_id": "c_human",
+      "question": "what is the ideal size and packaging for a body wash product for you? for example regarding volume in ml, materials used, design, functionality, informativeness, …",
+      "human_answers": "it should be around 300 ml, use natural materias and smell nice. of course it needs to clean the body haha",
+      "ai_answers": "i prefer a body wash size of around 250-500 ml, with packaging made from recyclable or biodegradable materials the design should be simple and functional, like a pump or squeeze bottle, and clearly list essential information such as ingredients and usage instructions sustainability and ease of use are key for me",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent's ideal body wash size is around 300 ml."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent prefers body wash packaging to use natural materials."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent prefers body wash to smell nice."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent expects body wash to clean the body."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent prefers a body wash volume of around 250–500 ml."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent prefers packaging made from recyclable or biodegradable materials."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent prefers a simple packaging design."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent prefers functional packaging."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent prefers a pump or squeeze bottle."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent prefers packaging that clearly lists the ingredients."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "The respondent prefers packaging that clearly lists usage instructions."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "Sustainability is a key consideration for the respondent."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "Ease of use is a key consideration for the respondent."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 8,
+      "person_id": "s_human",
+      "question": "what is the ideal size and packaging for a body wash product for you? for example regarding volume in ml, materials used, design, functionality, informativeness, …",
+      "human_answers": "for body wash, i would go with a big size as it is more efficient, but glass bottle and transparent, minimalistic.",
+      "ai_answers": "for a body wash, i prefer a 250-300 ml glass bottle with a pump dispenser for ease of use the packaging should be clean and clear, with detailed ingredient information and usage instructions natural and organic ingredients are a must, and the design should be practical and informative",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent would choose a large body wash size."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "Greater efficiency is the reason the respondent would choose a large size."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent prefers a glass bottle for body wash."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent prefers transparent body wash packaging."
+        },
+        {
+          "claim_id": "h5",
+          "claim": "The respondent prefers minimalist body wash packaging."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent prefers a body wash bottle with a volume of 250–300 ml."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent prefers a glass body wash bottle."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent prefers a pump dispenser."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "Ease of use is the reason for preferring a pump dispenser."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The body wash packaging should have a clean design."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The body wash packaging should be clear."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "The body wash packaging should include detailed ingredient information."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "The body wash packaging should include usage instructions."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "Natural ingredients are a must for the respondent."
+        },
+        {
+          "claim_id": "a10",
+          "claim": "Organic ingredients are a must for the respondent."
+        },
+        {
+          "claim_id": "a11",
+          "claim": "The body wash packaging design should be practical."
+        },
+        {
+          "claim_id": "a12",
+          "claim": "The body wash packaging design should be informative."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 9,
+      "person_id": "g_human",
+      "question": "what is the ideal size and packaging for a body wash product for you? for example regarding volume in ml, materials used, design, functionality, informativeness, …",
+      "human_answers": "for home use, i prefer medium-large sized metal bottles of more than 300 ml with a pump dispenser that can be refilled. regarding the design i don't have a strong opinion. however, i think i prefer a clean and minimalistic design. i don't really care about information of its ingredients. for traveling purposes, i prefer rather small plastic bottles (around 150ml) with a normal dispenser.",
+      "ai_answers": "i prefer a body wash product that comes in a 500ml bottle, as it lasts long enough without needing frequent repurchases the packaging should be simple and functional, with clear labeling of ingredients and benefits a minimalistic design that fits easily into my routine and storage space is ideal",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "For home use, the respondent prefers medium-large body wash bottles of more than 300 ml."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "For home use, the respondent prefers metal body wash bottles."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "For home use, the respondent prefers a pump dispenser."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "For home use, the respondent prefers refillable body wash bottles."
+        },
+        {
+          "claim_id": "h5",
+          "claim": "The respondent does not have a strong opinion about body wash packaging design."
+        },
+        {
+          "claim_id": "h6",
+          "claim": "The respondent thinks they prefer a clean and minimalistic design."
+        },
+        {
+          "claim_id": "h7",
+          "claim": "The respondent does not really care about information on the body wash's ingredients."
+        },
+        {
+          "claim_id": "h8",
+          "claim": "For travel, the respondent prefers rather small body wash bottles of around 150 ml."
+        },
+        {
+          "claim_id": "h9",
+          "claim": "For travel, the respondent prefers plastic body wash bottles."
+        },
+        {
+          "claim_id": "h10",
+          "claim": "For travel, the respondent prefers a normal dispenser."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent prefers a body wash in a 500 ml bottle."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "A 500 ml bottle lasts long enough for the respondent."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "Avoiding frequent repurchases is a reason for preferring a 500 ml bottle."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent prefers simple packaging."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent prefers functional packaging."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent prefers clear labeling of ingredients."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "The respondent prefers clear labeling of product benefits."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "The respondent considers a minimalistic design ideal."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "The respondent prefers a design that fits easily into their routine."
+        },
+        {
+          "claim_id": "a10",
+          "claim": "The respondent prefers a design that fits easily into their storage space."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 10,
+      "person_id": "c_human",
+      "question": "which personal care products, if any, do you regularly buy in larger/bulk quantities?",
+      "human_answers": "i don't usually buy in bulk, but rather as soon as i need them.",
+      "ai_answers": "i regularly buy toothpaste and deodorant in bulk these are essential items in my daily routine, and buying them in larger quantities helps me save money and avoid running out",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent does not usually buy personal care products in bulk."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent buys personal care products as soon as they need them."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent regularly buys toothpaste in bulk."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent regularly buys deodorant in bulk."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "Toothpaste and deodorant are essential items in the respondent's daily routine."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "Saving money is a reason the respondent buys these items in larger quantities."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "Avoiding running out is a reason the respondent buys these items in larger quantities."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 11,
+      "person_id": "s_human",
+      "question": "which personal care products, if any, do you regularly buy in larger/bulk quantities?",
+      "human_answers": "body wash, hand wash, thats it. i do not like to buy face products in big sizes or hair shampoo. i hate that. ",
+      "ai_answers": "i regularly buy the aha, bha, pha toner from 'some by mi' and the niacinamide serum from axis-y in bulk these products are essential for my skincare routine, and i like to ensure i always have a consistent supply plus, they work really well for my oily, acne-prone skin 😊",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent regularly buys body wash in larger or bulk quantities."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent regularly buys hand wash in larger or bulk quantities."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent strongly dislikes buying face products in large sizes."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent strongly dislikes buying hair shampoo in large sizes."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent regularly buys Some By Mi AHA, BHA, PHA toner in bulk."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent regularly buys Axis-Y niacinamide serum in bulk."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "These products are essential to the respondent's skincare routine."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "Ensuring they always have a consistent supply is a reason the respondent buys these products in bulk."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "These products work really well for the respondent's oily, acne-prone skin."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 12,
+      "person_id": "g_human",
+      "question": "which personal care products, if any, do you regularly buy in larger/bulk quantities?",
+      "human_answers": "i'm almost always only buying a single item as soon as one personal care product is about to go empty. in rare occasions i buy the same product twice in one shopping trip when its discounted.",
+      "ai_answers": "i regularly buy head & shoulders shampoo and nivea roll-on deodorant in bulk these are products i use daily and trust for their effectiveness buying in larger quantities helps me avoid frequent shopping trips and ensures i always have them on hand",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent almost always buys only one personal care item when a product is about to run out."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "On rare occasions, the respondent buys two of the same product in one shopping trip."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "A discount is the reason the respondent occasionally buys two of the same product."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent regularly buys Head & Shoulders shampoo in bulk."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent regularly buys Nivea roll-on deodorant in bulk."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent uses Head & Shoulders shampoo daily."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent uses Nivea roll-on deodorant daily."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent trusts Head & Shoulders shampoo for its effectiveness."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent trusts Nivea roll-on deodorant for its effectiveness."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "Avoiding frequent shopping trips is a reason the respondent buys these products in larger quantities."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "Ensuring these products are always on hand is a reason the respondent buys them in larger quantities."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 13,
+      "person_id": "c_human",
+      "question": "if you could choose one celebrity to represent a brand of men's or women's skin and body care products that inspires you to make a purchase, who would that celebrity be and why?",
+      "human_answers": "it would need to be a well-known celebreity, probably starring in movies which is handsome and lean. maybe something like jacob elordi or christian bale.",
+      "ai_answers": "i'd choose emma watson she's known for her practical approach to personal care, advocates for sustainability, and uses products with non-harmful ingredients her consistency and health-conscious choices align with my values",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent would choose a well-known celebrity to represent the skin and body care brand."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The celebrity would probably be a movie star."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The celebrity would need to be handsome and lean."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent might choose someone like Jacob Elordi or Christian Bale."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "If able to choose one celebrity to represent a skin and body care brand, the respondent would choose Emma Watson."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "Emma Watson is known for her practical approach to personal care."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "Emma Watson advocates for sustainability."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "Emma Watson uses products with non-harmful ingredients."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "Emma Watson's consistency aligns with the respondent's values."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "Emma Watson's health-conscious choices align with the respondent's values."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 14,
+      "person_id": "s_human",
+      "question": "if you could choose one celebrity to represent a brand of men's or women's skin and body care products that inspires you to make a purchase, who would that celebrity be and why?",
+      "human_answers": "i do not know, it really depends on the day, it changes all the time, but if i had to pick one, i would go with keira knightley, just because i like her in general :)",
+      "ai_answers": "i would choose hyram yarbro to represent a brand of skincare products he’s known for his dedication to skincare, transparency about ingredients, and practical advice, which aligns perfectly with my values and needs plus, he often recommends effective, natural, and organic products that suit my skin type",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent does not know which celebrity they would choose to represent a skin and body care brand."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent's choice depends on the day."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent's choice changes all the time."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "If required to choose one celebrity, the respondent would choose Keira Knightley."
+        },
+        {
+          "claim_id": "h5",
+          "claim": "The respondent's general liking of Keira Knightley is the reason for the hypothetical choice."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "If able to choose one celebrity, the respondent would choose Hyram Yarbro to represent a skincare brand."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "Hyram Yarbro is known for his dedication to skincare."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "Hyram Yarbro is known for his transparency about ingredients."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "Hyram Yarbro is known for giving practical advice."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "Hyram Yarbro's approach aligns perfectly with the respondent's values."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "Hyram Yarbro's approach aligns perfectly with the respondent's needs."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "Hyram Yarbro often recommends effective products."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "Hyram Yarbro often recommends natural products."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "Hyram Yarbro often recommends organic products."
+        },
+        {
+          "claim_id": "a10",
+          "claim": "Hyram Yarbro often recommends products that suit the respondent's skin type."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 15,
+      "person_id": "g_human",
+      "question": "if you could choose one celebrity to represent a brand of men's or women's skin and body care products that inspires you to make a purchase, who would that celebrity be and why?",
+      "human_answers": "i can't really think of a male celebrity right now since i haven't met any in real life and i'm aware that they are polished (using make-up) when being filmed or being at public events.",
+      "ai_answers": "i'd choose david beckham he's known for his practical and consistent approach to personal care, and he embodies reliability and a straightforward lifestyle plus, his long-term commitment to grooming makes him a trustworthy choice",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent cannot really think of a male celebrity right now."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "Not having met any male celebrities in real life is one reason the respondent cannot think of one."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "Awareness that male celebrities are polished with makeup when filmed or at public events is another reason the respondent cannot think of one."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent would choose David Beckham to represent a brand of men's or women's skin and body care products."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "David Beckham's practical approach to personal care is a reason for the choice."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "David Beckham's consistent approach to personal care is a reason for the choice."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "David Beckham embodies reliability."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "David Beckham embodies a straightforward lifestyle."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "David Beckham has a long-term commitment to grooming."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "David Beckham's long-term commitment to grooming makes him a trustworthy choice."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 16,
+      "person_id": "c_human",
+      "question": "how long have you been using your current brand of toothpaste? do you also remember the last time you switched brands and why?",
+      "human_answers": "since forever, my mum used to buy them and i just continued to buy them, so something like 10 years? i did never have a specific reason to switch toothpase brands.",
+      "ai_answers": "i've been using my current brand of toothpaste for a few years now the last time i switched brands was because i wanted a product with better ingredients i prefer to stick with what works and avoid unnecessary changes",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent has used their current toothpaste brand for something like 10 years, though they describe it as “since forever.”"
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent's mother used to buy their current toothpaste brand."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent continued buying the toothpaste brand their mother used to buy."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent never had a specific reason to switch toothpaste brands."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent has been using their current toothpaste brand for a few years."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent switched toothpaste brands because they wanted a product with better ingredients."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent prefers to stick with what works."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent prefers to avoid unnecessary changes."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 17,
+      "person_id": "s_human",
+      "question": "how long have you been using your current brand of toothpaste? do you also remember the last time you switched brands and why?",
+      "human_answers": "i do not care much about toothpaste brand, my boyfriend buys those in the drugstore close by. i just want it to feel fresh and have the right texture, i do care about the ingredients tho.",
+      "ai_answers": "i've been using my current brand of toothpaste for about two years now the last time i switched brands was because i wanted something with more natural ingredients and better effectiveness i always look for transparency in the ingredients and how well the product works for me 😊",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent does not care much about toothpaste brands."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent's boyfriend buys the toothpaste."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The toothpaste is bought at a nearby drugstore."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent wants toothpaste to feel fresh."
+        },
+        {
+          "claim_id": "h5",
+          "claim": "The respondent wants toothpaste to have the right texture."
+        },
+        {
+          "claim_id": "h6",
+          "claim": "The respondent cares about toothpaste ingredients."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent has been using their current toothpaste brand for about two years."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent switched toothpaste brands previously."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "Wanting a toothpaste with more natural ingredients was a reason for the respondent's last brand switch."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "Wanting a more effective toothpaste was a reason for the respondent's last brand switch."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent always looks for transparency about toothpaste ingredients."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent always considers how well a toothpaste works for them."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 18,
+      "person_id": "g_human",
+      "question": "how long have you been using your current brand of toothpaste? do you also remember the last time you switched brands and why?",
+      "human_answers": "its rather likely that my toothpaste brand changed when i bought a new toothpaste last week since i don't really pay attention to the toothpaste brands. however, i think that i'm usually rotating between 2-3 toothpaste brands (e.g., colgate, elmex, blend-a-med)",
+      "ai_answers": "i've been using my current brand of toothpaste for several years now the last time i switched brands was because of a recommendation from a friend, but i quickly went back to my usual one since it works well for me i prefer sticking to what i know is reliable",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent bought new toothpaste last week."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent considers it rather likely that their toothpaste brand changed when they bought the new toothpaste last week."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent does not really pay attention to toothpaste brands."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent thinks they usually rotate among 2–3 toothpaste brands, such as Colgate, Elmex, and Blend-a-med."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent has been using their current toothpaste brand for several years."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent switched toothpaste brands the last time a friend recommended another brand."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent quickly returned to their usual toothpaste brand."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent returned to their usual toothpaste brand because it works well for them."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent prefers sticking with products they know are reliable."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 19,
+      "person_id": "c_human",
+      "question": "if you would create the perfect body wash for you, what ingredients would it have? what other features you would prefer?",
+      "human_answers": "i prefer something that is effective and not overpriced, and of course i care about sustainable ingredients",
+      "ai_answers": "If I were to create my perfect body wash, it’d have a super gentle formula with ingredients like aloe vera or chamomile to keep my skin calm and hydrated. I’d want it to smell fresh but not too strong—something light and clean. Also, I’m all about sustainability, so the packaging needs to be eco-friendly! It should moisturize without leaving that greasy feeling, and definitely no harsh chemicals—stuff like sulfates or parabens. Just something simple, effective, and easy to use every day.",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent prefers a body wash that is effective."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent prefers a body wash that is not overpriced."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent cares about sustainable ingredients in a body wash."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent's perfect body wash would have a super gentle formula."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The formula would contain ingredients like aloe vera or chamomile."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The body wash would keep the respondent's skin calm."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The body wash would keep the respondent's skin hydrated."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent would want the body wash to smell fresh."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent would not want the scent to be too strong."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "The respondent would prefer a light scent."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "The respondent would prefer a clean scent."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "The respondent strongly values sustainability."
+        },
+        {
+          "claim_id": "a10",
+          "claim": "The packaging would need to be eco-friendly."
+        },
+        {
+          "claim_id": "a11",
+          "claim": "The body wash should moisturize the respondent's skin."
+        },
+        {
+          "claim_id": "a12",
+          "claim": "The body wash should not leave a greasy feeling."
+        },
+        {
+          "claim_id": "a13",
+          "claim": "The body wash should contain no harsh chemicals."
+        },
+        {
+          "claim_id": "a14",
+          "claim": "The body wash should contain no sulfates."
+        },
+        {
+          "claim_id": "a15",
+          "claim": "The body wash should contain no parabens."
+        },
+        {
+          "claim_id": "a16",
+          "claim": "The respondent would prefer the body wash to be simple."
+        },
+        {
+          "claim_id": "a17",
+          "claim": "The respondent would prefer the body wash to be effective."
+        },
+        {
+          "claim_id": "a18",
+          "claim": "The respondent would prefer the body wash to be easy to use every day."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 20,
+      "person_id": "s_human",
+      "question": "if you would create the perfect body wash for you, what ingredients would it have? what other features you would prefer?",
+      "human_answers": "the important things for me are ingredients, i want to have full transparency on the ingredient list. this should be clearly stated in the packaging. it would be nice to have for each ingredient also what are the effects on the body. I want a clear glass bottle, minimalistic. The texture if the body lotion is also very imprtant to me, it should be soft but not heavy. I want it to smell oud like. ",
+      "ai_answers": "If I were to create the perfect body wash, it would include organic coconut oil for hydration, aloe vera for soothing, and essential oils like lavender for a calming scent. I would ensure it’s free from harsh chemicals and packaged in biodegradable materials. A gentle exfoliating element from natural sources and cruelty-free testing would also be essential. Overall, it would nourish the skin while being kind to the planet.",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "Ingredients are important to the respondent."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent wants full transparency about the ingredients."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The ingredient list should be clearly stated on the packaging."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent would like the effects of each ingredient on the body to be stated."
+        },
+        {
+          "claim_id": "h5",
+          "claim": "The respondent wants a clear glass bottle."
+        },
+        {
+          "claim_id": "h6",
+          "claim": "The respondent prefers minimalist packaging."
+        },
+        {
+          "claim_id": "h7",
+          "claim": "The texture of the body lotion is very important to the respondent."
+        },
+        {
+          "claim_id": "h8",
+          "claim": "The texture should be soft."
+        },
+        {
+          "claim_id": "h9",
+          "claim": "The texture should not be heavy."
+        },
+        {
+          "claim_id": "h10",
+          "claim": "The respondent wants an oud-like scent."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent's perfect body wash would include organic coconut oil."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "Organic coconut oil would provide hydration."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent's perfect body wash would include aloe vera."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "Aloe vera would provide soothing effects."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent's perfect body wash would include essential oils such as lavender."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The essential oils would provide a calming scent."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "The respondent's perfect body wash would be free from harsh chemicals."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "The respondent's perfect body wash would be packaged in biodegradable materials."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "The respondent's perfect body wash would include a gentle exfoliating element from natural sources."
+        },
+        {
+          "claim_id": "a10",
+          "claim": "Cruelty-free testing would be essential for the respondent's perfect body wash."
+        },
+        {
+          "claim_id": "a11",
+          "claim": "The respondent's perfect body wash would nourish the skin."
+        },
+        {
+          "claim_id": "a12",
+          "claim": "The respondent's perfect body wash would be kind to the planet."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 21,
+      "person_id": "g_human",
+      "question": "if you would create the perfect body wash for you, what ingredients would it have? what other features you would prefer?",
+      "human_answers": "since i've never spent effort on investigating ingredients of a body wash, i don't have an answer to what ingredients should be in my perfect body wash. regarding other features, it should smell good and shouldn't impact the dryness of my skin in a negative way (ideally it effects it in a positive way)",
+      "ai_answers": "i’d love a body wash that blends real peppermint extract for a cool, refreshing feel with shea butter for deep moisture. a mild, herbal fragrance would keep it invigorating yet not overpowering. i’d also prefer a refillable pump bottle for convenience and to reduce waste—so it’s both a pleasant daily ritual and a more eco-friendly choice.",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent has never spent effort investigating body wash ingredients."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent does not know what ingredients their perfect body wash should contain."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent's perfect body wash should smell good."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent's perfect body wash should not negatively affect their skin dryness."
+        },
+        {
+          "claim_id": "h5",
+          "claim": "Ideally, the respondent's perfect body wash would improve their skin dryness."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent would want real peppermint extract in their ideal body wash."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent would want the body wash to provide a cool, refreshing feel."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent would want shea butter in their ideal body wash."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent would want the body wash to provide deep moisture."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent would prefer a mild, herbal fragrance."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent would want the fragrance to be invigorating."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "The respondent would not want the fragrance to be overpowering."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "The respondent would prefer a refillable pump bottle."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "Convenience is a reason for preferring the refillable pump bottle."
+        },
+        {
+          "claim_id": "a10",
+          "claim": "Reducing waste is a reason for preferring the refillable pump bottle."
+        },
+        {
+          "claim_id": "a11",
+          "claim": "The respondent would want the body wash to make daily use a pleasant ritual."
+        },
+        {
+          "claim_id": "a12",
+          "claim": "The respondent would want the body wash to be a more eco-friendly choice."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 22,
+      "person_id": "c_human",
+      "question": "Which out of the following type of body lotion you would prefer and why? Option 1 – Dove Body Love Nourished\nRadiance Body Lotion Option 2 – Dove Body Love Light Hydration Body Lotion Option 3 – Dove Body Love Pro Age\nBody Lotion for Mature Skin Option 4 – Dove Body Love Supple Bounce Body Lotion",
+      "human_answers": "i would chose option 2",
+      "ai_answers": "I’d probably go for Option 2 – Dove Body Love Light Hydration Body Lotion. It sounds like it’s perfect for daily use, providing just the right amount of hydration without feeling too heavy. I’m not really after something super rich or intense, so a light hydration option is ideal. Plus, it’s something I can use every day without worrying about feeling greasy or sticky—just smooth and soft skin!",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent would choose Option 2, Dove Body Love Light Hydration Body Lotion."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent would probably choose Option 2, Dove Body Love Light Hydration Body Lotion."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent thinks Option 2 sounds suitable for daily use."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent thinks Option 2 would provide the right amount of hydration."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent thinks Option 2 would not feel too heavy."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent is not looking for a super-rich body lotion."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent is not looking for an intense body lotion."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "The respondent considers a light-hydration body lotion ideal."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "The respondent thinks Option 2 could be used every day."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "The respondent thinks Option 2 would not feel greasy."
+        },
+        {
+          "claim_id": "a10",
+          "claim": "The respondent thinks Option 2 would not feel sticky."
+        },
+        {
+          "claim_id": "a11",
+          "claim": "The respondent expects Option 2 to leave the skin smooth."
+        },
+        {
+          "claim_id": "a12",
+          "claim": "The respondent expects Option 2 to leave the skin soft."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 23,
+      "person_id": "s_human",
+      "question": "Which out of the following type of body lotion you would prefer and why? Option 1 – Dove Body Love Nourished\nRadiance Body Lotion Option 2 – Dove Body Love Light Hydration Body Lotion Option 3 – Dove Body Love Pro Age\nBody Lotion for Mature Skin Option 4 – Dove Body Love Supple Bounce Body Lotion",
+      "human_answers": "my first choice would be option 1 and option 2, from what i understand just from the desciption I would like to have smth that hydratates and nourishes my body",
+      "ai_answers": "I would prefer Option 2 – Dove Body Love Light Hydration Body Lotion. I tend to go for products that provide hydration without being too heavy or greasy, and the \"light hydration\" aspect fits my preference. Since I’m sensitive to strong scents, I also appreciate that Dove’s body lotions generally have a mild fragrance. I also value sustainability, so Dove’s commitment to responsible sourcing and packaging aligns with my values, making it a good fit for my body care routine.",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent's first choices would be Option 1, Dove Body Love Nourished Radiance Body Lotion, and Option 2, Dove Body Love Light Hydration Body Lotion."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The preference is based only on the product descriptions."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent would like a body lotion that hydrates their body."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "The respondent would like a body lotion that nourishes their body."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent would prefer Option 2, Dove Body Love Light Hydration Body Lotion."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent tends to choose products that provide hydration without being too heavy or greasy."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The “light hydration” aspect fits the respondent’s preference."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent is sensitive to strong scents."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent appreciates the generally mild fragrance of Dove body lotions."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent values sustainability."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "Dove’s commitment to responsible sourcing aligns with the respondent’s values."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "Dove’s commitment to responsible packaging aligns with the respondent’s values."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "The respondent considers Dove Body Love Light Hydration Body Lotion a good fit for their body care routine."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 24,
+      "person_id": "g_human",
+      "question": "Which out of the following type of body lotion you would prefer and why? Option 1 – Dove Body Love Nourished\nRadiance Body Lotion Option 2 – Dove Body Love Light Hydration Body Lotion Option 3 – Dove Body Love Pro Age\nBody Lotion for Mature Skin Option 4 – Dove Body Love Supple Bounce Body Lotion",
+      "human_answers": "i don't really feel addressed by any of the suggested product names. i think that i don't pay that much attention to product names (at least regarding personal care products). i rather pay attention to visual product designs. if I had to pick one, then \"dove body love light hydration body lotion\".",
+      "ai_answers": "i’d pick the dove body love pro age body lotion for mature skin option because it absorbs quickly and feels weightless on my skin. that lightweight texture makes it easy to layer with my favorite scents, and it provides just the right amount of moisture for everyday comfort.",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent does not really feel addressed by any of the suggested product names."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent thinks they do not pay much attention to product names, at least for personal care products."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent pays more attention to visual product designs."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "If required to choose one option, the respondent would choose Dove Body Love Light Hydration Body Lotion."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent would pick Dove Body Love Pro Age Body Lotion for Mature Skin."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "Its quick absorption is a reason for the respondent's choice."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "Its weightless feel on the respondent's skin is a reason for the respondent's choice."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The lotion's lightweight texture makes it easy for the respondent to layer it with their favorite scents."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The lotion provides the respondent with just the right amount of moisture for everyday comfort."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 25,
+      "person_id": "c_human",
+      "question": "How likely are you to repurchase your preferred personal care brand, and what factors influence your loyalty to that brand?",
+      "human_answers": "as i said i would rebuy a brand if the product is working for me, has a good affortable price and smells good",
+      "ai_answers": "I’d say I’m pretty likely to repurchase if a brand works well for me. I mean, if it keeps my skin feeling good and smells nice, I’m happy. I also really like when a brand cares about sustainability—whether it’s how they package stuff or the ingredients they use. And of course, price matters too. I’m not looking to spend a lot on products that don’t make a difference. As long as it feels nice, doesn’t irritate my skin, and isn’t crazy expensive, I’ll definitely stick with it!",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent would repurchase a brand if its product works for them."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "An affordable price influences the respondent's willingness to repurchase a brand."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "A good smell influences the respondent's willingness to repurchase a brand."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent is pretty likely to repurchase a brand if it works well for them."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent is happy with a brand if it keeps their skin feeling good and smells nice."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent really likes brands that care about sustainability."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "A brand's packaging practices influence the respondent's view of its sustainability."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "A brand's ingredient choices influence the respondent's view of its sustainability."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "Price influences the respondent's brand loyalty."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "The respondent does not want to spend a lot on products that do not make a difference."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "The respondent will definitely stick with a brand as long as its products feel nice, do not irritate their skin, and are not excessively expensive."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 26,
+      "person_id": "s_human",
+      "question": "How likely are you to repurchase your preferred personal care brand, and what factors influence your loyalty to that brand?",
+      "human_answers": "if i am happy with the quality of the product, i stick to the brand, but i do not care much of the brand rather then the product itself. ",
+      "ai_answers": "I'm highly likely to repurchase my preferred personal care brands if they consistently deliver effective results, use clean and organic ingredients, have minimalistic and sustainable packaging, and align with my values of sustainability and ethical practices.",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent sticks with a brand when they are happy with the product's quality."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent does not care much about the brand itself."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent cares more about the product itself than about the brand."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent is highly likely to repurchase preferred personal care brands when the brands meet the stated criteria."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "Consistently delivering effective results influences the respondent's loyalty."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "Using clean ingredients influences the respondent's loyalty."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "Using organic ingredients influences the respondent's loyalty."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "Minimalistic packaging influences the respondent's loyalty."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "Sustainable packaging influences the respondent's loyalty."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "Alignment with the respondent's sustainability values influences loyalty."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "Alignment with the respondent's ethical-practice values influences loyalty."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 27,
+      "person_id": "g_human",
+      "question": "How likely are you to repurchase your preferred personal care brand, and what factors influence your loyalty to that brand?",
+      "human_answers": "i don't have a favorite personal care brand, so I can't answer what factors influence my loyalty. my generic answer would be high quality products with fair pricing.",
+      "ai_answers": "i don’t really have a single favorite brand, but if i happen to like one and it stays easy to find and reasonably priced, i usually stick with it. convenience, price, and whether i’ve had any issues using it before are the main reasons i keep buying the same product.",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent does not have a favorite personal care brand."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent cannot identify factors influencing loyalty to a favorite personal care brand."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "In general, high product quality would influence the respondent's loyalty."
+        },
+        {
+          "claim_id": "h4",
+          "claim": "In general, fair pricing would influence the respondent's loyalty."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent does not really have a single favorite personal care brand."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "If the respondent likes a brand and it remains easy to find and reasonably priced, they usually continue buying it."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "Convenience is a main factor in the respondent's loyalty to a product."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "Price is a main factor in the respondent's loyalty to a product."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "Whether the respondent has had issues using a product before is a main factor in their loyalty to it."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 28,
+      "person_id": "c_human",
+      "question": "How do you discover new personal care products, and what influences your decision to try them?",
+      "human_answers": "usually my friends or what i see is famous in instagram",
+      "ai_answers": "I mostly discover new products through friends or social media. If someone I trust recommends something or I see a positive review, that’s usually what gets my attention. I also pay attention to any cool ads or influencer posts that feel genuine, but it’s mostly about the product having a good reputation or sounding like it fits my needs. What influences me to try something new? It’s got to be something that aligns with what I already like—something simple, effective, and not full of harsh ingredients. I also check the price to make sure it’s reasonable.",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent usually discovers new personal care products through friends."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent usually discovers new personal care products by seeing what is famous on Instagram."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "Friends are one of the respondent's main sources for discovering new personal care products."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "Social media is one of the respondent's main sources for discovering new personal care products."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "A recommendation from someone the respondent trusts usually gets their attention."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "A positive review usually gets the respondent's attention."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent pays attention to cool advertisements."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent pays attention to influencer posts that feel genuine."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "A product having a good reputation is a major influence on the respondent's interest in it."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "A product seeming to fit the respondent's needs is a major influence on their interest in it."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "The respondent wants a new product to align with what they already like."
+        },
+        {
+          "claim_id": "a10",
+          "claim": "The respondent prefers simple personal care products."
+        },
+        {
+          "claim_id": "a11",
+          "claim": "The respondent prefers effective personal care products."
+        },
+        {
+          "claim_id": "a12",
+          "claim": "The respondent prefers personal care products that are not full of harsh ingredients."
+        },
+        {
+          "claim_id": "a13",
+          "claim": "The respondent checks a product's price."
+        },
+        {
+          "claim_id": "a14",
+          "claim": "The respondent wants a product's price to be reasonable."
+        }
+      ],
+      "status": "completed",
+      "human_cached": true,
+      "ai_cached": true
+    },
+    {
+      "row_id": 29,
+      "person_id": "s_human",
+      "question": "How do you discover new personal care products, and what influences your decision to try them?",
+      "human_answers": "mostly from instagram, people that i follow. there are a few people that have same skin issues as i do or hten could also be from friends",
+      "ai_answers": "I discover new personal care products mainly through social media, especially dermatologists and skincare experts on Instagram. I also do my own research to check ingredients and reviews. I’m influenced to try products if they’re high-quality, organic, sustainable, and have good performance without strong scents or harsh textures. If the packaging is minimalistic and functional, that's a bonus!",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "The respondent discovers new personal care products mostly through people they follow on Instagram."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "A few of the people the respondent follows have the same skin issues as the respondent."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "Friends can also be a source for discovering new personal care products."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent discovers new personal care products mainly through social media."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "Dermatologists and skincare experts on Instagram are especially important sources of new personal care product discovery for the respondent."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent conducts their own research on new personal care products."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent checks product ingredients during their research."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent checks product reviews during their research."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "High quality influences the respondent to try a personal care product."
+        },
+        {
+          "claim_id": "a7",
+          "claim": "Organic products are more likely to influence the respondent to try them."
+        },
+        {
+          "claim_id": "a8",
+          "claim": "Sustainability influences the respondent to try a personal care product."
+        },
+        {
+          "claim_id": "a9",
+          "claim": "Good performance influences the respondent to try a personal care product."
+        },
+        {
+          "claim_id": "a10",
+          "claim": "The absence of strong scents influences the respondent to try a personal care product."
+        },
+        {
+          "claim_id": "a11",
+          "claim": "The absence of harsh textures influences the respondent to try a personal care product."
+        },
+        {
+          "claim_id": "a12",
+          "claim": "Minimalistic packaging is a bonus for the respondent."
+        },
+        {
+          "claim_id": "a13",
+          "claim": "Functional packaging is a bonus for the respondent."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    },
+    {
+      "row_id": 30,
+      "person_id": "g_human",
+      "question": "How do you discover new personal care products, and what influences your decision to try them?",
+      "human_answers": "when buying a new product in the past, i think i mainly discovered them unintentionally when being in the personal care section of a supermarket. i think i could be influenced by the design of the product and whether i recognize the brand.",
+      "ai_answers": "i mostly come across new products by chance when i’m shopping or if a friend mentions something they like. if it seems practical, within my usual budget, and doesn’t have a scent or texture i dislike, i might pick it up to see how it works.",
+      "extractor_model": "gpt-5.6",
+      "prompt_version": "claims-v2",
+      "human_claims": [
+        {
+          "claim_id": "h1",
+          "claim": "In the past, the respondent thinks they mainly discovered new personal care products unintentionally while in a supermarket's personal care section."
+        },
+        {
+          "claim_id": "h2",
+          "claim": "The respondent thinks the product's design could influence their decision to try it."
+        },
+        {
+          "claim_id": "h3",
+          "claim": "The respondent thinks recognizing the brand could influence their decision to try a product."
+        }
+      ],
+      "ai_claims": [
+        {
+          "claim_id": "a1",
+          "claim": "The respondent mostly discovers new personal care products by chance while shopping."
+        },
+        {
+          "claim_id": "a2",
+          "claim": "The respondent mostly discovers new personal care products when a friend mentions a product they like."
+        },
+        {
+          "claim_id": "a3",
+          "claim": "The respondent might try a new personal care product if it seems practical."
+        },
+        {
+          "claim_id": "a4",
+          "claim": "The respondent might try a new personal care product if it is within their usual budget."
+        },
+        {
+          "claim_id": "a5",
+          "claim": "The respondent might try a new personal care product if it does not have a scent they dislike."
+        },
+        {
+          "claim_id": "a6",
+          "claim": "The respondent might try a new personal care product if it does not have a texture they dislike."
+        }
+      ],
+      "status": "completed",
+      "human_cached": false,
+      "ai_cached": false
+    }
+  ]
+}

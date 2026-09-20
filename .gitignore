@@ -13,6 +13,5 @@ wheels/
 .env
 .env.*
 !.env.example
-outputs/.geval_cache.json
+outputs/.*_cache.json
 .claude/
-outputs/.geval_cache.json
