@@ -1,3 +1,4 @@
+import math
 from typing import Literal, Self
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
@@ -129,4 +130,31 @@ class NLIPrediction(BaseModel):
             raise ValueError("NLI probabilities must sum to approximately 1.")
         if abs(probs[self.nli_label] - self.nli_confidence) > 1e-6:
             raise ValueError("nli_confidence must equal the probability of the predicted label.")
+        return self
+
+
+class BERTScoreResult(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    row_id: int | str
+    person_id: str
+    question: str = Field(min_length=1)
+    human_answer: str = Field(min_length=1)
+    ai_answer: str = Field(min_length=1)
+    # Baseline-rescaled BERTScore values are metric values, not probabilities; they are
+    # not restricted to [0, 1] and must only be checked for being finite numbers.
+    bertscore_precision: float
+    bertscore_recall: float
+    bertscore_f1: float
+
+    @model_validator(mode="after")
+    def validate_scores_are_finite(self) -> Self:
+        scores = {
+            "bertscore_precision": self.bertscore_precision,
+            "bertscore_recall": self.bertscore_recall,
+            "bertscore_f1": self.bertscore_f1,
+        }
+        for name, value in scores.items():
+            if not math.isfinite(value):
+                raise ValueError(f"{name} must be a finite number, got {value}.")
         return self
