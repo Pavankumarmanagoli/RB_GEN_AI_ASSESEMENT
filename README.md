@@ -183,6 +183,23 @@ All four figures are available under [`outputs/figures/`](outputs/figures/). Thr
 
 **Human validation.** Automated judgments are compared against structured manual review to understand where they agree, where they disagree, how well automated contradiction detection performs, and which omissions and borderline cases still need a human reader.
 
+## Tech Stack
+
+| Area | Technology |
+| --- | --- |
+| Language | Python 3.11+ |
+| LLM evaluation | OpenAI API (structured outputs; model set via `EVALUATOR_MODEL`) |
+| Structured outputs | Pydantic |
+| Claim-level evaluation | Custom claim extraction and alignment pipeline |
+| Contradiction validation | Hugging Face Transformers + PyTorch, `roberta-large-mnli` |
+| Semantic similarity | BERTScore + PyTorch, `roberta-large` |
+| Data processing | pandas |
+| Statistical analysis | SciPy |
+| Human review / Excel outputs | openpyxl |
+| Visualization | Matplotlib |
+| Configuration | python-dotenv |
+| Testing | Python `unittest` |
+
 ## Repository Structure
 
 ```
