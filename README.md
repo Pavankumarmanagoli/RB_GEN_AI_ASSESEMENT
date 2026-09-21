@@ -49,10 +49,10 @@ A few terminology notes that matter for reading the results:
 flowchart LR
     D[Human-AI Response Dataset<br/>30 pairs, 3 people, 10 questions each]
 
-    subgraph AUTO["Automated Evaluation"]
+    subgraph AUTO["Automated Evidence"]
         direction TB
-        GE[G-Eval<br/>Core, Behavior, Preference,<br/>Motivation, Nuance]
-        CE[Claim Extraction] --> CA[Claim Alignment] --> NLI[NLI Cross-check]
+        GE["G-Eval<br/>Core, Behavior, Preference,<br/>Motivation, Nuance"]
+        CE[Claim Extraction] --> CA[Claim Alignment] --> NLI[NLI Contradiction Cross-check]
         BS[BERTScore]
         GE --> AGG[Automated Evaluation]
         CA --> AGG
@@ -84,9 +84,10 @@ flowchart LR
     HR --> AHV
     HR --> PC
     AGG --> FS
+    HR --> FS
 ```
 
-The dataset feeds G-Eval, claim extraction, BERTScore, and manual Human review independently. Claim extraction feeds claim alignment, which provides matched claim pairs for the NLI contradiction cross-check. G-Eval, claim-level metrics, NLI, and BERTScore are consolidated as automated evidence without averaging or weighting them into a composite score. The automated results are then compared with structured Human review, while person-level consistency examines patterns across each individual's ten responses. These validated signals feed the final synthesis and visualizations.
+The dataset feeds G-Eval, claim extraction, BERTScore, and manual Human review independently. Claim extraction feeds claim alignment, which provides matched claim pairs for the NLI contradiction cross-check. G-Eval, claim-level metrics, NLI, and BERTScore are consolidated as automated evidence without averaging or weighting them into a composite score. The automated results are then compared with structured Human review to produce the automated-vs-human validation, while person-level consistency examines patterns across each individual's ten responses. Automated evaluation, automated-vs-human validation, Human review, and person-level consistency all feed the final synthesis and visualizations.
 
 ### Architecture explanation
 
@@ -311,14 +312,14 @@ The current repository test suite contains 196 passing tests.
 
 | Group | Files |
 | --- | --- |
-| Whole-answer evaluation | `geval_results_final.*` |
-| Claim analysis | `claim_extraction_final.*`, `claim_alignment_final.*` |
-| Contradiction validation | `nli_validation_final.*` |
-| Semantic similarity | `bertscore_final.*` |
-| Human validation | `human_review_final.*`, `person_consistency_*` |
-| Automated synthesis | `automated_evaluation_*` |
-| Final synthesis | `final_pairwise_evaluation.*`, `final_evaluation_summary.*`, `final_evaluation.xlsx` |
-| Visualizations | `outputs/figures/*.png` |
+| Whole-answer evaluation | `geval_results_final.json`, `geval_results_final.csv` |
+| Claim analysis | `claim_extraction_final.json`, `claim_extraction_final.csv`; `claim_alignment_final.json`, `claim_alignment_final.csv` |
+| Contradiction validation | `nli_validation_final.json`, `nli_validation_final.csv` |
+| Semantic similarity | `bertscore_final.json`, `bertscore_final.csv` |
+| Human validation | `human_review_final.json`, `human_review_final.csv`; `person_consistency_review.xlsx` |
+| Automated synthesis | `automated_evaluation_by_row.json`, `automated_evaluation_by_row.csv`; `automated_evaluation_summary.json`, `automated_evaluation_summary.md` |
+| Final synthesis | `final_pairwise_evaluation.json`, `final_pairwise_evaluation.csv`; `final_evaluation_summary.json`, `final_evaluation_summary.md`; `final_evaluation.xlsx` |
+| Visualizations | `outputs/figures/` |
 
 Formats: JSON is the machine-readable/reproducibility format; CSV supports tabular analysis; XLSX is for reviewer-friendly detailed inspection; Markdown gives a concise readable summary; PNG figures are presentation-ready.
 
