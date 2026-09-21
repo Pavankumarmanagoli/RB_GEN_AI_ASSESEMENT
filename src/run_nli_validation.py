@@ -1,3 +1,4 @@
+"""Cross-check claim alignment labels with a pretrained NLI model."""
 import argparse
 import json
 
@@ -8,10 +9,8 @@ from src.nli_validator import NLI_MODEL_NAME, load_nli_model, predict_nli, resol
 from src.run_geval import write_json
 from src.schemas import NLIPrediction
 
-# A small, manually curated set of frozen Step 4B claim pairs, selected by inspecting
-# outputs/claim_extraction_final.json and outputs/claim_alignment_final.json — not
-# guessed by row number. Identified as (row_id, human_claim_id); the matched
-# ai_claim_id and Step 4B label are read from the frozen alignment output. Roughly
+# A small, manually curated set of frozen claim pairs, selected by inspecting the
+# extraction and alignment outputs directly — not guessed by row number. Roughly
 # 5 aligned, 5 contradicted (including one deliberately borderline case), and
 # 5 partial pairs with useful scope/specificity differences.
 NLI_CALIBRATION_PAIRS: list[tuple[int, str]] = [
@@ -44,16 +43,14 @@ def _load_claim_alignment() -> dict[int, dict]:
 
 
 def eligible_pairs(extraction_by_row: dict[int, dict], alignment_by_row: dict[int, dict]) -> list[dict]:
-    """Every Step 4B alignment with a non-null ai_claim_id — labels aligned, partial, or
-    contradicted. Excludes `missing` human claims (no AI claim exists to compare) and
-    unsupported AI claims (no human claim exists to compare), which stay Step 4-only
-    diagnostics."""
+    """List claim alignments (aligned, partial, or contradicted) that have a matched AI claim."""
     pairs = []
     for row_id, alignment in alignment_by_row.items():
         extraction = extraction_by_row[row_id]
         human_by_id = {claim["claim_id"]: claim["claim"] for claim in extraction["human_claims"]}
         ai_by_id = {claim["claim_id"]: claim["claim"] for claim in extraction["ai_claims"]}
         for entry in alignment["alignments"]:
+            # Missing human claims and unsupported AI claims have no counterpart to test with NLI.
             if entry["ai_claim_id"] is None:
                 continue
             pairs.append({
@@ -74,23 +71,22 @@ def select_calibration_pairs(pairs: list[dict]) -> list[dict]:
     found = {(pair["row_id"], pair["human_claim_id"]) for pair in selected}
     missing = set(wanted_order) - found
     if missing:
-        raise ValueError(f"Calibration pairs not found in frozen Step 4 outputs: {sorted(missing)}")
+        raise ValueError(f"Calibration pairs not found in frozen claim alignment outputs: {sorted(missing)}")
     selected.sort(key=lambda pair: wanted_order[(pair["row_id"], pair["human_claim_id"])])
     return selected
 
 
 def compare_with_step4b(step4b_label: str, nli_label: str) -> dict:
-    """`aligned` expects entailment and `contradicted` expects contradiction; `partial` has
-    no single expected NLI signal (a partial semantic match may reasonably read as
-    entailment or neutral depending on specificity/scope), so it is never counted as
-    disagreement."""
+    """Compare an NLI prediction against the signal expected for its alignment label."""
     expected = {"aligned": "entailment", "contradicted": "contradiction"}.get(step4b_label)
     if expected is None:
+        # partial has no single expected NLI signal, so it's never counted as disagreement.
         return {"expected_nli_signal": None, "agrees_with_step4b": None}
     return {"expected_nli_signal": expected, "agrees_with_step4b": nli_label == expected}
 
 
 def run_validation(calibration: bool) -> int:
+    """Run NLI over the selected claim pairs and write the comparison."""
     extraction_by_row = _load_claim_extraction()
     alignment_by_row = _load_claim_alignment()
     pairs = eligible_pairs(extraction_by_row, alignment_by_row)
@@ -136,7 +132,7 @@ def run_validation(calibration: bool) -> int:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Cross-check frozen Step 4B claim alignment labels with a pretrained NLI model."
+        description="Cross-check frozen claim alignment labels with a pretrained NLI model."
     )
     selection = parser.add_mutually_exclusive_group(required=True)
     selection.add_argument(

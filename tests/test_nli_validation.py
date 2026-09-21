@@ -1,3 +1,4 @@
+"""Tests for the NLI cross-check of claim alignment."""
 import unittest
 from unittest.mock import MagicMock, patch
 

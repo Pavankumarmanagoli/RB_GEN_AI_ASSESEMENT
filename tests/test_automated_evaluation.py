@@ -1,3 +1,4 @@
+"""Tests for the automated evaluation synthesis."""
 import json
 import unittest
 from pathlib import Path
@@ -317,7 +318,7 @@ class RunAutomatedEvaluationTests(unittest.TestCase, FixtureOutputsMixin):
             output_dir = Path(directory)
             self._fixture(output_dir)
             # No human_review_final.json or person_consistency files exist in this
-            # temp dir at all; a successful run proves Step 7 data is never required.
+            # temp dir at all; a successful run proves human review data is never required.
             self.assertEqual(run_automated_evaluation(), 0)
             self.assertFalse((output_dir / "human_review_final.json").exists())
 

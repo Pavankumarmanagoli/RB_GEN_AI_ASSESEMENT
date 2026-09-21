@@ -1,3 +1,4 @@
+"""Pydantic schemas for evaluator inputs, outputs, and validation rules."""
 import math
 from typing import Literal, Self
 
@@ -5,6 +6,8 @@ from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 
 class DimensionEvaluation(BaseModel):
+    """One rubric dimension's applicability, score, evidence, and rationale."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     applicable: bool
@@ -31,6 +34,8 @@ class DimensionEvaluation(BaseModel):
 
 
 class FidelityJudgment(BaseModel):
+    """G-Eval judgment across all five rubric dimensions for one pair."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     core: DimensionEvaluation
@@ -47,18 +52,24 @@ class FidelityJudgment(BaseModel):
 
 
 class FidelityEvaluation(FidelityJudgment):
+    """A FidelityJudgment with its row and person identifiers attached."""
+
     # Identifiers are attached locally and are never sent to the judge.
     row_id: int | str
     person_id: str
 
 
 class ClaimList(BaseModel):
+    """A list of atomic claims extracted from one answer."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     claims: list[str] = Field(min_length=1)
 
 
 class AtomicClaim(BaseModel):
+    """One atomic claim with a locally assigned ID."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     # claim_id is assigned locally from extraction order and is never sent to the model.
@@ -67,6 +78,8 @@ class AtomicClaim(BaseModel):
 
 
 class ClaimExtractionResult(BaseModel):
+    """Extracted human and AI claims for one row."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     row_id: int | str
@@ -75,6 +88,8 @@ class ClaimExtractionResult(BaseModel):
 
 
 class ClaimAlignment(BaseModel):
+    """One human claim's alignment label against an AI claim."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     human_claim_id: str
@@ -92,6 +107,8 @@ class ClaimAlignment(BaseModel):
 
 
 class UnsupportedAIClaim(BaseModel):
+    """An AI claim not used to support any human claim."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     ai_claim_id: str
@@ -99,6 +116,8 @@ class UnsupportedAIClaim(BaseModel):
 
 
 class AlignmentJudgment(BaseModel):
+    """Claim alignments and unsupported AI claims for one row."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     alignments: list[ClaimAlignment]
@@ -106,11 +125,15 @@ class AlignmentJudgment(BaseModel):
 
 
 class ClaimAlignmentResult(AlignmentJudgment):
+    """An AlignmentJudgment with its row ID attached."""
+
     # row_id is attached locally and is never sent to the model.
     row_id: int | str
 
 
 class NLIPrediction(BaseModel):
+    """Predicted NLI label and probabilities for one claim pair."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     nli_label: Literal["entailment", "neutral", "contradiction"]
@@ -134,6 +157,8 @@ class NLIPrediction(BaseModel):
 
 
 class BERTScoreResult(BaseModel):
+    """BERTScore precision/recall/F1 for one Human-AI answer pair."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     row_id: int | str
@@ -161,6 +186,8 @@ class BERTScoreResult(BaseModel):
 
 
 class HumanReviewRecord(BaseModel):
+    """One human-reviewed row joined with its automated signals."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     review_id: str
@@ -188,6 +215,8 @@ class HumanReviewRecord(BaseModel):
 
 
 class AutomatedEvaluationRow(BaseModel):
+    """One row's automated signals joined across Steps 3-6."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     row_id: int | str
@@ -245,6 +274,8 @@ FINAL_FIDELITY_LABELS = {
 
 
 class FinalPairwiseEvaluation(BaseModel):
+    """Structured result for one Human-AI response pair."""
+
     model_config = ConfigDict(extra="forbid", strict=True)
 
     row_id: int | str

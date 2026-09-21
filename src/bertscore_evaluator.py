@@ -1,12 +1,10 @@
+"""Score Human-vs-AI answer similarity with BERTScore."""
 from bert_score import BERTScorer
 from transformers import AutoTokenizer
 
-# One fixed, official English BERTScore configuration. Reference = Human answer,
-# candidate = AI answer: precision loosely reflects how much of the candidate overlaps
-# the reference, recall loosely reflects how much of the reference is covered by the
-# candidate, and F1 summarizes contextual token-level similarity. These are semantic
-# similarity signals, not factual-verification metrics — precision is not a
-# hallucination rate and recall is not an omission rate.
+# Fixed English BERTScore config. Human answer = reference, AI answer = candidate.
+# These are semantic similarity signals, not factual-verification metrics —
+# precision is not a hallucination rate and recall is not an omission rate.
 MODEL_NAME = "roberta-large"
 LANGUAGE = "en"
 IDF = False
@@ -14,7 +12,7 @@ RESCALE_WITH_BASELINE = True
 
 
 class BERTScoreError(ValueError):
-    pass
+    """Raised for invalid BERTScore inputs."""
 
 
 def load_scorer() -> BERTScorer:
@@ -27,9 +25,7 @@ def load_scorer() -> BERTScorer:
 
 
 def find_length_overflows(rows: list[dict], tokenizer=None) -> list[dict]:
-    """Reports any Human/AI answer whose token count exceeds the model's max sequence
-    length, using the same tokenizer BERTScore will score with. Does not truncate or
-    chunk; overflow rows must be handled explicitly, not silently."""
+    """Flag Human/AI answers exceeding the model's max token length; does not truncate or chunk."""
     tokenizer = tokenizer or AutoTokenizer.from_pretrained(MODEL_NAME)
     max_length = tokenizer.model_max_length
     overflows = []
@@ -47,8 +43,7 @@ def find_length_overflows(rows: list[dict], tokenizer=None) -> list[dict]:
 def score_batch(
     scorer: BERTScorer, human_answers: list[str], ai_answers: list[str],
 ) -> tuple[list[float], list[float], list[float]]:
-    """Human answer = reference, AI answer = candidate. Scores the whole batch at once
-    and returns (precision, recall, f1) lists in input order."""
+    """Score a batch and return (precision, recall, f1) lists in input order."""
     if len(human_answers) != len(ai_answers):
         raise BERTScoreError("human_answers and ai_answers must be the same length.")
     if not human_answers:

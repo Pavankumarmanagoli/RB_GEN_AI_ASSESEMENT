@@ -1,3 +1,4 @@
+"""Run claim extraction via the OpenAI API."""
 import argparse
 import json
 from pathlib import Path
@@ -90,6 +91,7 @@ def _extract_rows(
 
 
 def run_extraction(row_ids: list[int] | None) -> int:
+    """Extract claims for the selected rows and write checkpointed results."""
     try:
         api_key, model = load_config()
     except ValueError as error:

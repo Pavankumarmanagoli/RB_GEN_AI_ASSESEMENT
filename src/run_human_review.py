@@ -1,3 +1,4 @@
+"""Run the human review comparison and export reviewer outputs."""
 import pandas as pd
 
 from src.config import OUTPUT_DIR
@@ -18,6 +19,7 @@ from src.run_geval import write_json
 
 
 def run_human_review() -> int:
+    """Map the human review to the dataset and write the joined comparison."""
     review = load_review()
     validate_review(review)
     mapped = map_reviews_to_dataset(review)
@@ -53,7 +55,7 @@ def run_human_review() -> int:
     OUTPUT_DIR.mkdir(exist_ok=True)
     write_json(OUTPUT_DIR / "human_review_final.json", {"summary": summary, "results": records})
     pd.json_normalize(records, sep="_").to_csv(OUTPUT_DIR / "human_review_final.csv", index=False)
-    print(f"Mapped and joined {len(records)} human review rows with frozen Step 3-6 outputs.")
+    print(f"Mapped and joined {len(records)} human review rows with the automated evaluation results.")
     return 0
 
 

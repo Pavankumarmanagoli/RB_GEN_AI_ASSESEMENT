@@ -1,3 +1,4 @@
+"""Run BERTScore evaluation over the dataset and export results."""
 import pandas as pd
 
 from src.bertscore_evaluator import (
@@ -31,6 +32,7 @@ def _load_rows() -> list[dict]:
 
 
 def run_bertscore() -> int:
+    """Score every row with BERTScore and write the frozen results."""
     rows = _load_rows()
     missing = [
         row["row_id"] for row in rows

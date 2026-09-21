@@ -1,3 +1,4 @@
+"""Align human claims against AI claims for the same question via LLM."""
 import hashlib
 import json
 

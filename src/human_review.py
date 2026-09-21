@@ -1,3 +1,4 @@
+"""Compare the human review with the automated evaluation results."""
 import json
 import re
 import statistics
@@ -19,7 +20,7 @@ YES_NO = {"YES", "NO"}
 
 
 class HumanReviewError(ValueError):
-    pass
+    """Raised for invalid or incomplete human review data."""
 
 
 def _normalize_text(value) -> str:
@@ -74,10 +75,8 @@ def validate_review(review) -> None:
 
 
 def map_reviews_to_dataset(review) -> list[dict]:
-    """Recovers each blinded review row's original row_id/person_id by exact, whitespace-
-    normalized matching of (question, human answer, AI answer) against the project's
-    dataset loader. Fails loudly on zero matches, ambiguous matches, or incomplete
-    coverage of the original 30 rows; never assumes review_id order."""
+    """Recover each review row's original row_id and person_id by exact-text matching,
+    failing loudly on any unmatched, ambiguous, or missing row."""
     dataset = load_data()
     candidates_by_key: dict[tuple, list[dict]] = defaultdict(list)
     for _, row in dataset.iterrows():
@@ -150,8 +149,7 @@ def _load_by_row_id(filename: str) -> dict:
 
 
 def build_joined_records(mapped: list[dict]) -> list[dict]:
-    """Joins each mapped human review row with the frozen Step 3-6 outputs by row_id,
-    without modifying or recomputing any of those frozen results."""
+    """Join each mapped human review row with the automated evaluation results by row_id."""
     geval_by_row = _load_by_row_id("geval_results_final.json")
     alignment_by_row = _load_by_row_id("claim_alignment_final.json")
     nli_by_row = _load_by_row_id("nli_validation_final.json")
@@ -220,9 +218,7 @@ def flag_rate(records: list[dict], field: str) -> dict:
 
 
 def spearman(records: list[dict], x_field: str, y_field: str) -> dict:
-    """Spearman correlation over rows where both fields are non-null. Reported cautiously:
-    rho, p-value, and n are returned as-is with no strength label, given the small (<=30
-    row) sample size."""
+    """Compute Spearman correlation over non-null rows; no strength label is added given the small sample."""
     pairs = [
         (record[x_field], record[y_field]) for record in records
         if record[x_field] is not None and record[y_field] is not None
@@ -235,8 +231,7 @@ def spearman(records: list[dict], x_field: str, y_field: str) -> dict:
 
 
 def contradiction_confusion(records: list[dict], predicted_field: str) -> dict:
-    """Confusion matrix for an automated contradiction flag against the human
-    `contradiction` label, treated here as the reference."""
+    """Build a confusion matrix for an automated flag against the human contradiction label."""
     true_positives = true_negatives = false_positives = false_negatives = 0
     for record in records:
         human = record["human_contradiction"] == "YES"

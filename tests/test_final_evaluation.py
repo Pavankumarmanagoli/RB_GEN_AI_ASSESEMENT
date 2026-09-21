@@ -1,3 +1,4 @@
+"""Tests for the final evaluation join and reviewer-facing exports."""
 import json
 import unittest
 from pathlib import Path

@@ -1,3 +1,4 @@
+"""Inspect the raw dataset for shape, missing values, and category balance."""
 from pathlib import Path
 
 import pandas as pd

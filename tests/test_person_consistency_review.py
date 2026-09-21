@@ -1,3 +1,4 @@
+"""Tests for the person-level consistency review workbook."""
 import json
 import unittest
 from pathlib import Path

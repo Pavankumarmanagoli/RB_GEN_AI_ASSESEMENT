@@ -1,3 +1,4 @@
+"""Tests for claim alignment."""
 import json
 import unittest
 from pathlib import Path

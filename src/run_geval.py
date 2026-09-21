@@ -1,3 +1,4 @@
+"""Run G-Eval scoring for Human-AI response pairs."""
 import argparse
 import json
 from pathlib import Path
@@ -53,6 +54,7 @@ BEHAVIOR_CALIBRATION_ROWS = {
 
 
 def write_json(path: Path, data: dict) -> None:
+    # Write-then-rename so a crash mid-write never leaves a truncated result file.
     temporary = path.with_suffix(".tmp")
     temporary.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     temporary.replace(path)
@@ -125,6 +127,7 @@ def _evaluate_rows(
 
 
 def run_pilot(row_ids: list[int] | None = None) -> int:
+    """Evaluate the manually selected pilot rows (or a subset of them)."""
     try:
         api_key, model = load_config()
     except ValueError as error:
@@ -157,6 +160,7 @@ def run_pilot(row_ids: list[int] | None = None) -> int:
 
 
 def run_full() -> int:
+    """Evaluate every row in the dataset."""
     try:
         api_key, model = load_config()
     except ValueError as error:
@@ -180,6 +184,7 @@ def run_full() -> int:
 
 
 def run_motivation_calibration() -> int:
+    """Evaluate the manually selected Motivation-calibration rows."""
     try:
         api_key, model = load_config()
     except ValueError as error:
@@ -207,6 +212,7 @@ def run_motivation_calibration() -> int:
 
 
 def run_behavior_calibration() -> int:
+    """Evaluate the manually selected Behavior-calibration rows."""
     try:
         api_key, model = load_config()
     except ValueError as error:

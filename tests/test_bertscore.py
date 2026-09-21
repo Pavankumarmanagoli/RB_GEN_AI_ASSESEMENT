@@ -1,3 +1,4 @@
+"""Tests for the BERTScore evaluator and its runner."""
 import json
 import math
 import unittest

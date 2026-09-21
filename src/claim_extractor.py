@@ -1,3 +1,4 @@
+"""Extract atomic claims from a single survey answer via LLM."""
 import hashlib
 import json
 

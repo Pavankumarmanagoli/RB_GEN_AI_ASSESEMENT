@@ -1,3 +1,4 @@
+"""Shared paths and environment configuration."""
 import os
 from pathlib import Path
 
@@ -10,6 +11,7 @@ OUTPUT_DIR = PROJECT_ROOT / "outputs"
 
 
 def load_config() -> tuple[str, str]:
+    """Load and validate the OpenAI API key and evaluator model from .env."""
     load_dotenv(PROJECT_ROOT / ".env", override=False)
     api_key = os.getenv("OPENAI_API_KEY", "").strip()
     model = os.getenv("EVALUATOR_MODEL", "").strip()

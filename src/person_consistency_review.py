@@ -1,3 +1,4 @@
+"""Group human review rows by person and build the consistency review workbook."""
 import json
 import statistics
 from collections import defaultdict
@@ -24,7 +25,7 @@ ROW_COLUMNS = [
 
 
 class PersonConsistencyError(ValueError):
-    pass
+    """Raised for invalid person-review groupings."""
 
 
 def load_human_review_records() -> list[dict]:
@@ -54,8 +55,7 @@ def validate_grouping(records: list[dict], grouped: dict[str, list[dict]]) -> No
 
 
 def build_workbook(grouped: dict[str, list[dict]]) -> Workbook:
-    """One sheet per person: a blank manual-review block at the top, then the row-level
-    evidence table below it. No consistency judgment is computed or written here."""
+    """Build one sheet per person with a blank manual-review block above the row-level evidence."""
     workbook = Workbook()
     workbook.remove(workbook.active)
 

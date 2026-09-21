@@ -1,3 +1,4 @@
+"""Judge Human-vs-AI fidelity per response pair with a rubric-based LLM judge."""
 import hashlib
 import json
 import re

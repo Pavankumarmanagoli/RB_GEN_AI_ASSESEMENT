@@ -1,3 +1,4 @@
+"""Build the automated evaluation summary."""
 import json
 import statistics
 from collections import defaultdict
@@ -45,9 +46,7 @@ def _nli_row_summary(pairs: list[dict]) -> dict:
 
 
 def build_row_records() -> list[dict]:
-    """Joins the frozen Step 3-6 outputs by row_id. G-Eval Core Fidelity is the sole
-    automated_fidelity_score; claim alignment, NLI, and BERTScore are carried alongside
-    as separate diagnostic evidence, never blended into one weighted number."""
+    """Combine G-Eval, claim alignment, NLI, and BERTScore results by row."""
     geval_by_row = _index_by_row(_load_results("geval_results_final.json"))
     alignment_by_row = _index_by_row(_load_results("claim_alignment_final.json"))
     nli_by_row = _group_by_row(_load_results("nli_validation_final.json"))
@@ -169,8 +168,7 @@ def claim_analysis(records: list[dict]) -> dict:
 
 
 def contradiction_analysis(records: list[dict]) -> dict:
-    """Descriptive only: reports where Step 4 and Step 5 agree or disagree on
-    contradiction presence per row, without judging which system is right."""
+    """Report where claim-based and NLI contradiction checks agree or disagree per row."""
     step4_rows = sorted(record["row_id"] for record in records if record["contradicted_count"] > 0)
     nli_rows = sorted(record["row_id"] for record in records if record["nli_contradiction_present"])
     both_rows = sorted(set(step4_rows) & set(nli_rows))

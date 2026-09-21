@@ -1,3 +1,4 @@
+"""Run the person-level consistency review and export reviewer outputs."""
 from src.config import OUTPUT_DIR
 from src.person_consistency_review import (
     build_workbook,
@@ -10,6 +11,7 @@ from src.run_geval import write_json
 
 
 def run_person_consistency_review() -> int:
+    """Group rows by person, build the review workbook, and write the summary."""
     records = load_human_review_records()
     grouped = group_by_person(records)
     validate_grouping(records, grouped)

@@ -1,3 +1,4 @@
+"""Run the automated evaluation synthesis and export outputs."""
 import pandas as pd
 
 from src.automated_evaluation import build_markdown_summary, build_row_records, dataset_summary
@@ -6,6 +7,7 @@ from src.run_geval import write_json
 
 
 def run_automated_evaluation() -> int:
+    """Build per-row records and write the automated evaluation summary."""
     records = build_row_records()
     summary = dataset_summary(records)
     markdown = build_markdown_summary(summary)
@@ -16,7 +18,7 @@ def run_automated_evaluation() -> int:
     write_json(OUTPUT_DIR / "automated_evaluation_summary.json", summary)
     (OUTPUT_DIR / "automated_evaluation_summary.md").write_text(markdown, encoding="utf-8")
 
-    print(f"Joined {len(records)} rows from Steps 3-6 into the automated evaluation synthesis.")
+    print(f"Joined {len(records)} rows into the automated evaluation synthesis.")
     print(f"Overall Automated Fidelity: {summary['automated_fidelity']['overall_automated_fidelity_mean']:.2f} / 5")
     return 0
 

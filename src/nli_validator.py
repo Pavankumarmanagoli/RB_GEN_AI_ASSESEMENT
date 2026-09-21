@@ -1,9 +1,9 @@
+"""Run NLI inference over claim pairs using a pretrained MNLI checkpoint."""
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-# A single pretrained MNLI checkpoint, used only to cross-check Step 4B's semantic
-# labels. This is not an LLM judge: it sees only the two claim texts, never the
-# Step 4B label, and produces no fidelity score.
+# Used only to cross-check claim alignment's semantic labels. Not an LLM judge: it
+# sees only the two claim texts, never the alignment label, and produces no fidelity score.
 NLI_MODEL_NAME = "roberta-large-mnli"
 MAX_LENGTH = 256
 
@@ -11,7 +11,7 @@ NLI_LABELS = ("entailment", "neutral", "contradiction")
 
 
 class NLIError(ValueError):
-    pass
+    """Raised when the checkpoint's label mapping is invalid or incomplete."""
 
 
 def resolve_device() -> torch.device:
@@ -32,9 +32,7 @@ def load_nli_model() -> tuple[AutoTokenizer, AutoModelForSequenceClassification,
 
 
 def resolve_label_map(model: AutoModelForSequenceClassification) -> dict[int, str]:
-    """Normalize the checkpoint's configured id2label into entailment/neutral/contradiction.
-    Never assumes a fixed numeric ordering such as 0=contradiction; reads the checkpoint's
-    own mapping and verifies it covers exactly the three expected labels."""
+    """Normalize the checkpoint's id2label mapping without assuming a fixed label order."""
     label_map = {}
     for class_id, raw_label in model.config.id2label.items():
         normalized = str(raw_label).strip().lower()
@@ -58,9 +56,7 @@ def predict_nli(
     label_map: dict[int, str],
     pairs: list[tuple[str, str]],
 ) -> list[dict]:
-    """Deterministic batch NLI inference. Each pair is (premise, hypothesis); by this
-    module's convention premise=human claim, hypothesis=AI claim (see run_nli_validation.py).
-    Returns one record per pair, in input order."""
+    """Run NLI inference for Human-AI claim pairs (premise=human claim, hypothesis=AI claim)."""
     if not pairs:
         return []
     premises = [premise for premise, _ in pairs]

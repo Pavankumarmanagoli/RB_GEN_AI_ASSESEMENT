@@ -1,3 +1,4 @@
+"""Run claim alignment via the OpenAI API."""
 import argparse
 import json
 
@@ -37,9 +38,9 @@ def describe_failure(error: Exception) -> dict[str, str]:
 
 
 def _load_extracted_claims() -> dict[int, dict]:
-    """Load completed Step 4A extraction records, keyed by row_id. Consumes existing
-    extraction output rather than re-extracting; a later-sorted file wins on overlap."""
+    """Load completed claim extraction records, keyed by row_id."""
     claims_by_row = {}
+    # Files are read in sorted order, so a later-sorted file wins on row_id overlap.
     for path in sorted(OUTPUT_DIR.glob(f"claim_extraction_results_{CLAIM_PROMPT_VERSION}_*.json")):
         for record in json.loads(path.read_text(encoding="utf-8"))["results"]:
             if record.get("status") == "completed":
@@ -109,6 +110,7 @@ def _align_rows(client: OpenAI, model: str, prompt: str, row_ids: list[int],
 
 
 def run_alignment(row_ids: list[int] | None) -> int:
+    """Align claims for the selected rows and write checkpointed results."""
     try:
         api_key, model = load_config()
     except ValueError as error:
@@ -119,7 +121,7 @@ def run_alignment(row_ids: list[int] | None) -> int:
     missing = [row_id for row_id in selected_ids if row_id not in claims_by_row]
     if missing:
         raise ValueError(
-            f"No completed Step 4A extraction found for row IDs {missing}. Run src.run_claim_extraction first."
+            f"No completed claim extraction found for row IDs {missing}. Run src.run_claim_extraction first."
         )
     OUTPUT_DIR.mkdir(exist_ok=True)
     cache_path = OUTPUT_DIR / ".alignment_cache.json"
@@ -136,20 +138,20 @@ def run_alignment(row_ids: list[int] | None) -> int:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Align atomic human/AI claims from Step 4A extraction.")
+    parser = argparse.ArgumentParser(description="Align atomic human/AI claims from extracted claim data.")
     selection = parser.add_mutually_exclusive_group(required=True)
     selection.add_argument(
         "--rows", type=int, nargs="+", metavar="ROW_ID",
-        help="row IDs to align (must already have Step 4A extraction results)",
+        help="row IDs to align (must already have extracted claim results)",
     )
     selection.add_argument(
         "--full", action="store_true",
-        help="align every row with completed Step 4A extraction results",
+        help="align every row with completed extraction results",
     )
     args = parser.parse_args()
     try:
         raise SystemExit(run_alignment(None if args.full else args.rows))
     except ValueError:
         # Configuration messages are fixed strings, never API error bodies.
-        print("Run could not start. Check OPENAI_API_KEY, EVALUATOR_MODEL, row IDs, and Step 4A extraction results.")
+        print("Run could not start. Check OPENAI_API_KEY, EVALUATOR_MODEL, row IDs, and extracted claim results.")
         raise SystemExit(1)

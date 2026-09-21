@@ -1,3 +1,4 @@
+"""Build the final evaluation outputs."""
 import json
 import re
 import statistics
@@ -62,7 +63,7 @@ REPRESENTATIVE_ROW_THEMES = [
 
 
 class FinalEvaluationError(ValueError):
-    pass
+    """Raised for invalid or inconsistent final-evaluation inputs."""
 
 
 def load_automated_rows() -> dict:
@@ -108,8 +109,7 @@ def final_label(human_fidelity_score: int) -> str:
 
 
 def main_issue(contradiction: bool, omission: bool, unsupported: bool) -> str:
-    """Deterministic mapping from the three Human-review flags to one of the fixed
-    issue categories; no heuristics or scoring involved."""
+    """Map the three human-review flags to a fixed issue category."""
     if contradiction and omission and unsupported:
         return "multiple fidelity issues"
     if contradiction and omission:
@@ -128,16 +128,12 @@ def main_issue(contradiction: bool, omission: bool, unsupported: bool) -> str:
 
 
 def _fix_reviewer_note_grammar(note: str) -> str:
-    """Corrects a stray mid-sentence capitalization in a couple of source review notes
-    ('... and It also ...' -> '... and it also ...'). Wording and meaning are unchanged;
-    only the capital letter is fixed. The frozen Step 7B reviewer_note itself is never
-    modified — this only affects how Step 8B renders it."""
+    """Fix a stray mid-sentence capitalization in a review note ('and It' -> 'and it')."""
     return re.sub(r"\band It\b", "and it", note)
 
 
 def final_assessment_note(reviewer_note: str, human_fidelity_score: int) -> str:
-    """Built only from the existing, human-authored reviewer_note plus a deterministic
-    label lookup — no new LLM judgment or numeric score is generated here."""
+    """Build the assessment note from the reviewer_note and fidelity label (no new judgment)."""
     note = _fix_reviewer_note_grammar(reviewer_note.strip())
     if note and not note.endswith((".", "!", "?")):
         note += "."
@@ -210,7 +206,7 @@ def build_final_rows() -> list[dict]:
 
 
 def validation_stats(records: list[dict], human_summary: dict) -> dict:
-    """Reuses the frozen Step 7B Spearman result verbatim rather than recomputing it."""
+    """Reuse the existing Spearman correlation rather than recomputing it."""
     automated_scores = [record["automated_fidelity_score"] for record in records]
     human_scores = [record["human_fidelity_score"] for record in records]
     abs_diffs = [abs(record["score_difference"]) for record in records]
@@ -240,8 +236,7 @@ def validation_stats(records: list[dict], human_summary: dict) -> dict:
 
 
 def contradiction_validation(human_summary: dict) -> dict:
-    """Reuses the frozen Step 7B confusion matrices and disagreement rows verbatim;
-    no new contradiction judgment is made here."""
+    """Reuse the existing confusion matrices and disagreement rows without recomputing them."""
     agreement = human_summary["contradiction_agreement"]
     disagreement = human_summary["contradiction_disagreement_rows"]
     step4 = agreement["step4_vs_human"]
@@ -343,9 +338,7 @@ def _short_summary(text: str, limit: int = 140) -> str:
 
 
 def representative_rows(records: list[dict]) -> list[dict]:
-    """Selects a fixed set of rows chosen for how clearly they illustrate a fidelity
-    pattern to a business reviewer; each theme is re-verified against the joined data
-    before use, so a row is never described a way the data no longer supports."""
+    """Select fixed example rows and verify each still matches its stated theme."""
     by_row = {record["row_id"]: record for record in records}
     examples = []
     for row_id, theme, condition in REPRESENTATIVE_ROW_THEMES:
@@ -452,7 +445,6 @@ def dataset_final_summary(records: list[dict], human_summary: dict, manual_by_pe
 def build_markdown_summary(summary: dict) -> str:
     validation = summary["validation"]
     contradiction = summary["contradiction_validation"]
-    failure = summary["failure_evidence"]
     spearman = validation["spearman_human_fidelity_vs_geval_core"]
 
     lines = [
@@ -540,8 +532,7 @@ def _wrap_columns(sheet, columns: list, start_row: int = 2) -> None:
 
 
 def _assert_no_empty_columns(sheet) -> None:
-    """Guards against an accidental blank spacer column inside the used range; every
-    column in a reviewer-facing sheet must carry a header and, for data sheets, values."""
+    """Guard against an accidental blank spacer column in a reviewer-facing sheet."""
     for column in range(1, sheet.max_column + 1):
         values = [sheet.cell(row=row, column=column).value for row in range(1, sheet.max_row + 1)]
         if all(value in (None, "") for value in values):
@@ -551,6 +542,7 @@ def _assert_no_empty_columns(sheet) -> None:
 
 
 def build_excel_workbook(records: list[dict], summary: dict) -> Workbook:
+    """Create the reviewer-facing Excel workbook."""
     workbook = Workbook()
 
     pairwise_sheet = workbook.active

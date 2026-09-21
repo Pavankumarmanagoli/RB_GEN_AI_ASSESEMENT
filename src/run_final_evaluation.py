@@ -1,3 +1,4 @@
+"""Run the final evaluation and export reviewer-facing outputs."""
 import pandas as pd
 
 from src.config import OUTPUT_DIR
@@ -14,6 +15,7 @@ from src.run_geval import write_json
 
 
 def run_final_evaluation() -> int:
+    """Join automated and human review results and write the final outputs."""
     records = build_final_rows()
     _, human_summary = load_human_review()
     manual_by_person = load_person_manual_fields()
