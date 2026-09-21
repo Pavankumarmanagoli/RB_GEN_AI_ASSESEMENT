@@ -1,0 +1,188 @@
+{
+  "dataset": {
+    "number_of_rows": 30,
+    "number_of_people": 3,
+    "rows_per_person": {
+      "c_human": 10,
+      "g_human": 10,
+      "s_human": 10
+    }
+  },
+  "automated_fidelity": {
+    "overall_automated_fidelity_mean": 2.6333333333333333,
+    "overall_automated_fidelity_median": 3.0,
+    "core_fidelity_distribution": {
+      "1": 5,
+      "2": 8,
+      "3": 12,
+      "4": 3,
+      "5": 2
+    },
+    "dimension_summary": {
+      "behavior": {
+        "applicable_count": 18,
+        "not_applicable_count": 12,
+        "mean": 3.0555555555555554
+      },
+      "preference": {
+        "applicable_count": 22,
+        "not_applicable_count": 8,
+        "mean": 2.772727272727273
+      },
+      "motivation": {
+        "applicable_count": 22,
+        "not_applicable_count": 8,
+        "mean": 2.909090909090909
+      },
+      "nuance": {
+        "applicable_count": 29,
+        "not_applicable_count": 1,
+        "mean": 2.3793103448275863
+      }
+    }
+  },
+  "claim_analysis": {
+    "human_claims_total": 121,
+    "aligned_count": 15,
+    "aligned_percentage": 12.396694214876034,
+    "partial_count": 35,
+    "partial_percentage": 28.92561983471074,
+    "contradicted_count": 10,
+    "contradicted_percentage": 8.264462809917356,
+    "missing_count": 61,
+    "missing_percentage": 50.413223140495866,
+    "ai_claims_total": 254,
+    "unsupported_ai_count": 198,
+    "unsupported_ai_percentage": 77.95275590551181,
+    "mean_claim_coverage_rate": 0.4711111111111111,
+    "median_claim_coverage_rate": 0.5,
+    "mean_strict_alignment_rate": 0.1527777777777778,
+    "median_strict_alignment_rate": 0.0,
+    "mean_unsupported_rate": 0.7557163207163207,
+    "median_unsupported_rate": 0.7777777777777778,
+    "rows_with_contradiction": 8,
+    "rows_with_missing_claim": 26
+  },
+  "contradiction_analysis": {
+    "step4_contradiction_row_count": 8,
+    "step4_contradiction_rows": [
+      9,
+      12,
+      13,
+      14,
+      15,
+      16,
+      21,
+      24
+    ],
+    "nli_contradiction_row_count": 10,
+    "nli_contradiction_rows": [
+      7,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      18,
+      24
+    ],
+    "both_detect_contradiction_row_count": 6,
+    "both_detect_contradiction_rows": [
+      9,
+      13,
+      14,
+      15,
+      16,
+      24
+    ],
+    "step4_only_contradiction_rows": [
+      12,
+      21
+    ],
+    "nli_only_contradiction_rows": [
+      7,
+      10,
+      11,
+      18
+    ]
+  },
+  "semantic_similarity": {
+    "mean_f1": 0.14421611294771233,
+    "median_f1": 0.14501218497753143,
+    "min_f1": -0.060879118740558624,
+    "max_f1": 0.3151189982891083,
+    "representative_rows": [
+      {
+        "row_id": 10,
+        "bertscore_f1": 0.25749602913856506,
+        "core_fidelity_score": 1,
+        "step4_contradiction_present": false,
+        "nli_contradiction_present": true,
+        "note": "BERTScore F1 is above the dataset median despite the lowest possible G-Eval Core score and an NLI-detected contradiction."
+      },
+      {
+        "row_id": 22,
+        "bertscore_f1": 0.03760256618261337,
+        "core_fidelity_score": 4,
+        "step4_contradiction_present": false,
+        "nli_contradiction_present": false,
+        "note": "BERTScore F1 is among the lowest in the dataset despite a high G-Eval Core score and no detected contradiction."
+      },
+      {
+        "row_id": 28,
+        "bertscore_f1": -0.060879118740558624,
+        "core_fidelity_score": 4,
+        "step4_contradiction_present": false,
+        "nli_contradiction_present": false,
+        "note": "BERTScore F1 is among the lowest in the dataset despite a high G-Eval Core score and no detected contradiction."
+      }
+    ]
+  },
+  "person_summary": [
+    {
+      "person_id": "c_human",
+      "number_of_rows": 10,
+      "automated_fidelity_mean": 2.9,
+      "automated_fidelity_median": 3.0,
+      "mean_claim_coverage_rate": 0.6683333333333333,
+      "mean_strict_alignment_rate": 0.24166666666666667,
+      "mean_unsupported_rate": 0.7393253968253968,
+      "step4_contradiction_row_count": 2,
+      "nli_contradiction_row_count": 4,
+      "mean_bertscore_f1": 0.1424539877101779
+    },
+    {
+      "person_id": "g_human",
+      "number_of_rows": 10,
+      "automated_fidelity_mean": 2.3,
+      "automated_fidelity_median": 2.5,
+      "mean_claim_coverage_rate": 0.33,
+      "mean_strict_alignment_rate": 0.11,
+      "mean_unsupported_rate": 0.7271428571428571,
+      "step4_contradiction_row_count": 5,
+      "nli_contradiction_row_count": 4,
+      "mean_bertscore_f1": 0.1508266449905932
+    },
+    {
+      "person_id": "s_human",
+      "number_of_rows": 10,
+      "automated_fidelity_mean": 2.7,
+      "automated_fidelity_median": 3.0,
+      "mean_claim_coverage_rate": 0.415,
+      "mean_strict_alignment_rate": 0.10666666666666667,
+      "mean_unsupported_rate": 0.8006807081807081,
+      "step4_contradiction_row_count": 1,
+      "nli_contradiction_row_count": 2,
+      "mean_bertscore_f1": 0.13936770614236593
+    }
+  ],
+  "automated_findings": [
+    "Overall automated fidelity is mixed: G-Eval Core Fidelity averages 2.63/5 across the 30 rows, with scores spread across the full 1-5 range rather than clustering at the top.",
+    "Human content is frequently omitted: 50.4% of human claims (61/121) are missing from the AI answer, affecting 26/30 rows.",
+    "Unsupported AI elaboration is common: on average 75.6% of AI claims per row are unsupported by the human reference (this indicates content absent from the reference, not proven-false content).",
+    "Explicit contradictions occur in a meaningful subset of responses: Step 4 claim alignment flags 8/30 rows and independent NLI validation flags 10/30 rows, agreeing on 6 of them.",
+    "BERTScore can remain relatively high despite a behavioral contradiction, and can also be low despite a high G-Eval score and no detected contradiction (see representative_rows in the semantic_similarity section) — semantic similarity alone is not a reliable fidelity signal."
+  ]
+}

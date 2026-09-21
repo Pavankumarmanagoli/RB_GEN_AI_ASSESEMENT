@@ -16,4 +16,4 @@ wheels/
 outputs/.*_cache.json
 .claude/
 .DS_Store
-~.xlsx
+~$*

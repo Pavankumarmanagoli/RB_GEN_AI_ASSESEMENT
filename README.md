@@ -116,7 +116,7 @@ Run the non-API tests:
 Regenerate the dependency export after dependency changes:
 
 ```bash
-uv export --format requirements-txt --no-hashes --no-emit-project --output-file requirements.txt
+uv export --format requirements-txt --no-hashes --no-emit-project --no-annotate --no-header --output-file requirements.txt
 ```
 
 API implementation reference: [OpenAI structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs).

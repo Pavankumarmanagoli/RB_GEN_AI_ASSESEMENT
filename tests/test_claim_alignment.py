@@ -4,7 +4,6 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import MagicMock, patch
 
-import pandas as pd
 from pydantic import ValidationError
 
 from src.claim_aligner import (

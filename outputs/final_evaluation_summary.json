@@ -1,0 +1,219 @@
+{
+  "dataset_size": 30,
+  "automated_fidelity_mean": 2.6333333333333333,
+  "human_fidelity_mean": 2.533333333333333,
+  "validation": {
+    "automated_fidelity_mean": 2.6333333333333333,
+    "automated_fidelity_median": 3.0,
+    "human_fidelity_mean": 2.533333333333333,
+    "human_fidelity_median": 3.0,
+    "mean_difference": 0.10000000000000009,
+    "mean_absolute_score_difference": 0.5,
+    "exact_score_agreement_count": 15,
+    "exact_score_agreement_percentage": 50.0,
+    "within_one_point_count": 30,
+    "within_one_point_percentage": 100.0,
+    "rows_with_score_difference_over_one": [],
+    "spearman_human_fidelity_vs_geval_core": {
+      "rho": 0.819981006646163,
+      "p_value": 2.9462324866506116e-08,
+      "n": 30
+    }
+  },
+  "contradiction_validation": {
+    "step4_vs_human": {
+      "true_positives": 8,
+      "true_negatives": 19,
+      "false_positives": 0,
+      "false_negatives": 3,
+      "agreement_count": 27,
+      "agreement_percentage": 90.0,
+      "precision": 1.0,
+      "recall": 0.7272727272727273,
+      "f1": 0.8421052631578948
+    },
+    "nli_vs_human": {
+      "true_positives": 9,
+      "true_negatives": 18,
+      "false_positives": 1,
+      "false_negatives": 2,
+      "agreement_count": 27,
+      "agreement_percentage": 90.0,
+      "precision": 0.9,
+      "recall": 0.8181818181818182,
+      "f1": 0.8571428571428572
+    },
+    "contradictions_correctly_detected": {
+      "step4": 8,
+      "nli": 9
+    },
+    "contradictions_missed_by_step4": {
+      "count": 3,
+      "rows": [
+        10,
+        11,
+        18
+      ]
+    },
+    "contradictions_missed_by_nli": {
+      "count": 2,
+      "rows": [
+        12,
+        21
+      ]
+    },
+    "nli_false_positives": {
+      "count": 1,
+      "rows": [
+        7
+      ]
+    }
+  },
+  "failure_evidence": {
+    "human_contradiction_rate": 36.666666666666664,
+    "human_omission_rate": 73.33333333333333,
+    "human_unsupported_detail_rate": 100.0,
+    "missing_human_claim_rate": 50.413223140495866,
+    "unsupported_ai_claim_rate": 77.95275590551181
+  },
+  "person_consistency": {
+    "c_human": "Low",
+    "g_human": "Low",
+    "s_human": "Medium"
+  },
+  "person_summary": [
+    {
+      "person_id": "c_human",
+      "number_of_rows": 10,
+      "automated_fidelity_mean": 2.9,
+      "human_fidelity_mean": 2.7,
+      "mean_claim_coverage_rate": 0.6683333333333333,
+      "mean_unsupported_rate": 0.7393253968253968,
+      "human_contradiction_count": 3,
+      "human_omission_count": 6,
+      "human_unsupported_detail_count": 10,
+      "consistency_label": "Low",
+      "consistent_traits": "The AI usually keeps things like price, affordability, whether the product works well, and some discovery preferences like friends or social media",
+      "inconsistent_traits": "In some answers the AI changes the person's behavior completely, for example saying they regularly buy in bulk when they normally do not, choosing Emma Watson instead of the male actors mentioned, and changing the toothpaste history and reason for switching",
+      "invented_profile_traits": "The AI often adds extra preferences around sustainability, ingredients, eco-friendly packaging, skincare effects, reviews, and recommendations that were not clearly mentioned by the Human",
+      "person_level_note": "Some important preferences are kept correctly, but there are a few major contradictions and many extra details added across the answers",
+      "person_final_conclusion": "c_human's simulated answers show an Automated Match Score of 2.90/5 and a Human-Reviewed Match Score of 2.70/5, with overall person-level consistency rated Low. Some important preferences are kept correctly, but there are a few major contradictions and many extra details added across the answers."
+    },
+    {
+      "person_id": "g_human",
+      "number_of_rows": 10,
+      "automated_fidelity_mean": 2.3,
+      "human_fidelity_mean": 2.5,
+      "mean_claim_coverage_rate": 0.33,
+      "mean_unsupported_rate": 0.7271428571428571,
+      "human_contradiction_count": 6,
+      "human_omission_count": 7,
+      "human_unsupported_detail_count": 10,
+      "consistency_label": "Low",
+      "consistent_traits": "The AI keeps some broad preferences like supermarket shopping, convenience, fair pricing, and practical product use",
+      "inconsistent_traits": "The AI changes several important details, such as rare bulk buying into regular bulk buying, uncertainty about a celebrity into choosing David Beckham, rotating toothpaste brands into using one brand for years, and choosing specific body-wash ingredients even though the Human said they did not know what ingredients they wanted",
+      "invented_profile_traits": "The AI often adds brand loyalty, specific ingredient preferences, eco-friendly packaging, friend recommendations, scent and texture preferences, and detailed shopping or product habits that were not supported by the Human answers",
+      "person_level_note": "The AI keeps a few general preferences, but there are several major contradictions and many unsupported personal details across the person's profile",
+      "person_final_conclusion": "g_human's simulated answers show an Automated Match Score of 2.30/5 and a Human-Reviewed Match Score of 2.50/5, with overall person-level consistency rated Low. The AI keeps a few general preferences, but there are several major contradictions and many unsupported personal details across the person's profile."
+    },
+    {
+      "person_id": "s_human",
+      "number_of_rows": 10,
+      "automated_fidelity_mean": 2.7,
+      "human_fidelity_mean": 2.4,
+      "mean_claim_coverage_rate": 0.415,
+      "mean_unsupported_rate": 0.8006807081807081,
+      "human_contradiction_count": 2,
+      "human_omission_count": 9,
+      "human_unsupported_detail_count": 10,
+      "consistency_label": "Medium",
+      "consistent_traits": "The AI usually keeps the person's preference for Korean skincare brands, interest in ingredients, and some focus on product quality and hydration",
+      "inconsistent_traits": "The AI says face products are bought in bulk even though the Human says they dislike buying face products in large sizes, and it also changes the celebrity choice from Keira Knightley to Hyram Yarbro",
+      "invented_profile_traits": "The AI often adds things like oily or acne-prone skin, natural or organic ingredients, sustainability, ethical practices, and sustainable packaging even when these were not clearly stated by the Human",
+      "person_level_note": "The AI keeps several real skincare preferences, but it also adds a lot of extra profile details and has a few clear inconsistencies",
+      "person_final_conclusion": "s_human's simulated answers show an Automated Match Score of 2.70/5 and a Human-Reviewed Match Score of 2.40/5, with overall person-level consistency rated Medium. The AI keeps several real skincare preferences, but it also adds a lot of extra profile details and has a few clear inconsistencies."
+    }
+  ],
+  "representative_examples": [
+    {
+      "row_id": 10,
+      "person_id": "c_human",
+      "question": "which personal care products, if any, do you regularly buy in larger/bulk quantities?",
+      "human_answer_summary": "i don't usually buy in bulk, but rather as soon as i need them.",
+      "ai_answer_summary": "i regularly buy toothpaste and deodorant in bulk these are essential items in my daily routine, and buying them in larger quantities helps m…",
+      "automated_fidelity_score": 1,
+      "human_fidelity_score": 1,
+      "final_fidelity_label": "Very low fidelity",
+      "main_issue": "multiple fidelity issues",
+      "explanation": "Behavioral reversal: The AI gives the opposite buying behavior; the Human says they do not usually buy in bulk, while the AI says they regularly do and also adds specific products and reasons that were not mentioned."
+    },
+    {
+      "row_id": 16,
+      "person_id": "c_human",
+      "question": "how long have you been using your current brand of toothpaste? do you also remember the last time you switched brands and why?",
+      "human_answer_summary": "since forever, my mum used to buy them and i just continued to buy them, so something like 10 years? i did never have a specific reason to s…",
+      "ai_answer_summary": "i've been using my current brand of toothpaste for a few years now the last time i switched brands was because i wanted a product with bette…",
+      "automated_fidelity_score": 2,
+      "human_fidelity_score": 1,
+      "final_fidelity_label": "Very low fidelity",
+      "main_issue": "multiple fidelity issues",
+      "explanation": "Unsupported switching reason: The Human answer says the toothpaste has been used for around 10 years and there was never a specific reason to switch, while the AI shortens this to a few years and invents a switch because of better ingredients."
+    },
+    {
+      "row_id": 22,
+      "person_id": "c_human",
+      "question": "Which out of the following type of body lotion you would prefer and why? Option 1 – Dove Body Love Nourished\nRadiance Body Lotion Option 2 – Dove Body Love Light Hydration Body Lotion Option 3 – Dove Body Love Pro Age\nBody Lotion for Mature Skin Option 4 – Dove Body Love Supple Bounce Body Lotion",
+      "human_answer_summary": "i would chose option 2",
+      "ai_answer_summary": "I’d probably go for Option 2 – Dove Body Love Light Hydration Body Lotion. It sounds like it’s perfect for daily use, providing just the rig…",
+      "automated_fidelity_score": 4,
+      "human_fidelity_score": 4,
+      "final_fidelity_label": "Mostly faithful",
+      "main_issue": "unsupported elaboration",
+      "explanation": "Correct choice, heavy unsupported elaboration: The AI correctly keeps Option 2 as the preferred choice, but it adds several reasons about hydration, heaviness, greasiness, and daily use that were not mentioned."
+    },
+    {
+      "row_id": 7,
+      "person_id": "c_human",
+      "question": "what is the ideal size and packaging for a body wash product for you? for example regarding volume in ml, materials used, design, functionality, informativeness, …",
+      "human_answer_summary": "it should be around 300 ml, use natural materias and smell nice. of course it needs to clean the body haha",
+      "ai_answer_summary": "i prefer a body wash size of around 250-500 ml, with packaging made from recyclable or biodegradable materials the design should be simple a…",
+      "automated_fidelity_score": 3,
+      "human_fidelity_score": 3,
+      "final_fidelity_label": "Mixed fidelity",
+      "main_issue": "omission + unsupported elaboration",
+      "explanation": "NLI false positive: The AI keeps the approximate size and natural-material idea, but it misses the smell preference and adds several packaging, labeling, sustainability, and ease-of-use preferences that were not mentioned."
+    },
+    {
+      "row_id": 14,
+      "person_id": "s_human",
+      "question": "if you could choose one celebrity to represent a brand of men's or women's skin and body care products that inspires you to make a purchase, who would that celebrity be and why?",
+      "human_answer_summary": "i do not know, it really depends on the day, it changes all the time, but if i had to pick one, i would go with keira knightley, just becaus…",
+      "ai_answer_summary": "i would choose hyram yarbro to represent a brand of skincare products he’s known for his dedication to skincare, transparency about ingredie…",
+      "automated_fidelity_score": 2,
+      "human_fidelity_score": 1,
+      "final_fidelity_label": "Very low fidelity",
+      "main_issue": "multiple fidelity issues",
+      "explanation": "Celebrity preference mismatch: The Human answer is uncertain and, if forced to choose, picks Keira Knightley, while the AI chooses Hyram Yarbro instead and adds several unsupported reasons and preferences."
+    },
+    {
+      "row_id": 28,
+      "person_id": "c_human",
+      "question": "How do you discover new personal care products, and what influences your decision to try them?",
+      "human_answer_summary": "usually my friends or what i see is famous in instagram",
+      "ai_answer_summary": "I mostly discover new products through friends or social media. If someone I trust recommends something or I see a positive review, that’s u…",
+      "automated_fidelity_score": 4,
+      "human_fidelity_score": 3,
+      "final_fidelity_label": "Mixed fidelity",
+      "main_issue": "unsupported elaboration",
+      "explanation": "Broad theme preserved, heavy elaboration: The AI keeps friends and social media as the main discovery sources, but it adds many extra influences such as reviews, ads, influencers, product reputation, ingredients, and price that were not mentioned."
+    }
+  ],
+  "final_business_findings": [
+    "Automated and Human-reviewed match scores broadly agree: the Automated Match Score averages 2.63/5 versus a Human-Reviewed Match Score of 2.53/5, matching exactly on 50% of rows and within one point on 100%.",
+    "Broad themes (what a person buys, cares about, or discovers) are usually preserved, but person-specific details, quantities, and named preferences are frequently lost or replaced.",
+    "Omissions and unsupported elaboration are common: the human reviewer flagged omission in 73% of rows and unsupported detail in 100% of rows.",
+    "Human review identified contradictions in 36.7% of rows, including several clear behavioral or preference reversals.",
+    "Person-level consistency remains weak for c_human, g_human (Low) and is only moderate for s_human (Medium), based on the manual cross-row consistency review."
+  ],
+  "overall_conclusion": "Across the 30 reviewed answers, the AI simulations show only a partial match to the real Human responses, with an Automated Match Score of 2.63/5 and a Human-Reviewed Match Score of 2.53/5. The simulations often preserve parts of the broad theme of an answer, but frequently omit person-specific details and introduce unsupported personal elaboration; Human review identified contradictions in 36.7% of rows, including several clear behavioral or preference reversals. Automated and Human judgments show strong rank agreement (Spearman ρ = 0.82) and differ by no more than one point across all 30 rows, indicating that automated evaluation can serve as a useful screening signal. Human review remains important for identifying meaningful reversals, determining which omissions matter, and resolving borderline cases where automated methods disagree."
+}

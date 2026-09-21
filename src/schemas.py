@@ -185,3 +185,116 @@ class HumanReviewRecord(BaseModel):
     bertscore_precision: float
     bertscore_recall: float
     bertscore_f1: float
+
+
+class AutomatedEvaluationRow(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    row_id: int | str
+    person_id: str
+    question: str = Field(min_length=1)
+    human_answer: str = Field(min_length=1)
+    ai_answer: str = Field(min_length=1)
+
+    # automated_fidelity_score is G-Eval Core Fidelity, and only that; never a
+    # weighted composite with claim, NLI, or BERTScore signals.
+    automated_fidelity_score: int = Field(ge=1, le=5)
+    automated_fidelity_scale: Literal["1-5"]
+
+    core_fidelity_score: int = Field(ge=1, le=5)
+    behavior_score: int | None = Field(ge=1, le=5)
+    preference_score: int | None = Field(ge=1, le=5)
+    motivation_score: int | None = Field(ge=1, le=5)
+    nuance_score: int | None = Field(ge=1, le=5)
+
+    human_claim_count: int = Field(ge=0)
+    aligned_count: int = Field(ge=0)
+    partial_count: int = Field(ge=0)
+    contradicted_count: int = Field(ge=0)
+    missing_count: int = Field(ge=0)
+    ai_claim_count: int = Field(ge=0)
+    unsupported_ai_count: int = Field(ge=0)
+    claim_coverage_rate: float | None
+    strict_alignment_rate: float | None
+    unsupported_rate: float | None
+
+    nli_contradiction_present: bool
+    nli_contradiction_count: int = Field(ge=0)
+    strongest_contradiction_probability: float | None = Field(ge=0.0, le=1.0)
+
+    bertscore_precision: float
+    bertscore_recall: float
+    bertscore_f1: float
+
+    @model_validator(mode="after")
+    def validate_primary_score_is_geval_core(self) -> Self:
+        if self.automated_fidelity_score != self.core_fidelity_score:
+            raise ValueError("automated_fidelity_score must equal G-Eval Core Fidelity exactly.")
+        return self
+
+
+# The Human fidelity score IS the final validated score; this only maps it to a
+# readable label. No new number is calculated anywhere from this mapping.
+FINAL_FIDELITY_LABELS = {
+    5: "High fidelity",
+    4: "Mostly faithful",
+    3: "Mixed fidelity",
+    2: "Low fidelity",
+    1: "Very low fidelity",
+}
+
+
+class FinalPairwiseEvaluation(BaseModel):
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    row_id: int | str
+    person_id: str
+    question: str = Field(min_length=1)
+    human_answer: str = Field(min_length=1)
+    ai_answer: str = Field(min_length=1)
+
+    automated_fidelity_score: int = Field(ge=1, le=5)
+    automated_fidelity_scale: Literal["1-5"]
+    behavior_score: int | None = Field(ge=1, le=5)
+    preference_score: int | None = Field(ge=1, le=5)
+    motivation_score: int | None = Field(ge=1, le=5)
+    nuance_score: int | None = Field(ge=1, le=5)
+    claim_coverage_rate: float | None
+    strict_alignment_rate: float | None
+    contradicted_count: int = Field(ge=0)
+    missing_count: int = Field(ge=0)
+    unsupported_rate: float | None
+    nli_contradiction_present: bool
+    bertscore_f1: float
+
+    human_fidelity_score: int = Field(ge=1, le=5)
+    human_contradiction: Literal["YES", "NO"]
+    human_omission: Literal["YES", "NO"]
+    human_unsupported_detail: Literal["YES", "NO"]
+    reviewer_note: str = Field(min_length=1)
+
+    # score_difference is diagnostic only; it is never averaged with either score or
+    # turned into a new combined number.
+    score_difference: int
+    exact_score_agreement: bool
+    within_one_point: bool
+    final_fidelity_label: str
+    main_issue: str = Field(min_length=1)
+    final_assessment_note: str = Field(min_length=1)
+
+    @model_validator(mode="after")
+    def validate_derived_fields(self) -> Self:
+        expected_difference = self.automated_fidelity_score - self.human_fidelity_score
+        if self.score_difference != expected_difference:
+            raise ValueError("score_difference must equal automated_fidelity_score - human_fidelity_score.")
+        if self.exact_score_agreement != (self.score_difference == 0):
+            raise ValueError("exact_score_agreement must reflect score_difference == 0.")
+        if self.within_one_point != (abs(self.score_difference) <= 1):
+            raise ValueError("within_one_point must reflect abs(score_difference) <= 1.")
+        expected_label = FINAL_FIDELITY_LABELS[self.human_fidelity_score]
+        if self.final_fidelity_label != expected_label:
+            raise ValueError(
+                f"final_fidelity_label must be {expected_label!r} for human_fidelity_score="
+                f"{self.human_fidelity_score}."
+            )
+        return self

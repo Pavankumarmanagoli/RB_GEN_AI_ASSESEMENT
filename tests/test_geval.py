@@ -10,7 +10,7 @@ from pydantic import ValidationError
 
 from src.config import load_config
 from src.geval_evaluator import (
-    CALIBRATION_INSTRUCTIONS, EvaluationError, PROMPT_VERSION, build_prompt,
+    EvaluationError, PROMPT_VERSION, build_prompt,
     cache_key, evaluate_pair, validate_evidence,
 )
 from src.run_geval import (
